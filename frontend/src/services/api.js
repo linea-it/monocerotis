@@ -16,3 +16,4 @@ export const getRegistrations = () => {
     .then(res => res)
     .catch(err => err)
 }
+
