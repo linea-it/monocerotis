@@ -1,10 +1,13 @@
 import React from 'react';
+import { MuiThemeProvider } from '@material-ui/core/styles';
+import Router from './Routes';
+import theme from './themes/MaterialTheme';
 
 function App() {
   return (
-    <div className="App">
-      <h1>LIneA Workshop</h1>
-    </div>
+    <MuiThemeProvider theme={theme}>
+      <Router />
+    </MuiThemeProvider>
   );
 }
 
