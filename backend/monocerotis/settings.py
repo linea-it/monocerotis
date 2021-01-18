@@ -40,6 +40,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # My apps
+    'workshop',
+
+
     # Third-party
     'rest_framework',
     'rest_framework.authtoken',
