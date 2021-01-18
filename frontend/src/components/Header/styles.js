@@ -1,39 +1,33 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 const styles = makeStyles((theme) => ({
-  list: {
-    padding: 0,
-  },
-  avatar: {
-    marginRight: 10,
-  },
-  root: {
-    flexGrow: 1,
-  },
   appbar: {
-    background: theme.palette.appbarcolor,
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-  separator: {
-    flexGrow: 1,
+    background: '#fff',
+    boxShadow: 'none',
   },
   menuList: {
     display: 'flex',
+    width: '40vw',
+    margin: 'auto',
+  },
+  listItem: {
+    justifyContent: 'center',
   },
   menuLink: {
-    color: '#fff',
+    fontSize: 'larger',
     textDecoration: 'none',
-    fontWeight: 500,
+    fontWeight: 600,
     textTransform: 'uppercase',
     whiteSpace: 'nowrap',
   },
-  logoLIneA: {
+  logo: {
     [theme.breakpoints.up('sm')]: {
-      maxWidth: 75,
+      maxWidth: 160,
     },
-    maxWidth: 75,
+    maxWidth: 160,
+  },
+  toolbar: {
+    padding: 0,
   },
 }));
 

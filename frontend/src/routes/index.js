@@ -1,12 +1,26 @@
 import React from 'react';
-import { Switch } from 'react-router-dom';
+import { BrowserRouter, Switch } from 'react-router-dom';
 import Route from './Route';
-import Subscription from '../pages/Subscription'
+import Home from '../pages/Home';
+import Registration from '../pages/Registration';
+import Program from '../pages/Program';
+import AdditionalInformation from '../pages/AdditionalInformation';
+import Notfound from '../pages/NotFound';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 export default function Routes() {
   return (
-    <Switch>
-      <Route exact path="/subscription" component={Subscription} />
-    </Switch>
+    <BrowserRouter>
+      <Header />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/registration" component={Registration} />
+        <Route exact path="/program" component={Program} />
+        <Route exact path="/additional-information" component={AdditionalInformation} />
+        <Route component={Notfound} />
+      </Switch>
+      <Footer />
+    </BrowserRouter>
   );
 }
