@@ -1,4 +1,4 @@
-# LIneA Workshop
+# LIneA Workshop 2021
 
 
 ## Installation
