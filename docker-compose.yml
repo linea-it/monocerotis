@@ -20,6 +20,8 @@ services:
       - .env.dev
     volumes:
       - ./backend:/app
+    depends_on:
+      - database
 
   # Frontend React
   frontend:
