@@ -13,6 +13,9 @@ const light = createMuiTheme({
   },
   typography: {
     useNextVariants: true,
+    text: {
+      secondary: '#fff',
+    },
   },
   overrides: {
     Pagination: {
@@ -56,6 +59,11 @@ const light = createMuiTheme({
       text: {
         marginTop: 0,
         marginBottom: 0,
+      },
+    },
+    MuiTypography: {
+      colorTextSecondary: {
+        color: 'darkblue',
       },
     },
   },
