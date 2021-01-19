@@ -6,7 +6,7 @@ import { Alert, AlertTitle } from '@material-ui/lab';
 import EmailIcon from '@material-ui/icons/Email';
 import ReCAPTCHA from 'react-google-recaptcha';
 import styles from './styles';
-import { postRegistration } from '../../Services/api';
+import { postSubscription } from '../../services/api';
 
 function Registration() {
   const classes = styles();
@@ -25,7 +25,7 @@ function Registration() {
   const handleSubmit = (event) => {
     event.preventDefault();
     if(submitEnabled) {
-      
+
       const name = formRef.current.name.value;
       const email = formRef.current.email.value;
       const institute = formRef.current.institute.value;
@@ -37,7 +37,7 @@ function Registration() {
       //   institute,
       //   newsletter,
       // });
-      postRegistration({ name, email, institute, newsletter })
+      postSubscription({ name, email, institute, newsletter })
         .then(res => {
           if (res.status === 200) {
             setOpen('success');
@@ -73,7 +73,7 @@ function Registration() {
                   id="name"
                   type="text"
                   variant="outlined"
-                  label="Name" 
+                  label="Name"
                   name="name"
                   placeholder="Name"
                   fullWidth
@@ -87,7 +87,7 @@ function Registration() {
                   id="email"
                   type="email"
                   variant="outlined"
-                  label="E-mail" 
+                  label="E-mail"
                   name="email"
                   placeholder="E-mail"
                   fullWidth
@@ -101,7 +101,7 @@ function Registration() {
                   id="institute"
                   type="text"
                   variant="outlined"
-                  label="Institute" 
+                  label="Institute"
                   name="institute"
                   placeholder="Subject"
                   fullWidth

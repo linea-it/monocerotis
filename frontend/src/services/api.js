@@ -1,21 +1,18 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Route } from 'react-router-dom';
+import axios from 'axios';
 
-export default function RouteWrapper({
-  component: Component,
-  ...rest
-}) {
+// Set the default baseURL for the API
+axios.defaults.baseURL = process.env.REACT_APP_API;
 
-  return (
-    <Route
-      {...rest}
-      render={(props) => <Component {...props} />}
-    />
-  );
+export const postSubscription = ({ name, email, institute, newsletter }) => {
+  const params = { name, email, institute, newsletter_permission: newsletter };
+
+  return axios.post('/subscription/', params)
+    .then(res => res)
+    .catch(err => err)
 }
+export const getSubscriptions = () => {
 
-RouteWrapper.propTypes = {
-  component: PropTypes.oneOfType([PropTypes.element, PropTypes.func])
-    .isRequired,
-};
+  return axios.get('/subscription/')
+    .then(res => res)
+    .catch(err => err)
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Link from '@material-ui/core/Link';
+import { Link } from 'react-router-dom';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import styles from './styles';
@@ -46,9 +46,9 @@ function Header() {
         <List className={classes.menuList}>
           {menus.map((menu, index) => (
             <ListItem key={index} className={classes.listItem}>
-              <Link href={menu.href} className={classes.menuLink}>
+              <Link to={menu.href} className={classes.menuLink}>
                 {menu.description}
-                {/* {menus.length === index+1 ? '' : 
+                {/* {menus.length === index+1 ? '' :
                 (
                   <spam>|</spam>
                 )} */}
@@ -56,7 +56,7 @@ function Header() {
             </ListItem>
           ))}
         </List>
-        <img src={`${process.env.PUBLIC_URL}/img/logo-inct.png`} alt="LIneA" className={classes.logo} /> 
+        <img src={`${process.env.PUBLIC_URL}/img/logo-inct.png`} alt="LIneA" className={classes.logo} />
       </Toolbar>
     </AppBar>
     </>

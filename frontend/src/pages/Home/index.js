@@ -7,13 +7,17 @@ function Main() {
       <Container>
         <Grid item xs={12}>
             <Typography variant="h3" align="center" color="textSecondary">Remote Workshop</Typography>
-            <br /><Typography variant="h4" align="center" color="textSecondary">On the Future of Data Centers and eScience Institutes Celebrating LIneA’s 10th Anniversary</Typography>
-            <br /><Typography variant="h3" align="center" color="textSecondary">April 13-15, 2021</Typography>
-            <br /><br />
-            <Grid container xs={12}>
+            <br />
+            <Typography variant="h4" align="center" color="textSecondary">On the Future of Data Centers and eScience Institutes Celebrating LIneA’s 10th Anniversary</Typography>
+            <br />
+            <Typography variant="h3" align="center" color="textSecondary">April 13-15, 2021</Typography>
+            <br />
+            <br />
+            <Grid container>
               <Grid item xs={6} >
               <Typography variant="h5" align="center" color="textSecondary">International Organizing Committee</Typography>
-              <br /><br />
+              <br />
+              <br />
               <Typography variant="h5" align="center" color="textSecondary">Andreas Wicenec</Typography>
               <Typography variant="h5" align="center" color="textSecondary">Fabio Hernandez</Typography>
               <Typography variant="h5" align="center" color="textSecondary">George Beckett</Typography>
@@ -22,7 +26,8 @@ function Main() {
               </Grid>
               <Grid item xs={6} >
               <Typography variant="h5" align="center" color="textSecondary">Local Organizing Committee</Typography>
-              <br /><br />
+              <br />
+              <br />
               <Typography variant="h5" align="center" color="textSecondary">Carlos Adean</Typography>
               <Typography variant="h5" align="center" color="textSecondary">Julia Gschwend</Typography>
               <Typography variant="h5" align="center" color="textSecondary">Mariana Fernandes</Typography>
