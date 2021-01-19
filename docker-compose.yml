@@ -1,6 +1,8 @@
 version: "3.6"
+
 services:
-  # Database
+
+  # Postgres Database
   database:
     image: postgres:12.3-alpine
     env_file:
@@ -11,7 +13,6 @@ services:
       - 5432
     volumes:
       - ./pg_data:/var/lib/postgresql/data
-
 
   # Backend Django
   backend:
@@ -32,15 +33,16 @@ services:
       - ./frontend:/app
     command: yarn start
 
-  # Servidor Web NGINX
+  # Web Server Nginx with React Frontend
   nginx:
     image: nginx:latest
     ports:
       - 80:8080
     volumes:
-      - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf:ro
       # Directory of static file of Django
       - ./archive/static:/var/www/django_static
+      # Nginx configuration file
+      - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf:ro
     depends_on:
       - backend
       - frontend
