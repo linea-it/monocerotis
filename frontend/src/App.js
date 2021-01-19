@@ -1,7 +1,7 @@
 import React from 'react';
 import { Router } from 'react-router-dom';
 import { MuiThemeProvider } from '@material-ui/core/styles';
-import Routes from './routes';
+import Routes from './routes/index';
 import history from './services/history';
 import light from './themes/light';
 
