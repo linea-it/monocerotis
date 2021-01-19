@@ -7,6 +7,9 @@ import { YouTube, Twitter, GitHub } from '@material-ui/icons';
 import styles from './styles';
 
 function AboutUs() {
+  // Change dynamically the page title:
+  document.title = 'LIneA Workshop | About';
+
   const handlerClick = (socialMedia) => {
     let uri = '';
     switch (socialMedia) {

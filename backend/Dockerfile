@@ -1,8 +1,5 @@
 FROM python:3.6
 
-ENV GUNICORN_PORT=8001
-ENV GUNICORN_MODULE=monocerotis.wsgi
-ENV GUNICORN_CALLABLE=application
 ENV APP_PATH=/app
 
 RUN apt-get update && apt-get install -y  \

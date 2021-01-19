@@ -3,6 +3,9 @@ import { Grid, Container, Typography } from '@material-ui/core';
 import styles from './styles';
 
 function Program() {
+  // Change dynamically the page title:
+  document.title = 'LIneA Workshop | Program';
+
   const classes = styles();
 
   return (

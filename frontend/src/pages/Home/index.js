@@ -2,6 +2,9 @@ import React from 'react';
 import { Grid, Container, Typography } from '@material-ui/core';
 
 function Main() {
+  // Change dynamically the page title:
+  document.title = 'LIneA Workshop | Home';
+
   return (
     <div>
       <Container>
