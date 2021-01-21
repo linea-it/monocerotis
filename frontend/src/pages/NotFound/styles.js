@@ -1,7 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
 
-const styles = makeStyles((theme) => ({
-  initContainer: theme.initContainer,
+const styles = makeStyles(() => ({
   notfound: {
     textAlign: 'center',
     paddingTop: '10vh',

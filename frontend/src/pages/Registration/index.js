@@ -2,10 +2,11 @@ import React, { useRef, useState } from 'react';
 import {
   Grid, Container, Typography, TextField, Button, Snackbar, FormControlLabel, Checkbox
 } from '@material-ui/core';
-import { Alert, AlertTitle } from '@material-ui/lab';
+import { Alert, AlertTitle, Autocomplete } from '@material-ui/lab';
 import EmailIcon from '@material-ui/icons/Email';
 import ReCAPTCHA from 'react-google-recaptcha';
 import styles from './styles';
+import countries from './countries';
 import { postSubscription } from '../../services/api';
 
 function Registration() {
@@ -32,9 +33,10 @@ function Registration() {
       const name = formRef.current.name.value;
       const email = formRef.current.email.value;
       const institute = formRef.current.institute.value;
+      const country = formRef.current.country.value;
       const newsletter = formRef.current.newsletter.checked;
 
-      postSubscription({ name, email, institute, newsletter })
+      postSubscription({ name, email, institute, newsletter, country })
         .then(res => {
           if (res.status === 200) {
             setOpen('success');
@@ -48,7 +50,7 @@ function Registration() {
                 eventLabel: 'Subscription Success'
               });
             } catch (error) {
-              console.log(error);
+              // console.log(error);
             }
           } else {
             setOpen('unexpected');
@@ -60,7 +62,7 @@ function Registration() {
                 eventLabel: 'Subscription Failure'
               });
             } catch (error) {
-              console.log(error);
+              // console.log(error);
             }
           }
       })
@@ -114,6 +116,25 @@ function Registration() {
               </div>
 
               <div className={classes.textFields}>
+                <Autocomplete
+                  id="country"
+                  name="country"
+                  options={countries}
+                  getOptionLabel={(option) => option.label}
+                  renderInput={(params) => 
+                    <TextField {...params} 
+                      label="Country" 
+                      variant="outlined" 
+                      required
+                      id="country"
+                      placeholder="Countries"
+                      fullWidth
+                      size="small"/>
+                  }
+                />
+              </div>
+
+              <div className={classes.textFields}>
                 <TextField
                   required
                   id="institute"
@@ -135,7 +156,7 @@ function Registration() {
               />
 
               <Grid container alignItems="flex-end">
-                <Grid item xs={10} >
+                <Grid item xs={12} md={10} >
                   {recaptchaKey ? (
                     <ReCAPTCHA
                       sitekey={recaptchaKey}
@@ -143,7 +164,7 @@ function Registration() {
                     />
                   ) : null}
                 </Grid>
-                <Grid item xs={2}>
+                <Grid item xs={12} md={2}>
                   <Button variant="contained" color="primary" type="submit" disableElevation disabled={!submitEnabled}>
                     <EmailIcon />
                     &nbsp;Submit

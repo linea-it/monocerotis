@@ -30,63 +30,61 @@ function AboutUs() {
 
   const classes = styles();
   return (
-    <div className={classes.initContainer}>
-      <Container>
-        <Grid
-          item
-          xs={12}
-        >
-          <Breadcrumbs aria-label="breadcrumb">
-            <Link color="inherit" href="/">
-              Home
-            </Link>
-            <Typography color="primary">Not Found</Typography>
-          </Breadcrumbs>
-          <>
-            <div className={classes.notfound}>
-              <Typography variant="h1" className={classes.title}>404</Typography>
-              <Typography variant="h2" className={classes.subTitle}>
-                Oops! Nothing was found
-              </Typography>
-              <Typography variant="subtitle1" className={classes.description}>
-                The page you are looking for might have been removed, had its name changed or is temporarily unavailable.
-                {' '}
-                <Link color="inherit" className={classes.returnPage} href="/">Return to homepage</Link>
-              </Typography>
-              <>
-                <IconButton
-                  className={classes.icon}
-                  onClick={() => { handlerClick('Youtube'); }}
-                  color="inherit"
-                  aria-label="YouTube"
-                  component="span"
-                >
-                  <YouTube />
-                </IconButton>
-                <IconButton
-                  className={classes.icon}
-                  onClick={() => { handlerClick('Twitter'); }}
-                  color="inherit"
-                  aria-label="Twitter"
-                  component="span"
-                >
-                  <Twitter />
-                </IconButton>
-                <IconButton
-                  className={classes.icon}
-                  onClick={() => { handlerClick('GitHub'); }}
-                  color="inherit"
-                  aria-label="GitHub"
-                  component="span"
-                >
-                  <GitHub />
-                </IconButton>
-              </>
-            </div>
-          </>
-        </Grid>
-      </Container>
-    </div>
+    <Container>
+      <Grid
+        item
+        xs={12}
+      >
+        <Breadcrumbs aria-label="breadcrumb">
+          <Link color="inherit" href="/">
+            Home
+          </Link>
+          <Typography color="primary">Not Found</Typography>
+        </Breadcrumbs>
+        <>
+          <div className={classes.notfound}>
+            <Typography variant="h1" className={classes.title}>404</Typography>
+            <Typography variant="h2" className={classes.subTitle}>
+              Oops! Nothing was found
+            </Typography>
+            <Typography variant="subtitle1" className={classes.description}>
+              The page you are looking for might have been removed, had its name changed or is temporarily unavailable.
+              {' '}
+              <Link color="inherit" className={classes.returnPage} href="/">Return to homepage</Link>
+            </Typography>
+            <>
+              <IconButton
+                className={classes.icon}
+                onClick={() => { handlerClick('Youtube'); }}
+                color="inherit"
+                aria-label="YouTube"
+                component="span"
+              >
+                <YouTube />
+              </IconButton>
+              <IconButton
+                className={classes.icon}
+                onClick={() => { handlerClick('Twitter'); }}
+                color="inherit"
+                aria-label="Twitter"
+                component="span"
+              >
+                <Twitter />
+              </IconButton>
+              <IconButton
+                className={classes.icon}
+                onClick={() => { handlerClick('GitHub'); }}
+                color="inherit"
+                aria-label="GitHub"
+                component="span"
+              >
+                <GitHub />
+              </IconButton>
+            </>
+          </div>
+        </>
+      </Grid>
+    </Container>
   );
 }
 
