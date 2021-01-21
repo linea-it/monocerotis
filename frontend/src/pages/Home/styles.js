@@ -1,9 +1,9 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 const styles = makeStyles(() => ({
-  darkblue: {
-    color: 'darkblue',
-  },
+  organizing : {
+    padding: '0 30%',
+  }
 }));
 
 export default styles;

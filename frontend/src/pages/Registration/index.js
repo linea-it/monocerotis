@@ -31,19 +31,34 @@ function Registration() {
       const institute = formRef.current.institute.value;
       const newsletter = formRef.current.newsletter.checked;
 
-      // console.log({
-      //   name,
-      //   email,
-      //   institute,
-      //   newsletter,
-      // });
       postSubscription({ name, email, institute, newsletter })
         .then(res => {
           if (res.status === 200) {
             setOpen('success');
             formRef.current.reset();
+
+            try {
+              window.ga('send', {
+                hitType: 'event',
+                eventCategory: 'Subscription',
+                eventAction: 'subscript',
+                eventLabel: 'Subscription Success'
+              });
+            } catch (error) {
+              console.log(error);
+            }
           } else {
             setOpen('unexpected');
+            try {
+              window.ga('send', {
+                hitType: 'event',
+                eventCategory: 'Subscription',
+                eventAction: 'subscript',
+                eventLabel: 'Subscription Failure'
+              });
+            } catch (error) {
+              console.log(error);
+            }
           }
       })
     }
@@ -56,11 +71,11 @@ function Registration() {
   }
 
   return (
-    <div className={classes.initContainer}>
-      <Container>
+    <div>
+      <Container align="center">
         <Grid item xs={12}>
           <Grid item xs={6} className={classes.grid}>
-            <Typography variant="h3" align="center" color="textPrimary">Registration</Typography>
+            <Typography variant="h3" align="center" color="primary">Registration</Typography>
             <br /><br />
             <form
               ref={formRef}
@@ -110,19 +125,20 @@ function Registration() {
               </div>
 
               <FormControlLabel
-                  control={<Checkbox name="newsletter" />}
-                  label="Newsletter Permission"
-                  labelPlacement="start"
-              />
+                control={<Checkbox name="newsletter" />}
+                label="Newsletter Permission"
+                labelPlacement="start"
+              />  
 
-              {recaptchaKey ? (
-                <ReCAPTCHA
-                  sitekey={recaptchaKey}
-                  onChange={onRecaptchaChange}
-                />
-              ) : null}
               <Grid container alignItems="flex-end">
-                <Grid item xs={10} />
+                <Grid item xs={10} >
+                  {recaptchaKey ? (
+                    <ReCAPTCHA
+                      sitekey={recaptchaKey}
+                      onChange={onRecaptchaChange}
+                    />
+                  ) : null}
+                </Grid>
                 <Grid item xs={2}>
                   <Button variant="contained" color="primary" type="submit" disableElevation disabled={!submitEnabled}>
                     <EmailIcon />

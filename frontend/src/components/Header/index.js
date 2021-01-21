@@ -31,11 +31,6 @@ function Header() {
       href: '/additional-information',
       target: '_self',
     },
-    // {
-    //   description: 'Releases',
-    //   href: 'https://github.com/linea-it/dri/releases',
-    //   target: '_blank',
-    // },
   ];
 
   return (
@@ -46,12 +41,8 @@ function Header() {
         <List className={classes.menuList}>
           {menus.map((menu, index) => (
             <ListItem key={index} className={classes.listItem}>
-              <Link to={menu.href} className={classes.menuLink}>
+              <Link color="primary" to={menu.href} className={classes.menuLink}>
                 {menu.description}
-                {/* {menus.length === index+1 ? '' :
-                (
-                  <spam>|</spam>
-                )} */}
               </Link>
             </ListItem>
           ))}
