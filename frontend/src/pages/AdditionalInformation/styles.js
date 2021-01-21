@@ -5,16 +5,6 @@ const styles = makeStyles((theme) => ({
   grid: {
     margin: 'auto',
   },
-  textFormat: {
-    marginTop: 40,
-    fontSize: '1.07rem!important',
-    fontFamily: 'arial',
-    fontWeight: '100',
-    lineHeight: '1.5',
-    textAlign: 'justify',
-    color: 'black',
-    letterSpacing: '0.0em',
-  },
 }));
 
 export default styles;
