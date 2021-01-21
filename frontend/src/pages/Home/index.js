@@ -5,7 +5,7 @@ import styles from './styles';
 function Main() {
 
   const classes = styles();
-  
+
   // Change dynamically the page title:
   document.title = 'LIneA Workshop | Home';
 
@@ -21,7 +21,7 @@ function Main() {
             <Typography variant="h5" align="center" color="primary">April 13-15, 2021</Typography>
             <br />
             <br />
-            <Grid container>
+            <Grid container spacing={3} justify="center">
               <Grid item xs={6} >
               <Typography variant="h5" align="center" color="primary">International Organizing Committee</Typography>
               <br />
