@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
     height: '25vh',
     [theme.breakpoints.up('xl')]: {
       backgroundPosition: 'top',
-      height: '33vh',
+      height: '30vh',
     },
     position: 'fixed',
     bottom: 0,
