@@ -6,7 +6,9 @@ function Footer() {
   const classes = useStyles({ footerBg });
 
   return (
-    <footer className={classes.root} />
+    <footer className={classes.footer}>
+      <img src={footerBg} className={classes.footerImg} alt="Footer" />
+    </footer>
   );
 }
 export default Footer;

@@ -8,19 +8,25 @@ import AdditionalInformation from '../pages/AdditionalInformation';
 import Notfound from '../pages/NotFound';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import useStyles from './styles';
 
 export default function Routes() {
+
+  const classes = useStyles();
+
   return (
     <BrowserRouter>
-      <Header />
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/registration" component={Registration} />
-        <Route exact path="/program" component={Program} />
-        <Route exact path="/additional-information" component={AdditionalInformation} />
-        <Route component={Notfound} />
-      </Switch>
-      <Footer />
+      <div className={classes.container}>
+        <Header />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/registration" component={Registration} />
+          <Route exact path="/program" component={Program} />
+          <Route exact path="/additional-information" component={AdditionalInformation} />
+          <Route component={Notfound} />
+        </Switch>
+        <Footer />
+      </div>
     </BrowserRouter>
   );
 }

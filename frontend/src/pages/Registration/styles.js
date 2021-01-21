@@ -6,6 +6,9 @@ const styles = makeStyles((theme) => ({
   },
   grid : {
     textAlign: 'left',
+  },
+  checkboxLabel: {
+    margin: 0,
   }
 }));
 

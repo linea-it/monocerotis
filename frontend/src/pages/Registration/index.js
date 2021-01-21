@@ -129,8 +129,9 @@ function Registration() {
 
               <FormControlLabel
                 control={<Checkbox name="newsletter" />}
-                label="Newsletter Permission"
+                label="Subscribe to LIneA News"
                 labelPlacement="start"
+                className={classes.checkboxLabel}
               />
 
               <Grid container alignItems="flex-end">

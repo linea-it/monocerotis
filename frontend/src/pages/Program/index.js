@@ -27,7 +27,6 @@ function Program() {
   }))(TableRow);
 
   return (
-    <div className={classes.initContainer}>
       <Container>
         <Grid item xs={12}>
           <Typography variant="h3" align="center" color="primary">Program</Typography>
@@ -35,7 +34,7 @@ function Program() {
           {program.scheules.map((schedule) => (
             <>
               <br /><br />
-              <Typography variant="h5" align="center" color="primary">Day {schedule.day} - {schedule.date}</Typography> 
+              <Typography variant="h5" align="center" color="primary">Day {schedule.day} - {schedule.date}</Typography>
 
               <TableContainer component={Paper} key={schedule.id}>
                 <Table className={classes.table} aria-label="customized table">
@@ -49,10 +48,10 @@ function Program() {
                   </TableHead>
                   <TableBody>
                     {schedule.rows.map((row) => {
-                      return row.speaker === 'break' ? 
+                      return row.speaker === 'break' ?
                       <StyledTableRow  key={row.speaker}>
                         <TableCell align="center" colspan="4">Break</TableCell>
-                      </StyledTableRow > : 
+                      </StyledTableRow > :
                       <StyledTableRow  bac="#00b9f2" key={row.speaker}>
                         <TableCell component="th" scope="row">
                           {row.time}
@@ -69,7 +68,6 @@ function Program() {
           ))}
         </Grid>
       </Container>
-    </div>
   );
 }
 

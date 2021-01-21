@@ -5,7 +5,7 @@ import styles from './styles';
 function Main() {
 
   const classes = styles();
-  
+
   // Change dynamically the page title:
   document.title = 'LIneA Workshop | Home';
 
@@ -21,17 +21,17 @@ function Main() {
             <Typography variant="h4" align="center" color="primary">April 13-15, 2021</Typography>
             <br />
             <br />
-            <Grid container>
+            <Grid container spacing={3} justify="center">
               <Grid item xs={6} >
               <Typography variant="h5" align="center" color="primary">International Organizing Committee</Typography>
               <br />
               <br />
               <div className={classes.organizing}>
-                <Typography variant="h5" align="left" color="primary">Andreas Wicenec</Typography>
-                <Typography variant="h5" align="left" color="primary">Fabio Hernandez</Typography>
-                <Typography variant="h5" align="left" color="primary">George Beckett</Typography>
-                <Typography variant="h5" align="left" color="primary">Mario Yuric</Typography>
-                <Typography variant="h5" align="left" color="primary">William O’Mullane</Typography>
+                <Typography variant="h5" align="center" color="primary">Andreas Wicenec</Typography>
+                <Typography variant="h5" align="center" color="primary">Fabio Hernandez</Typography>
+                <Typography variant="h5" align="center" color="primary">George Beckett</Typography>
+                <Typography variant="h5" align="center" color="primary">Mario Yuric</Typography>
+                <Typography variant="h5" align="center" color="primary">William O’Mullane</Typography>
               </div>
               </Grid>
               <Grid item xs={6} >
@@ -39,9 +39,9 @@ function Main() {
               <br />
               <br />
               <div className={classes.organizing}>
-                <Typography variant="h5" align="left" color="primary">Carlos Adean</Typography>
-                <Typography variant="h5" align="left" color="primary">Julia Gschwend</Typography>
-                <Typography variant="h5" align="left" color="primary">Mariana Fernandes</Typography>
+                <Typography variant="h5" align="center" color="primary">Carlos Adean</Typography>
+                <Typography variant="h5" align="center" color="primary">Julia Gschwend</Typography>
+                <Typography variant="h5" align="center" color="primary">Mariana Fernandes</Typography>
               </div>
               </Grid>
             </Grid>
