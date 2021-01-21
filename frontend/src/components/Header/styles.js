@@ -7,7 +7,6 @@ const styles = makeStyles((theme) => ({
   },
   menuList: {
     display: 'flex',
-    // width: '40vw',
     margin: 'auto',
   },
   listItem: {

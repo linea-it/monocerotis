@@ -55,17 +55,6 @@ const light = createMuiTheme({
         backgroundColor: 'rgba(92, 107, 125, .8)',
       },
     },
-    MuiSkeleton: {
-      text: {
-        marginTop: 0,
-        marginBottom: 0,
-      },
-    },
-    MuiTypography: {
-      colorTextSecondary: {
-        color: 'darkblue',
-      },
-    },
   },
 });
 

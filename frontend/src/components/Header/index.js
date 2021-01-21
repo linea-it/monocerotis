@@ -14,28 +14,19 @@ function Header() {
     {
       description: 'Home',
       href: '/',
-      target: '_self',
     },
     {
       description: 'Registration',
       href: '/registration',
-      target: '_self',
     },
     {
       description: 'Program',
       href: '/program',
-      target: '_self',
     },
     {
       description: 'Additional Information',
       href: '/additional-information',
-      target: '_self',
     },
-    // {
-    //   description: 'Releases',
-    //   href: 'https://github.com/linea-it/dri/releases',
-    //   target: '_blank',
-    // },
   ];
 
   return (
@@ -48,10 +39,6 @@ function Header() {
             <ListItem key={index} className={classes.listItem}>
               <Link to={menu.href} className={classes.menuLink}>
                 {menu.description}
-                {/* {menus.length === index+1 ? '' :
-                (
-                  <spam>|</spam>
-                )} */}
               </Link>
             </ListItem>
           ))}

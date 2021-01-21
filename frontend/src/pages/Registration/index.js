@@ -34,12 +34,7 @@ function Registration() {
       const institute = formRef.current.institute.value;
       const newsletter = formRef.current.newsletter.checked;
 
-      // console.log({
-      //   name,
-      //   email,
-      //   institute,
-      //   newsletter,
-      // });
+
       postSubscription({ name, email, institute, newsletter })
         .then(res => {
           if (res.status === 200) {
