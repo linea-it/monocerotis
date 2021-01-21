@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
 
-const styles = makeStyles((theme) => ({
+const styles = makeStyles(() => ({
   initContainer: {
     marginBottom: '30vh',
     // [theme.breakpoints.up('lg')]: {
