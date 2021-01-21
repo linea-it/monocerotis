@@ -1,7 +1,13 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 const styles = makeStyles((theme) => ({
-  initContainer: theme.initContainer,
+  initContainer: {
+    marginBottom: '30vh',
+    // [theme.breakpoints.up('lg')]: {
+
+    // }
+
+  },
   grid: {
     margin: 'auto',
     marginTop: 20,

@@ -10,7 +10,7 @@ function Schedule() {
                 "end": "11:30",
                 "time": "11:15-11:30",
                 "title": "Disponível um dos maiores catálogos astronômicos liberados publicamente até hoje",
-                "speaker": "Fernando",
+                "speaker": "",
                 "affiliation": "LIneA"
             },{
                 "time": "11:30-12:00",
