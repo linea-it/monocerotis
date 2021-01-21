@@ -14,22 +14,18 @@ function Header() {
     {
       description: 'Home',
       href: '/',
-      target: '_self',
     },
     {
       description: 'Registration',
       href: '/registration',
-      target: '_self',
     },
     {
       description: 'Program',
       href: '/program',
-      target: '_self',
     },
     {
       description: 'Additional Information',
       href: '/additional-information',
-      target: '_self',
     },
   ];
 

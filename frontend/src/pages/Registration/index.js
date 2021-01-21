@@ -131,7 +131,7 @@ function Registration() {
                 control={<Checkbox name="newsletter" />}
                 label="Newsletter Permission"
                 labelPlacement="start"
-              />  
+              />
 
               <Grid container alignItems="flex-end">
                 <Grid item xs={10} >
