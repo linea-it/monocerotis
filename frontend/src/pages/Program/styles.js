@@ -1,17 +1,17 @@
 import { makeStyles } from '@material-ui/core/styles';
 
-const styles = makeStyles(() => ({
-  initContainer: {
-    marginBottom: '30vh',
-    // [theme.breakpoints.up('lg')]: {
-
-    // }
-
+const styles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+    backgroundColor: theme.palette.background.paper,
   },
   grid: {
     margin: 'auto',
     marginTop: 20,
   },
+  toolbar: {
+    justifyContent: 'center',
+  }
 }));
 
 export default styles;

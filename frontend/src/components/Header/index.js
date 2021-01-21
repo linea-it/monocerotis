@@ -24,6 +24,10 @@ function Header() {
       href: '/program',
     },
     {
+      description: 'Participants',
+      href: '/participants',
+    }, 
+    {
       description: 'Additional Information',
       href: '/additional-information',
     },
