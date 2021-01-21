@@ -9,6 +9,9 @@ import styles from './styles';
 import { postSubscription } from '../../services/api';
 
 function Registration() {
+  // Change dynamically the page title:
+  document.title = 'LIneA Workshop | Registration';
+
   const classes = styles();
 
   const formRef = useRef();

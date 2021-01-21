@@ -12,6 +12,9 @@ import styles from './styles';
 import Schedule from "./Schedule";
 
 function Program() {
+  // Change dynamically the page title:
+  document.title = 'LIneA Workshop | Program';
+
   const classes = styles();
   const program = Schedule();
 

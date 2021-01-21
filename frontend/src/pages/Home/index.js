@@ -5,6 +5,9 @@ import styles from './styles';
 function Main() {
 
   const classes = styles();
+  
+  // Change dynamically the page title:
+  document.title = 'LIneA Workshop | Home';
 
   return (
     <div>
