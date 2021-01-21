@@ -37,7 +37,7 @@ function Header() {
         <List className={classes.menuList}>
           {menus.map((menu, index) => (
             <ListItem key={index} className={classes.listItem}>
-              <Link to={menu.href} className={classes.menuLink}>
+              <Link color="primary" to={menu.href} className={classes.menuLink}>
                 {menu.description}
               </Link>
             </ListItem>

@@ -18,6 +18,7 @@ const styles = makeStyles((theme) => ({
     fontWeight: 600,
     textTransform: 'uppercase',
     whiteSpace: 'nowrap',
+    color: '#283663'
   },
   logo: {
     [theme.breakpoints.up('sm')]: {

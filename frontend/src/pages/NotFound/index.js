@@ -40,7 +40,7 @@ function AboutUs() {
             <Link color="inherit" href="/">
               Home
             </Link>
-            <Typography color="textPrimary">Not Found</Typography>
+            <Typography color="primary">Not Found</Typography>
           </Breadcrumbs>
           <>
             <div className={classes.notfound}>

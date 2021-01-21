@@ -1,7 +1,11 @@
 import React from 'react';
 import { Grid, Container, Typography } from '@material-ui/core';
+import styles from './styles';
 
 function Main() {
+
+  const classes = styles();
+  
   // Change dynamically the page title:
   document.title = 'LIneA Workshop | Home';
 
@@ -9,31 +13,36 @@ function Main() {
     <div>
       <Container>
         <Grid item xs={12}>
-            <Typography variant="h3" align="center" color="textSecondary">Remote Workshop</Typography>
+            <Typography variant="h3" align="center" color="primary">Workshop (Remote)</Typography>
             <br />
-            <Typography variant="h4" align="center" color="textSecondary">On the Future of Data Centers and eScience Institutes Celebrating LIneA’s 10th Anniversary</Typography>
+            <Typography variant="h4" align="center" color="primary">On the Future of Data Centers and eScience Institutes</Typography>
+            <Typography variant="h4" align="center" color="primary">Celebrating LIneA’s 10th Anniversary</Typography>
             <br />
-            <Typography variant="h3" align="center" color="textSecondary">April 13-15, 2021</Typography>
+            <Typography variant="h4" align="center" color="primary">April 13-15, 2021</Typography>
             <br />
             <br />
             <Grid container>
               <Grid item xs={6} >
-              <Typography variant="h5" align="center" color="textSecondary">International Organizing Committee</Typography>
+              <Typography variant="h5" align="center" color="primary">International Organizing Committee</Typography>
               <br />
               <br />
-              <Typography variant="h5" align="center" color="textSecondary">Andreas Wicenec</Typography>
-              <Typography variant="h5" align="center" color="textSecondary">Fabio Hernandez</Typography>
-              <Typography variant="h5" align="center" color="textSecondary">George Beckett</Typography>
-              <Typography variant="h5" align="center" color="textSecondary">Mario Yuric</Typography>
-              <Typography variant="h5" align="center" color="textSecondary">William O’Mullane</Typography>
+              <div className={classes.organizing}>
+                <Typography variant="h5" align="left" color="primary">Andreas Wicenec</Typography>
+                <Typography variant="h5" align="left" color="primary">Fabio Hernandez</Typography>
+                <Typography variant="h5" align="left" color="primary">George Beckett</Typography>
+                <Typography variant="h5" align="left" color="primary">Mario Yuric</Typography>
+                <Typography variant="h5" align="left" color="primary">William O’Mullane</Typography>
+              </div>
               </Grid>
               <Grid item xs={6} >
-              <Typography variant="h5" align="center" color="textSecondary">Local Organizing Committee</Typography>
+              <Typography variant="h5" align="center" color="primary">Local Organizing Committee</Typography>
               <br />
               <br />
-              <Typography variant="h5" align="center" color="textSecondary">Carlos Adean</Typography>
-              <Typography variant="h5" align="center" color="textSecondary">Julia Gschwend</Typography>
-              <Typography variant="h5" align="center" color="textSecondary">Mariana Fernandes</Typography>
+              <div className={classes.organizing}>
+                <Typography variant="h5" align="left" color="primary">Carlos Adean</Typography>
+                <Typography variant="h5" align="left" color="primary">Julia Gschwend</Typography>
+                <Typography variant="h5" align="left" color="primary">Mariana Fernandes</Typography>
+              </div>
               </Grid>
             </Grid>
         </Grid>
