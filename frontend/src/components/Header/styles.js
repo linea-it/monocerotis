@@ -42,11 +42,12 @@ const styles = makeStyles((theme) => ({
     },
   },
   logoInctMobile: {
-    [theme.breakpoints.up('md')]: {
-      display: 'none',
+    display: 'none',
+    [theme.breakpoints.down('md')]: {
+      display: 'inline-flex',
+      maxWidth: 90,
+      margin: '0 10px'
     },
-    maxWidth: 90,
-    margin: '0 10px'
   },
   toolbar: {
     padding: 0,
@@ -55,10 +56,11 @@ const styles = makeStyles((theme) => ({
     }
   },
   menuMobileButton: {
-    fontSize: '1.55rem',
-    fontWeight: 600,
-    [theme.breakpoints.up('md')]: {
-      display: 'none'
+    display: 'none',
+    [theme.breakpoints.down('md')]: {
+      fontSize: '1.55rem',
+      fontWeight: 600,
+      display: 'inline-flex',
     }
   },
 
@@ -69,7 +71,11 @@ const styles = makeStyles((theme) => ({
   },
 
   menuMobileClosed: {
-    maxHeight: 0,
+    [theme.breakpoints.down('md')]: {
+      maxHeight: 0,
+      padding: 0,
+      margin: 0,
+    }
   }
 }));
 
