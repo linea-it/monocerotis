@@ -39,7 +39,7 @@ function Registration() {
 
       postSubscription({ name, email, institute, newsletter, country })
       .then((res) => {
-        console.log(res);
+        // console.log(res);
         if (res && res.data && res.data.id) {
           setopen('success');
           setErrorMensage('');

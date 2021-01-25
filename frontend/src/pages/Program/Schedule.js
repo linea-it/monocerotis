@@ -6,36 +6,33 @@ function Schedule() {
             "date": "13-04-2021",
             "rows": [{
                 "id": 1,
-                "date": "13-04-2021",
-                "start": "11:15",
-                "end": "11:30",
                 "time": "11:15-11:30",
-                "title": "Disponível um dos maiores catálogos astronômicos liberados publicamente até hoje",
-                "speaker": "",
-                "affiliation": "LIneA"
+                "title": "",
+                "speaker": "Luiz da Costa",
+                "affiliation": "Opening Remarks"
             },{
                 "id": 2,
                 "time": "11:30-12:00",
                 "title": "",
-                "speaker": "",
+                "speaker": "Ian Bird",
                 "affiliation": "ESCAPE"
             },{
                 "id": 3,
                 "time": "12:00-12:30",
                 "title": "",
-                "speaker": "",
-                "affiliation": "ESAC"
+                "speaker": "Veronique Vallete",
+                "affiliation": "CNES"
             },{
                 "id": 4,
                 "time": "12:30-12:45",
                 "title": "",
-                "speaker": "",
+                "speaker": "Nirav Merchant",
                 "affiliation": "CYverse"
             },{
                 "id": 5,
-                "time": "12:45-12:30",
+                "time": "12:45-13:00",
                 "title": "",
-                "speaker": "",
+                "speaker": "Ross Thomson",
                 "affiliation": "Google"
             },{
                 "id": 6,
@@ -44,19 +41,19 @@ function Schedule() {
                 "id": 7,
                 "time": "13:30:14:00",
                 "title": "",
-                "speaker": "",
-                "affiliation": "HEARSC"
+                "speaker": "Vandara Desai",
+                "affiliation": "IPAC"
             },{
                 "id": 8,
-                "time": "14::30:15:00",
+                "time": "14:30:15:00",
                 "title": "",
-                "speaker": "",
+                "speaker": "Alex Szalay",
                 "affiliation": "IDIES"
             },{
                 "id": 9,
                 "time": "15:00-15:30",
                 "title": "",
-                "speaker": "",
+                "speaker": "Andy Connoly",
                 "affiliation": "DIRAC/UW eScience"
             }]
         },
@@ -65,38 +62,29 @@ function Schedule() {
             "day": "02",
             "date": "14-04-2021",
             "rows": [{
-                "id": 1,
-                "date": "13-04-2021",
-                "start": "11:15",
-                "end": "11:30",
-                "time": "11:15-11:30",
-                "title": "",
-                "speaker": "",
-                "affiliation": "LIneA"
-            },{
+              "id": 1,
+              "time": "11:15-11:30",
+              "title": "",
+              "speaker": "",
+              "affiliation": "DUG/databricks"
+          },{
                 "id": 2,
                 "time": "11:30-12:00",
                 "title": "",
-                "speaker": "",
-                "affiliation": "ESCAPE"
+                "speaker": "Dominique/Fabio",
+                "affiliation": "FR-LSST"
             },{
                 "id": 3,
                 "time": "12:00-12:30",
                 "title": "",
-                "speaker": "",
-                "affiliation": "ESAC"
+                "speaker": "George",
+                "affiliation": "UL-LSST"
             },{
                 "id": 4,
-                "time": "12:30-12:45",
+                "time": "12:30-13:00",
                 "title": "",
-                "speaker": "",
-                "affiliation": "CYverse"
-            },{
-                "id": 5,
-                "time": "12:45-12:30",
-                "title": "",
-                "speaker": "",
-                "affiliation": "Google"
+                "speaker": "Simone Campana",
+                "affiliation": "HEP"
             },{
                 "id": 6,
                 "speaker": "break",
@@ -104,20 +92,20 @@ function Schedule() {
                 "id": 7,
                 "time": "13:30:14:00",
                 "title": "",
-                "speaker": "",
-                "affiliation": "HEARSC"
+                "speaker": "Mark Allen",
+                "affiliation": "CDS"
             },{
                 "id": 8,
-                "time": "14::30:15:00",
+                "time": "14:00:14:30",
                 "title": "",
-                "speaker": "",
-                "affiliation": "IDIES"
+                "speaker": "Michelle Kuttel",
+                "affiliation": "IDIA"
             },{
                 "id": 9,
-                "time": "15:00-15:30",
+                "time": "14:30-15:00",
                 "title": "",
-                "speaker": "",
-                "affiliation": "DIRAC/UW eScience"
+                "speaker": "Demian Arancibia",
+                "affiliation": "Ch-LSST"
             }]
         },
         {
@@ -125,32 +113,29 @@ function Schedule() {
             "day": "03",
             "date": "15-04-2021",
             "rows": [{
-                "id": 1,
-                "date": "13-04-2021",
-                "start": "11:15",
-                "end": "11:30",
-                "time": "11:15-11:30",
-                "title": "",
-                "speaker": "",
-                "affiliation": "LIneA"
-            },{
+              "id": 1,
+              "time": "11:15-11:30",
+              "title": "",
+              "speaker": "",
+              "affiliation": "AWS/Snowflake"
+          },{
                 "id": 2,
                 "time": "11:30-12:00",
                 "title": "",
-                "speaker": "",
-                "affiliation": "ESCAPE"
+                "speaker": "Chenzhou Cui",
+                "affiliation": "NAOC"
             },{
                 "id": 3,
                 "time": "12:00-12:30",
                 "title": "",
-                "speaker": "",
-                "affiliation": "ESAC"
+                "speaker": "Severin Gaudet",
+                "affiliation": "CDAC"
             },{
                 "id": 4,
                 "time": "12:30-12:45",
                 "title": "",
-                "speaker": "",
-                "affiliation": "CYverse"
+                "speaker": "Richard Dubois",
+                "affiliation": "USDF (SLAC)"
             },{
                 "id": 5,
                 "time": "12:45-12:30",
