@@ -17,6 +17,7 @@ function Registration() {
   const classes = styles();
 
   const formRef = useRef();
+  const autocompleteRef = useRef();
 
   const recaptchaKey = process.env.REACT_APP_RECAPTCHA_SITE_KEY;
 
@@ -36,7 +37,6 @@ function Registration() {
       const institute = formRef.current.institute.value;
       const country = formRef.current.country.value;
       const newsletter = formRef.current.newsletter.checked;
-
       postSubscription({ name, email, institute, newsletter, country })
       .then((res) => {
         // console.log(res);
@@ -44,6 +44,8 @@ function Registration() {
           setopen('success');
           setErrorMensage('');
           formRef.current.reset();
+          formRef.current.country.value = "";
+          autocompleteRef.current.getElementsByClassName('MuiAutocomplete-clearIndicator')[0].click();
           try {
             window.ga('send', {
               hitType: 'event',
@@ -140,16 +142,16 @@ function Registration() {
 
               <div className={classes.textFields}>
                 <Autocomplete
-                  id="country"
-                  name="country"
+                  ref={autocompleteRef}
                   options={countries}
                   getOptionLabel={(option) => option.label}
-                  renderInput={(params) => 
-                    <TextField {...params} 
-                      label="Country" 
-                      variant="outlined" 
+                  renderInput={(params) =>
+                    <TextField {...params}
                       required
                       id="country"
+                      name="country"
+                      label="Country"
+                      variant="outlined"
                       placeholder="Countries"
                       fullWidth
                       size="small"/>

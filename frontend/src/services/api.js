@@ -4,8 +4,8 @@ import axios from 'axios';
 axios.defaults.baseURL = process.env.REACT_APP_API;
 // axios.defaults.baseURL = "http://localhost/api";
 
-export const postSubscription = ({ name, email, institute, newsletter }) => {
-  const params = { name, email, institute, newsletter_permission: newsletter };
+export const postSubscription = ({ name, email, institute, newsletter, country }) => {
+  const params = { name, email, institute, newsletter_permission: newsletter, country };
 
   return axios.post('/subscription/', params)
     .catch(err => err)

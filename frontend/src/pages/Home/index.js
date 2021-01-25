@@ -13,7 +13,7 @@ function Main() {
     <div>
       <Container>
         <Grid item xs={12}>
-            <Typography variant="h3" align="center" color="primary">Workshop <spam className={classes.onlineText}>(online)</spam></Typography>
+            <Typography variant="h3" align="center" color="primary">Workshop <span className={classes.onlineText}>(online)</span></Typography>
             <br />
             <Typography variant="h4" align="center" color="primary">On the Future of Data Centers and eScience Institutes</Typography>
             <Typography variant="h4" align="center" color="primary">Celebrating LIneA’s 10th Anniversary</Typography>
