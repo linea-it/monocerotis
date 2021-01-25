@@ -8,7 +8,6 @@ export const postSubscription = ({ name, email, institute, newsletter, country }
   const params = { name, email, institute, newsletter_permission: newsletter, country };
 
   return axios.post('/subscription/', params)
-    .catch(err => err)
     .then(res => res)
   }
 

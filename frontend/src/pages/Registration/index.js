@@ -7,10 +7,11 @@ import { Alert, AlertTitle, Autocomplete } from '@material-ui/lab';
 import EmailIcon from '@material-ui/icons/Email';
 import ReCAPTCHA from 'react-google-recaptcha';
 import styles from './styles';
-import countries from './countries';
+import countries from './countries.json';
 import { postSubscription } from '../../services/api';
 
 function Registration() {
+
   // Change dynamically the page title:
   document.title = 'LIneA Workshop | Registration';
 
@@ -21,13 +22,11 @@ function Registration() {
 
   const recaptchaKey = process.env.REACT_APP_RECAPTCHA_SITE_KEY;
 
-  const [open, setopen] = useState('');
-  const [errorMensage, setErrorMensage] = useState('');
+  const [openFormFeedback, setOpenFormFeedback] = useState(false);
+  const [errorMessage, setErrorMessage] = useState({});
   const [submitEnabled, setSubmitEnabled] = useState(!recaptchaKey);
 
-  const handleClose = () => {
-    setopen('');
-  };
+  const handleClose = () => setOpenFormFeedback(false);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -37,14 +36,13 @@ function Registration() {
       const institute = formRef.current.institute.value;
       const country = formRef.current.country.value;
       const newsletter = formRef.current.newsletter.checked;
+
       postSubscription({ name, email, institute, newsletter, country })
-      .then((res) => {
-        // console.log(res);
-        if (res && res.data && res.data.id) {
-          setopen('success');
-          setErrorMensage('');
+      .then(() => {
+          setOpenFormFeedback(true);
+          setErrorMessage({});
           formRef.current.reset();
-          formRef.current.country.value = "";
+          // formRef.current.country.value = "";
           autocompleteRef.current.getElementsByClassName('MuiAutocomplete-clearIndicator')[0].click();
           try {
             window.ga('send', {
@@ -53,22 +51,22 @@ function Registration() {
               eventAction: 'subscript',
               eventLabel: 'Subscription Success'
             });
-          } catch (error) {
-            // console.log(error);
+          } catch (err) {
+            console.log("Couldn't fire GA event", err);
           }
-        }else {
-          // setErrorMensage(res.email ? res.email[0] : res.name ? res.name[0] : res.affiliation ? res.affiliation[0] : '');
-          try {
-            window.ga('send', {
-              hitType: 'event',
-              eventCategory: 'Subscription',
-              eventAction: 'subscript',
-              eventLabel: 'Subscription Failure'
-            });
-          } catch (error) {
-            // console.log(error);
-          }
-          setopen('unexpected');
+      })
+      .catch(error => {
+        setErrorMessage(error.response.data);
+
+        try {
+          window.ga('send', {
+            hitType: 'event',
+            eventCategory: 'Subscription',
+            eventAction: 'subscript',
+            eventLabel: 'Subscription Failure'
+          });
+        } catch (err) {
+          console.log(err);
         }
       });
     }
@@ -84,7 +82,7 @@ function Registration() {
     <div>
       <Container align="center">
         <Grid item xs={12}>
-          <Grid item xs={6} className={classes.grid}>
+          <Grid item xs={11} md={6} className={classes.grid}>
             <Typography variant="h3" align="center" color="primary">Registration</Typography>
             <br /><br />
             <form
@@ -103,8 +101,8 @@ function Registration() {
                   placeholder="Name"
                   fullWidth
                   size="small"
-                  error={errorMensage.includes('name')}
-                  helperText={errorMensage.includes('name') ? errorMensage : ''}
+                  error={'name' in errorMessage}
+                  helperText={'name' in errorMessage ? errorMessage.name[0] : ''}
                 />
               </div>
 
@@ -119,8 +117,8 @@ function Registration() {
                   placeholder="E-mail"
                   fullWidth
                   size="small"
-                  error={errorMensage.includes('email')}
-                  helperText={errorMensage.includes('email') ? errorMensage : ''}
+                  error={'email' in errorMessage}
+                  helperText={'email' in errorMessage ? errorMessage.email[0] : ''}
                 />
               </div>
 
@@ -135,8 +133,8 @@ function Registration() {
                   placeholder="Subject"
                   fullWidth
                   size="small"
-                  error={errorMensage.includes('institute')}
-                  helperText={errorMensage.includes('institute') ? errorMensage : ''}
+                  error={'institute' in errorMessage}
+                  helperText={'institute' in errorMessage ? errorMessage.institute[0] : ''}
                 />
               </div>
 
@@ -154,19 +152,26 @@ function Registration() {
                       variant="outlined"
                       placeholder="Countries"
                       fullWidth
-                      size="small"/>
+                      size="small"
+                      error={'country' in errorMessage}
+                      helperText={'country' in errorMessage ? errorMessage.country[0] : ''}
+                    />
                   }
                 />
               </div>
 
               <FormControlLabel
-                control={<Checkbox name="newsletter" />}
                 label="Subscribe to LIneA News"
                 labelPlacement="start"
                 className={classes.checkboxLabel}
+                control={
+                  <Checkbox
+                    name="newsletter"
+                  />
+                }
               />
 
-              <Grid container alignItems="flex-end">
+              <Grid container spacing={2} alignItems="flex-end">
                 <Grid item xs={12} md={10} >
                   {recaptchaKey ? (
                     <ReCAPTCHA
@@ -177,7 +182,7 @@ function Registration() {
                 </Grid>
                 <Grid item xs={12} md={2}>
                   <Button variant="contained" color="primary" type="submit" disableElevation disabled={!submitEnabled}>
-                    <EmailIcon />
+                    <EmailIcon fontSize="small" />
                     &nbsp;Submit
                   </Button>
                 </Grid>
@@ -190,16 +195,10 @@ function Registration() {
           </Grid>
         </Grid>
       </Container>
-      <Snackbar anchorOrigin={{ vertical: 'top', horizontal: 'center' }} open={open === 'success'} autoHideDuration={6000} onClose={handleClose}>
+      <Snackbar anchorOrigin={{ vertical: 'top', horizontal: 'center' }} open={openFormFeedback} autoHideDuration={6000} onClose={handleClose}>
         <Alert onClose={handleClose} severity="success">
           <AlertTitle>Success</AlertTitle>
-          <Typography variant="body1">Success</Typography><br />
-        </Alert>
-      </Snackbar>
-      <Snackbar anchorOrigin={{ vertical: 'top', horizontal: 'center' }} open={open === 'unexpected'} autoHideDuration={6000} onClose={handleClose}>
-        <Alert onClose={handleClose} severity="error">
-          <AlertTitle>Error</AlertTitle>
-          <Typography variant="body1">{errorMensage}</Typography><br />
+          <Typography variant="body1">Registered with sucess! Check your e-mail for a confirmation message.</Typography>
         </Alert>
       </Snackbar>
     </div>
