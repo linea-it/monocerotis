@@ -1,3 +1,4 @@
+/* eslint-disable no-nested-ternary */
 import React, { useRef, useState } from 'react';
 import {
   Grid, Container, Typography, TextField, Button, Snackbar, FormControlLabel, Checkbox
@@ -19,17 +20,17 @@ function Registration() {
 
   const recaptchaKey = process.env.REACT_APP_RECAPTCHA_SITE_KEY;
 
-  const [open, setOpen] = useState('');
+  const [open, setopen] = useState('');
+  const [errorMensage, setErrorMensage] = useState('');
   const [submitEnabled, setSubmitEnabled] = useState(!recaptchaKey);
 
   const handleClose = () => {
-    setOpen('');
+    setopen('');
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
     if(submitEnabled) {
-
       const name = formRef.current.name.value;
       const email = formRef.current.email.value;
       const institute = formRef.current.institute.value;
@@ -37,35 +38,37 @@ function Registration() {
       const newsletter = formRef.current.newsletter.checked;
 
       postSubscription({ name, email, institute, newsletter, country })
-        .then(res => {
-          if (res.status === 200) {
-            setOpen('success');
-            formRef.current.reset();
-
-            try {
-              window.ga('send', {
-                hitType: 'event',
-                eventCategory: 'Subscription',
-                eventAction: 'subscript',
-                eventLabel: 'Subscription Success'
-              });
-            } catch (error) {
-              // console.log(error);
-            }
-          } else {
-            setOpen('unexpected');
-            try {
-              window.ga('send', {
-                hitType: 'event',
-                eventCategory: 'Subscription',
-                eventAction: 'subscript',
-                eventLabel: 'Subscription Failure'
-              });
-            } catch (error) {
-              // console.log(error);
-            }
+      .then((res) => {
+        console.log(res);
+        if (res && res.data && res.data.id) {
+          setopen('success');
+          setErrorMensage('');
+          formRef.current.reset();
+          try {
+            window.ga('send', {
+              hitType: 'event',
+              eventCategory: 'Subscription',
+              eventAction: 'subscript',
+              eventLabel: 'Subscription Success'
+            });
+          } catch (error) {
+            // console.log(error);
           }
-      })
+        }else {
+          // setErrorMensage(res.email ? res.email[0] : res.name ? res.name[0] : res.affiliation ? res.affiliation[0] : '');
+          try {
+            window.ga('send', {
+              hitType: 'event',
+              eventCategory: 'Subscription',
+              eventAction: 'subscript',
+              eventLabel: 'Subscription Failure'
+            });
+          } catch (error) {
+            // console.log(error);
+          }
+          setopen('unexpected');
+        }
+      });
     }
   };
 
@@ -98,6 +101,8 @@ function Registration() {
                   placeholder="Name"
                   fullWidth
                   size="small"
+                  error={errorMensage.includes('name')}
+                  helperText={errorMensage.includes('name') ? errorMensage : ''}
                 />
               </div>
 
@@ -112,6 +117,24 @@ function Registration() {
                   placeholder="E-mail"
                   fullWidth
                   size="small"
+                  error={errorMensage.includes('email')}
+                  helperText={errorMensage.includes('email') ? errorMensage : ''}
+                />
+              </div>
+
+              <div className={classes.textFields}>
+                <TextField
+                  required
+                  id="institute"
+                  type="text"
+                  variant="outlined"
+                  label="Affiliation"
+                  name="institute"
+                  placeholder="Subject"
+                  fullWidth
+                  size="small"
+                  error={errorMensage.includes('institute')}
+                  helperText={errorMensage.includes('institute') ? errorMensage : ''}
                 />
               </div>
 
@@ -131,20 +154,6 @@ function Registration() {
                       fullWidth
                       size="small"/>
                   }
-                />
-              </div>
-
-              <div className={classes.textFields}>
-                <TextField
-                  required
-                  id="institute"
-                  type="text"
-                  variant="outlined"
-                  label="Institute"
-                  name="institute"
-                  placeholder="Subject"
-                  fullWidth
-                  size="small"
                 />
               </div>
 
@@ -170,24 +179,25 @@ function Registration() {
                     &nbsp;Submit
                   </Button>
                 </Grid>
+                <br />
               </Grid>
-
             </form>
+            <Grid item xs={12}>
+              <br /><Typography variant="body1" color="error">* required fields</Typography>
+            </Grid>
           </Grid>
         </Grid>
       </Container>
       <Snackbar anchorOrigin={{ vertical: 'top', horizontal: 'center' }} open={open === 'success'} autoHideDuration={6000} onClose={handleClose}>
         <Alert onClose={handleClose} severity="success">
           <AlertTitle>Success</AlertTitle>
-          <p>sucess.</p>
+          <Typography variant="body1">Success</Typography><br />
         </Alert>
       </Snackbar>
       <Snackbar anchorOrigin={{ vertical: 'top', horizontal: 'center' }} open={open === 'unexpected'} autoHideDuration={6000} onClose={handleClose}>
         <Alert onClose={handleClose} severity="error">
           <AlertTitle>Error</AlertTitle>
-          <p>
-          <p>unexpected.</p>
-          </p>
+          <Typography variant="body1">{errorMensage}</Typography><br />
         </Alert>
       </Snackbar>
     </div>

@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const styles = makeStyles(() => ({
   organizing : {
-    padding: '0 35%',
+    padding: '0 28%',
   },
   onlineText : {
     fontSize: '1.5rem',

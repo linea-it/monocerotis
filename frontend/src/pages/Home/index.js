@@ -27,11 +27,11 @@ function Main() {
               <br />
               <br />
               <div className={classes.organizing}>
-                <Typography variant="h5" align="left" color="primary" className={classes.textOrganizingCommitte}>Andreas Wicenec</Typography>
-                <Typography variant="h5" align="left" color="primary" className={classes.textOrganizingCommitte}>Fabio Hernandez</Typography>
-                <Typography variant="h5" align="left" color="primary" className={classes.textOrganizingCommitte}>George Beckett</Typography>
-                <Typography variant="h5" align="left" color="primary" className={classes.textOrganizingCommitte}>Mario Yuric</Typography>
-                <Typography variant="h5" align="left" color="primary" className={classes.textOrganizingCommitte}>William O’Mullane</Typography>
+                <Typography variant="h5" align="left" color="primary" className={classes.textOrganizingCommitte}>Andreas Wicenec (UWA)</Typography>
+                <Typography variant="h5" align="left" color="primary" className={classes.textOrganizingCommitte}>Fabio Hernandez (IN2P3)</Typography>
+                <Typography variant="h5" align="left" color="primary" className={classes.textOrganizingCommitte}>George Beckett (Univ. Edingburgh)</Typography>
+                <Typography variant="h5" align="left" color="primary" className={classes.textOrganizingCommitte}>Mario Yuric (DIRAC/UW)</Typography>
+                <Typography variant="h5" align="left" color="primary" className={classes.textOrganizingCommitte}>William O’Mullane (LSST)</Typography>
               </div>
               </Grid>
               <Grid item xs={6} >
@@ -39,9 +39,9 @@ function Main() {
               <br />
               <br />
               <div className={classes.organizing}>
-                <Typography variant="h5" align="left" color="primary" className={classes.textOrganizingCommitte}>Carlos Adean</Typography>
-                <Typography variant="h5" align="left" color="primary" className={classes.textOrganizingCommitte}>Julia Gschwend</Typography>
-                <Typography variant="h5" align="left" color="primary" className={classes.textOrganizingCommitte}>Mariana Fernandes</Typography>
+                <Typography variant="h5" align="left" color="primary" className={classes.textOrganizingCommitte}>Carlos Adean (LIneA)</Typography>
+                <Typography variant="h5" align="left" color="primary" className={classes.textOrganizingCommitte}>Julia Gschwend (LIneA)</Typography>
+                <Typography variant="h5" align="left" color="primary" className={classes.textOrganizingCommitte}>Mariana Fernandes (LIneA)</Typography>
               </div>
               </Grid>
             </Grid>
