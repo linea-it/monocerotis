@@ -17,6 +17,13 @@ const light = createMuiTheme({
       secondary: '#fff',
     },
   },
+  overrides: {
+    MuiFormHelperText: {
+      root: {
+        textTransform: 'capitalize'
+      }
+    }
+  }
 });
 
 export default light;

@@ -1,5 +1,4 @@
-/* eslint-disable react/require-default-props */
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import { Grid, Container, Typography } from '@material-ui/core';
 import Table from '@material-ui/core/Table';
@@ -15,12 +14,12 @@ import PropTypes from 'prop-types';
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-import Schedule from "./Schedule";
+import schedule from "./schedule.json";
 import styles from './styles';
 
 function TabPanel(props) {
-  const program = Schedule();
-  const [scheduleSelected, setScheduleSelected] = React.useState(program.scheules[0]);
+
+  const [scheduleSelected, setScheduleSelected] = useState(schedule.events[0]);
   const { value, index } = props;
   const classes = styles();
 
@@ -33,7 +32,7 @@ function TabPanel(props) {
   }))(TableRow);
 
   useEffect(() => {
-    setScheduleSelected(program.scheules[value]);
+    setScheduleSelected(schedule.events[value]);
   }, [value]);
 
   return (
@@ -59,10 +58,10 @@ function TabPanel(props) {
             </TableHead>
             <TableBody>
               {scheduleSelected.rows.map((row) => {
-                return row.speaker === 'break' ? 
+                return row.speaker === 'break' ?
                 <StyledTableRow  key={row.id}>
                   <TableCell align="center" colSpan="4">Break</TableCell>
-                </StyledTableRow > : 
+                </StyledTableRow > :
                 <StyledTableRow key={row.id}>
                   <TableCell component="th" scope="row">
                     {row.time}
