@@ -60,7 +60,7 @@ function TabPanel(props) {
               {scheduleSelected.rows.map((row) => {
                 return row.speaker === 'break' ?
                 <StyledTableRow  key={row.id}>
-                  <TableCell align="center" colSpan="4">Break</TableCell>
+                  <TableCell align="center" colSpan="4" className={classes.tableCell}>Break</TableCell>
                 </StyledTableRow > :
                 <StyledTableRow key={row.id}>
                   <TableCell component="th" scope="row">

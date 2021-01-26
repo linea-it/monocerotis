@@ -7,31 +7,31 @@
         "id": 1,
         "time": "11:15-11:30",
         "title": "",
-        "speaker": "Luiz da Costa",
+        "speaker": "",
         "affiliation": "Opening Remarks"
       }, {
         "id": 2,
         "time": "11:30-12:00",
         "title": "",
-        "speaker": "Ian Bird",
+        "speaker": "",
         "affiliation": "ESCAPE"
       }, {
         "id": 3,
         "time": "12:00-12:30",
         "title": "",
-        "speaker": "Veronique Vallete",
+        "speaker": "",
         "affiliation": "CNES"
       }, {
         "id": 4,
         "time": "12:30-12:45",
         "title": "",
-        "speaker": "Nirav Merchant",
+        "speaker": "",
         "affiliation": "CYverse"
       }, {
         "id": 5,
         "time": "12:45-13:00",
         "title": "",
-        "speaker": "Ross Thomson",
+        "speaker": "",
         "affiliation": "Google"
       }, {
         "id": 6,
@@ -40,19 +40,19 @@
         "id": 7,
         "time": "13:30:14:00",
         "title": "",
-        "speaker": "Vandara Desai",
+        "speaker": "",
         "affiliation": "IPAC"
       }, {
         "id": 8,
         "time": "14:30:15:00",
         "title": "",
-        "speaker": "Alex Szalay",
+        "speaker": "",
         "affiliation": "IDIES"
       }, {
         "id": 9,
         "time": "15:00-15:30",
         "title": "",
-        "speaker": "Andy Connoly",
+        "speaker": "",
         "affiliation": "DIRAC/UW eScience"
       }]
     },
@@ -70,19 +70,19 @@
         "id": 2,
         "time": "11:30-12:00",
         "title": "",
-        "speaker": "Dominique/Fabio",
+        "speaker": "",
         "affiliation": "FR-LSST"
       }, {
         "id": 3,
         "time": "12:00-12:30",
         "title": "",
-        "speaker": "George",
+        "speaker": "",
         "affiliation": "UL-LSST"
       }, {
         "id": 4,
         "time": "12:30-13:00",
         "title": "",
-        "speaker": "Simone Campana",
+        "speaker": "",
         "affiliation": "HEP"
       }, {
         "id": 6,
@@ -91,19 +91,19 @@
         "id": 7,
         "time": "13:30:14:00",
         "title": "",
-        "speaker": "Mark Allen",
+        "speaker": "",
         "affiliation": "CDS"
       }, {
         "id": 8,
         "time": "14:00:14:30",
         "title": "",
-        "speaker": "Michelle Kuttel",
+        "speaker": "",
         "affiliation": "IDIA"
       }, {
         "id": 9,
         "time": "14:30-15:00",
         "title": "",
-        "speaker": "Demian Arancibia",
+        "speaker": "",
         "affiliation": "Ch-LSST"
       }]
     },
@@ -116,24 +116,24 @@
         "time": "11:15-11:30",
         "title": "",
         "speaker": "",
-        "affiliation": "AWS/Snowflake"
+        "affiliation": ""
       }, {
         "id": 2,
         "time": "11:30-12:00",
         "title": "",
-        "speaker": "Chenzhou Cui",
+        "speaker": "",
         "affiliation": "NAOC"
       }, {
         "id": 3,
         "time": "12:00-12:30",
         "title": "",
-        "speaker": "Severin Gaudet",
+        "speaker": "",
         "affiliation": "CDAC"
       }, {
         "id": 4,
         "time": "12:30-12:45",
         "title": "",
-        "speaker": "Richard Dubois",
+        "speaker": "",
         "affiliation": "USDF (SLAC)"
       }, {
         "id": 5,
