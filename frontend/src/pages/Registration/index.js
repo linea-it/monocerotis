@@ -19,6 +19,7 @@ function Registration() {
 
   const formRef = useRef();
   const autocompleteRef = useRef();
+  const recaptchaRef = useRef();
 
   const recaptchaKey = process.env.REACT_APP_RECAPTCHA_SITE_KEY;
 
@@ -41,9 +42,17 @@ function Registration() {
       .then(() => {
           setOpenFormFeedback(true);
           setErrorMessage({});
+          // Reseting form:
           formRef.current.reset();
-          // formRef.current.country.value = "";
+          // Forcing the Autocomplete component to reset:
           autocompleteRef.current.getElementsByClassName('MuiAutocomplete-clearIndicator')[0].click();
+
+          // Forcing the reCAPTCHA to reset:
+          recaptchaRef.current.reset()
+
+          // Forcing the Newsletter checkbox to reset:
+          formRef.current.newsletter.checked = false;
+
           try {
             window.ga('send', {
               hitType: 'event',
@@ -175,6 +184,7 @@ function Registration() {
                 <Grid item xs={12} md={10} >
                   {recaptchaKey ? (
                     <ReCAPTCHA
+                      ref={recaptchaRef}
                       sitekey={recaptchaKey}
                       onChange={onRecaptchaChange}
                     />
