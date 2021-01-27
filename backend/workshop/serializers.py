@@ -12,6 +12,8 @@ class SubscriptionSerializer(serializers.ModelSerializer):
             'name',
             'email',
             'institute',
+            'country',
             'newsletter_permission',
+            'is_active',
             'creation_date',
         )
