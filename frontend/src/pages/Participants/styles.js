@@ -11,6 +11,9 @@ const styles = makeStyles((theme) => ({
   },
   toolbar: {
     justifyContent: 'center',
+  },
+  tableCell: {
+    padding: '6px 30px',
   }
 }));
 

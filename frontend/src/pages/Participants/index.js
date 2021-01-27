@@ -31,7 +31,7 @@ function Participants() {
       },
     },
   }))(TableRow);
-  
+
   return (
     <Container>
       <Grid item xs={12}>
@@ -51,11 +51,11 @@ function Participants() {
               <TableBody>
                 {subscription.map((row) => (
                   <StyledTableRow key={row.id}>
-                    <TableCell component="th" scope="row">
+                    <TableCell component="th" scope="row" className={classes.tableCell}>
                       {row.name}
                     </TableCell>
-                    <TableCell>{row.institute}</TableCell>
-                    <TableCell>{row.country}</TableCell>
+                    <TableCell className={classes.tableCell}>{row.institute}</TableCell>
+                    <TableCell className={classes.tableCell}>{row.country}</TableCell>
                   </StyledTableRow >
                 ))}
               </TableBody>

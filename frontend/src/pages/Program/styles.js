@@ -11,6 +11,12 @@ const styles = makeStyles((theme) => ({
   },
   toolbar: {
     justifyContent: 'center',
+  },
+  tableCell: {
+    padding: '25px',
+    backgroundColor: '#283663',
+    color: 'white',
+    fontSize: 'larger',
   }
 }));
 
