@@ -1,8 +1,7 @@
 import axios from 'axios';
 
 // Set the default baseURL for the API
-// axios.defaults.baseURL = process.env.REACT_APP_API;
-axios.defaults.baseURL = "http://localhost/api";
+axios.defaults.baseURL = process.env.REACT_APP_API;
 
 export const postSubscription = ({ name, email, institute, newsletter, country }) => {
   const params = { name, email, institute, newsletter_permission: newsletter, country };
