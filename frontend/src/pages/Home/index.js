@@ -26,22 +26,22 @@ function Main() {
               <Typography variant="h5" align="center" color="primary" className={classes.blockTitle}>International Organizing Committee</Typography>
               <br />
               <br />
-              <div className={classes.organizing}>
-                <Typography variant="h5" align="left" color="primary" className={classes.blockText}>Andreas Wicenec (UWA)</Typography>
-                <Typography variant="h5" align="left" color="primary" className={classes.blockText}>Fabio Hernandez (IN2P3)</Typography>
-                <Typography variant="h5" align="left" color="primary" className={classes.blockText}>George Beckett (Univ. Edingburgh)</Typography>
-                <Typography variant="h5" align="left" color="primary" className={classes.blockText}>Mario Yuric (DIRAC/UW)</Typography>
-                <Typography variant="h5" align="left" color="primary" className={classes.blockText}>William O’Mullane (LSST)</Typography>
+              <div>
+                <Typography align="center" color="primary" className={classes.blockText}>Andreas Wicenec (UWA)</Typography>
+                <Typography align="center" color="primary" className={classes.blockText}>Fabio Hernandez (IN2P3)</Typography>
+                <Typography align="center" color="primary" className={classes.blockText}>George Beckett (Univ. Edingburgh)</Typography>
+                <Typography align="center" color="primary" className={classes.blockText}>Mario Yuric (DIRAC/UW)</Typography>
+                <Typography align="center" color="primary" className={classes.blockText}>William O’Mullane (LSST)</Typography>
               </div>
               </Grid>
               <Grid item xs={12} md={6} >
               <Typography variant="h5" align="center" color="primary" className={classes.blockTitle}>Local Organizing Committee</Typography>
               <br />
               <br />
-              <div className={classes.organizing}>
-                <Typography variant="h5" align="left" color="primary" className={classes.blockText}>Carlos Adean (LIneA)</Typography>
-                <Typography variant="h5" align="left" color="primary" className={classes.blockText}>Julia Gschwend (LIneA)</Typography>
-                <Typography variant="h5" align="left" color="primary" className={classes.blockText}>Mariana Fernandes (LIneA)</Typography>
+              <div>
+                <Typography align="center" color="primary" className={classes.blockText}>Carlos Adean (LIneA)</Typography>
+                <Typography align="center" color="primary" className={classes.blockText}>Mariana Fernandes (LIneA)</Typography>
+                <Typography align="center" color="primary" className={classes.blockText}>Rodrigo Boufleur (LIneA)</Typography>
               </div>
               </Grid>
             </Grid>

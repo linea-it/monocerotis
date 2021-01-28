@@ -28,40 +28,47 @@ function Participants() {
     root: {
       '&:nth-of-type(odd)': {
         backgroundColor: theme.palette.action.hover,
-      },
+      }
     },
   }))(TableRow);
 
+  const StyledTableCell = withStyles(() => ({
+    root: {
+      fontSize: '1.2rem',
+      padding: '10px 20px',
+    },
+  }))(TableCell);
+
   return (
-    <Container>
+    <Container className={classes.container}>
       <Grid item xs={12}>
         <Typography variant="h3" align="center" color="primary">
           Participants
         </Typography><br /><br />
-        <div className={classes.root}>
+        <Grid item xs={11} md={8} className={classes.grid}>
           <TableContainer component={Paper}>
             <Table className={classes.table} aria-label="customized table">
               <TableHead>
                 <TableRow>
-                  <TableCell>Name</TableCell>
-                  <TableCell>Affiliation</TableCell>
-                  <TableCell>Country</TableCell>
+                  <StyledTableCell>Name</StyledTableCell>
+                  <StyledTableCell>Affiliation</StyledTableCell>
+                  <StyledTableCell>Country</StyledTableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
                 {subscription.map((row) => (
                   <StyledTableRow key={row.id}>
-                    <TableCell component="th" scope="row" className={classes.tableCell}>
+                    <StyledTableCell component="th" scope="row" className={classes.tableCell}>
                       {row.name}
-                    </TableCell>
-                    <TableCell className={classes.tableCell}>{row.institute}</TableCell>
-                    <TableCell className={classes.tableCell}>{row.country}</TableCell>
+                    </StyledTableCell>
+                    <StyledTableCell className={classes.tableCell}>{row.institute}</StyledTableCell>
+                    <StyledTableCell className={classes.tableCell}>{row.country}</StyledTableCell>
                   </StyledTableRow >
                 ))}
               </TableBody>
             </Table>
           </TableContainer>
-        </div>
+        </Grid>
       </Grid>
     </Container>
   );

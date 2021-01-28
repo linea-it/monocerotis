@@ -4,164 +4,182 @@
       "day": "01",
       "date": "13-04-2021",
       "rows": [{
+        "id": 0,
+        "speaker": "Chair: "
+      },{
         "id": 1,
-        "time": "11:15-11:30",
-        "title": "",
-        "speaker": "",
-        "affiliation": "Opening Remarks"
-      }, {
-        "id": 2,
-        "time": "11:30-12:00",
-        "title": "",
-        "speaker": "",
-        "affiliation": "ESCAPE"
-      }, {
-        "id": 3,
-        "time": "12:00-12:30",
-        "title": "",
-        "speaker": "",
-        "affiliation": "CNES"
-      }, {
-        "id": 4,
-        "time": "12:30-12:45",
-        "title": "",
-        "speaker": "",
-        "affiliation": "CYverse"
-      }, {
-        "id": 5,
-        "time": "12:45-13:00",
-        "title": "",
-        "speaker": "",
-        "affiliation": "Google"
-      }, {
-        "id": 6,
-        "speaker": "break"
-      }, {
-        "id": 7,
-        "time": "13:30:14:00",
-        "title": "",
-        "speaker": "",
-        "affiliation": "IPAC"
-      }, {
-        "id": 8,
-        "time": "14:30:15:00",
-        "title": "",
-        "speaker": "",
-        "affiliation": "IDIES"
-      }, {
-        "id": 9,
-        "time": "15:00-15:30",
-        "title": "",
-        "speaker": "",
-        "affiliation": "DIRAC/UW eScience"
-      }]
-    },
-    {
-      "id": 2,
-      "day": "02",
-      "date": "14-04-2021",
-      "rows": [{
-        "id": 1,
-        "time": "11:15-11:30",
-        "title": "",
-        "speaker": "",
-        "affiliation": "DUG/databricks"
-      }, {
-        "id": 2,
-        "time": "11:30-12:00",
-        "title": "",
-        "speaker": "",
-        "affiliation": "FR-LSST"
-      }, {
-        "id": 3,
-        "time": "12:00-12:30",
-        "title": "",
-        "speaker": "",
-        "affiliation": "UL-LSST"
-      }, {
-        "id": 4,
-        "time": "12:30-13:00",
-        "title": "",
-        "speaker": "",
-        "affiliation": "HEP"
-      }, {
-        "id": 6,
-        "speaker": "break"
-      }, {
-        "id": 7,
-        "time": "13:30:14:00",
-        "title": "",
-        "speaker": "",
-        "affiliation": "CDS"
-      }, {
-        "id": 8,
-        "time": "14:00:14:30",
-        "title": "",
-        "speaker": "",
-        "affiliation": "IDIA"
-      }, {
-        "id": 9,
-        "time": "14:30-15:00",
-        "title": "",
-        "speaker": "",
-        "affiliation": "Ch-LSST"
-      }]
-    },
-    {
-      "id": 3,
-      "day": "03",
-      "date": "15-04-2021",
-      "rows": [{
-        "id": 1,
-        "time": "11:15-11:30",
+        "time": "11:15 - 11:30",
         "title": "",
         "speaker": "",
         "affiliation": ""
       }, {
         "id": 2,
-        "time": "11:30-12:00",
-        "title": "",
-        "speaker": "",
-        "affiliation": "NAOC"
+        "time": "11:30 - 12:00",
+        "title": "Celebrating LIneA’s 10th Anniversary",
+        "speaker": "Fernando",
+        "affiliation": "LIneA"
       }, {
         "id": 3,
-        "time": "12:00-12:30",
+        "time": "12:00 - 12:30",
         "title": "",
         "speaker": "",
-        "affiliation": "CDAC"
+        "affiliation": ""
       }, {
         "id": 4,
-        "time": "12:30-12:45",
+        "time": "12:30 - 12:45",
         "title": "",
         "speaker": "",
-        "affiliation": "USDF (SLAC)"
+        "affiliation": ""
       }, {
         "id": 5,
-        "time": "12:45-12:30",
+        "time": "12:45 - 13:00",
         "title": "",
         "speaker": "",
-        "affiliation": "Google"
+        "affiliation": ""
       }, {
         "id": 6,
         "speaker": "break"
-      }, {
+      },{
         "id": 7,
-        "time": "13:30:14:00",
-        "title": "",
-        "speaker": "",
-        "affiliation": "HEARSC"
+        "speaker": "Chair: "
       }, {
         "id": 8,
-        "time": "14::30:15:00",
+        "time": "13:30 - 14:00",
         "title": "",
         "speaker": "",
-        "affiliation": "IDIES"
+        "affiliation": ""
       }, {
         "id": 9,
-        "time": "15:00-15:30",
+        "time": "14:30 - 15:00",
         "title": "",
         "speaker": "",
-        "affiliation": "DIRAC/UW eScience"
+        "affiliation": ""
+      }, {
+        "id": 10,
+        "time": "15:00 - 15:30",
+        "title": "",
+        "speaker": "",
+        "affiliation": ""
+      }]
+    },
+    {
+      "id": 12,
+      "day": "02",
+      "date": "14-04-2021",
+      "rows": [{
+        "id": 13,
+        "speaker": "Chair: "
+      },{
+        "id": 14,
+        "time": "11:15 - 11:30",
+        "title": "",
+        "speaker": "",
+        "affiliation": ""
+      }, {
+        "id": 15,
+        "time": "11:30 - 12:00",
+        "title": "",
+        "speaker": "",
+        "affiliation": ""
+      }, {
+        "id": 16,
+        "time": "12:00 - 12:30",
+        "title": "",
+        "speaker": "",
+        "affiliation": ""
+      }, {
+        "id": 17,
+        "time": "12:30 - 13:00",
+        "title": "",
+        "speaker": "",
+        "affiliation": ""
+      }, {
+        "id": 18,
+        "speaker": "break"
+      },{
+        "id": 19,
+        "speaker": "Chair: "
+      }, {
+        "id": 20,
+        "time": "13:30 - 14:00",
+        "title": "",
+        "speaker": "",
+        "affiliation": ""
+      }, {
+        "id": 21,
+        "time": "14:00 - 14:30",
+        "title": "",
+        "speaker": "",
+        "affiliation": ""
+      }, {
+        "id": 22,
+        "time": "14:30 - 15:00",
+        "title": "",
+        "speaker": "",
+        "affiliation": ""
+      }]
+    },
+    {
+      "id": 23,
+      "day": "03",
+      "date": "15-04-2021",
+      "rows": [{
+        "id": 24,
+        "speaker": "Chair: "
+      },{
+        "id": 25,
+        "time": "11:15 - 11:30",
+        "title": "",
+        "speaker": "",
+        "affiliation": ""
+      }, {
+        "id": 26,
+        "time": "11:30 - 12:00",
+        "title": "",
+        "speaker": "",
+        "affiliation": ""
+      }, {
+        "id": 27,
+        "time": "12:00 - 12:30",
+        "title": "",
+        "speaker": "",
+        "affiliation": ""
+      }, {
+        "id": 28,
+        "time": "12:30 - 12:45",
+        "title": "",
+        "speaker": "",
+        "affiliation": ""
+      }, {
+        "id": 29,
+        "time": "12:45 - 12:30",
+        "title": "",
+        "speaker": "",
+        "affiliation": ""
+      }, {
+        "id": 30,
+        "speaker": "break"
+      },{
+        "id": 31,
+        "speaker": "Chair: "
+      }, {
+        "id": 32,
+        "time": "13:30 - 14:00",
+        "title": "",
+        "speaker": "",
+        "affiliation": ""
+      }, {
+        "id": 33,
+        "time": "14:30 - 15:00",
+        "title": "",
+        "speaker": "",
+        "affiliation": ""
+      }, {
+        "id": 34,
+        "time": "15:00 - 15:30",
+        "title": "",
+        "speaker": "",
+        "affiliation": ""
       }]
     }
   ]

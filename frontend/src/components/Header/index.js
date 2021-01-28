@@ -25,6 +25,10 @@ function Header() {
       href: '/registration',
     },
     {
+      description: 'Speakers',
+      href: '/speakers',
+    },
+    {
       description: 'Program',
       href: '/program',
     },

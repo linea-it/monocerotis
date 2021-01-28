@@ -4,6 +4,7 @@ import Route from './Route';
 import Home from '../pages/Home';
 import Registration from '../pages/Registration';
 import Program from '../pages/Program';
+import Speakers from '../pages/Speakers';
 import Participants from '../pages/Participants';
 import AdditionalInformation from '../pages/AdditionalInformation';
 import Notfound from '../pages/NotFound';
@@ -22,6 +23,7 @@ export default function Routes() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/registration" component={Registration} />
+          <Route exact path="/speakers" component={Speakers} />
           <Route exact path="/program" component={Program} />
           <Route exact path="/participants" component={Participants} />
           <Route exact path="/additional-information" component={AdditionalInformation} />

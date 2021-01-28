@@ -31,6 +31,15 @@ function TabPanel(props) {
     },
   }))(TableRow);
 
+  const StyledTableCell = withStyles((theme) => ({
+    root: {
+      [theme.breakpoints.up('lg')]: {
+        fontSize: '1.2rem',
+        padding: '10px 20px',
+      }
+    },
+  }))(TableCell);
+
   useEffect(() => {
     setScheduleSelected(schedule.events[value]);
   }, [value]);
@@ -50,26 +59,37 @@ function TabPanel(props) {
           <Table className={classes.table} aria-label="customized table">
             <TableHead>
               <TableRow>
-                <TableCell>Time</TableCell>
-                <TableCell>Title</TableCell>
-                <TableCell>Speaker</TableCell>
-                <TableCell>Affiliation</TableCell>
+                <StyledTableCell>Time BRT (UTC-3)</StyledTableCell>
+                <StyledTableCell>Title</StyledTableCell>
+                <StyledTableCell>Speaker</StyledTableCell>
+                <StyledTableCell>Affiliation</StyledTableCell>
               </TableRow>
             </TableHead>
             <TableBody>
               {scheduleSelected.rows.map((row) => {
-                return row.speaker === 'break' ?
-                <StyledTableRow  key={row.id}>
-                  <TableCell align="center" colSpan="4" className={classes.tableCell}>Break</TableCell>
-                </StyledTableRow > :
-                <StyledTableRow key={row.id}>
-                  <TableCell component="th" scope="row">
-                    {row.time}
-                  </TableCell>
-                  <TableCell>{row.title}</TableCell>
-                  <TableCell>{row.speaker}</TableCell>
-                  <TableCell>{row.affiliation}</TableCell>
-                </StyledTableRow >
+                if (row.speaker.includes('Chair')) {
+                  return (
+                    <StyledTableRow  key={row.id}>
+                      <StyledTableCell colSpan="4" >{row.speaker}</StyledTableCell>
+                    </StyledTableRow >
+                  )
+                } if (row.speaker === 'break') {
+                  return (
+                    <StyledTableRow  key={row.id}>
+                      <StyledTableCell align="center" colSpan="4" className={classes.tableCell}>Break</StyledTableCell>
+                    </StyledTableRow >
+                  )
+                }
+                  return (
+                    <StyledTableRow key={row.id}>
+                      <StyledTableCell component="th" scope="row">
+                        {row.time}
+                      </StyledTableCell>
+                      <StyledTableCell>{row.title}</StyledTableCell>
+                      <StyledTableCell>{row.speaker}</StyledTableCell>
+                      <StyledTableCell>{row.affiliation}</StyledTableCell>
+                    </StyledTableRow >
+                  )
               } )}
             </TableBody>
           </Table>
@@ -108,10 +128,10 @@ function Program() {
         </Typography><br /><br />
         <div className={classes.root}>
           <AppBar position="static">
-            <Tabs value={value} onChange={handleChange} >
-              <Tab label="Day One" {...a11yProps(0)} />
-              <Tab label="Day Two" {...a11yProps(1)} />
-              <Tab label="Day Three" {...a11yProps(2)} />
+            <Tabs value={value} onChange={handleChange} indicatorColor="secondary">
+              <Tab label="Day 1" className={classes.tab} {...a11yProps(0)} />
+              <Tab label="Day 2" className={classes.tab} {...a11yProps(1)} />
+              <Tab label="Day 3" className={classes.tab} {...a11yProps(2)} />
             </Tabs>
           </AppBar>
           <TabPanel value={value} index={0} />
