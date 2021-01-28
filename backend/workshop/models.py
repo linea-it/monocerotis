@@ -20,9 +20,21 @@ class Subscription(models.Model):
         max_length=150,
     )
 
+    # Country
+    country = models.CharField(
+        verbose_name="Country",
+        max_length=150,
+    )
+
     # Newsletter Permission
     newsletter_permission = models.BooleanField(
         verbose_name='Newsletter Permission',
+        default=False,
+    )
+
+    # Is Account Active
+    is_active = models.BooleanField(
+        verbose_name='Account Verification',
         default=False,
     )
 

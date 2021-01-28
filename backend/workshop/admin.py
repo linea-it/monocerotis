@@ -4,5 +4,5 @@ from .models import Subscription
 
 @admin.register(Subscription)
 class SubscriptionAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name', 'email', 'institute',
-                    'newsletter_permission', 'creation_date')
+    list_display = ('id', 'name', 'email', 'institute', 'country',
+                    'newsletter_permission', 'is_active', 'creation_date')
