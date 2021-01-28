@@ -218,8 +218,8 @@ APPLICATION_NAME = 'LIneA Workshop'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS = True
 try:
-    EMAIL_NOTIFICATION = os.environ['EMAIL_NOTIFICATION']
-    EMAIL_NOTIFICATION_COPY_TO = list([os.environ['EMAIL_NOTIFICATION']])
+    EMAIL_NOTIFICATION = list([os.environ['EMAIL_NOTIFICATION']])
+    EMAIL_NOTIFICATION_COPY_TO = os.environ['EMAIL_NOTIFICATION']
     EMAIL_HOST = os.environ['EMAIL_HOST']
     EMAIL_PORT = os.environ['EMAIL_PORT']
     EMAIL_HOST_USER = os.environ['EMAIL_HOST_USER']
