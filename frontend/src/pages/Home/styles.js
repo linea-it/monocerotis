@@ -1,11 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 const styles = makeStyles((theme) => ({
-  organizing : {
-    [theme.breakpoints.up('md')]: {
-      padding: '0 28%',
-    }
-  },
   onlineText : {
     fontSize: '1.5rem',
     fontFamily: 'Roboto,"Helvetica Neue",Arial',
@@ -25,21 +20,14 @@ const styles = makeStyles((theme) => ({
     }
   },
   date: {
-    [theme.breakpoints.down('md')]: {
-      fontSize: '1.3rem',
-    }
+    fontSize: '1.8rem',
   },
   blockTitle: {
-    [theme.breakpoints.down('md')]: {
-      fontSize: '1.4rem',
-    }
+    fontSize: '1.6rem',
   },
   blockText: {
     whiteSpace: 'nowrap',
-    [theme.breakpoints.down('md')]: {
-      fontSize: '1.2rem',
-      textAlign: 'center'
-    }
+    fontSize: '1.4rem',
   },
 }));
 

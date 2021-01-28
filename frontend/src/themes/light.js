@@ -5,6 +5,9 @@ const light = createMuiTheme({
     primary: {
       main: '#283663',
     },
+    secondary: {
+      main: '#ffdd00',
+    },
   },
   typography: {
     fontFamily: [
@@ -22,7 +25,7 @@ const light = createMuiTheme({
       root: {
         textTransform: 'capitalize'
       }
-    }
+    },
   }
 });
 

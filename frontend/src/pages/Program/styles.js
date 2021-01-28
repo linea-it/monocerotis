@@ -13,10 +13,15 @@ const styles = makeStyles((theme) => ({
     justifyContent: 'center',
   },
   tableCell: {
-    padding: '25px',
+    padding: '10px',
     backgroundColor: '#283663',
     color: 'white',
-    fontSize: 'larger',
+    fontSize: '1.5rem',
+  },
+  tab : {
+    [theme.breakpoints.up('md')]: {
+      fontSize: '1.2rem',
+    }
   }
 }));
 
