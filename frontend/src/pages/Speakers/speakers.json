@@ -9,7 +9,7 @@
 }, {
 	"id": 2,
 	"speaker": "Andy Conolly",
-	"affiliation": "DIRAC Institute and /e-Science Institute of the University of Washington (DIRAC)"
+	"affiliation": "DIRAC Institute and/e-Science Institute of the University of Washington (DIRAC)"
 }, {
 	"id": 4,
 	"speaker": "Chenzhou Cui",
@@ -41,7 +41,7 @@
 }, {
 	"id": 11,
 	"speaker": "Mario Yuric",
-	"affiliation": "DIRAC Institute /University of Washington (DIRAC)"
+	"affiliation": "DIRAC Institute/University of Washington (DIRAC)"
 }, {
 	"id": 12,
 	"speaker": "Nirav Merchant",
@@ -53,11 +53,11 @@
 }, {
 	"id": 14,
 	"speaker": "Ross Thomson",
-	"affiliation": "Google Inc."
+	"affiliation": "Google LLC"
 }, {
 	"id": 15,
 	"speaker": "Sanjay Padhi",
-	"affiliation": "Amazon"
+	"affiliation": "Amazon.com, Inc"
 }, {
 	"id": 16,
 	"speaker": "Simone Campana",
@@ -69,5 +69,5 @@
 }, {
 	"id": 18,
 	"speaker": "William O’Mullane ",
-	"affiliation": "Legacy Survey of Space and Time"
+	"affiliation": "Legacy Survey of Space and Time (LSST)"
 }]
