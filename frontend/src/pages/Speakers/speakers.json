@@ -17,15 +17,15 @@
 }, {
 	"id": 5,
 	"speaker": "Dominique Boutigny",
-	"affiliation": "IN2P3"
+	"affiliation": "French National Institute of Nuclear and Particle Physics (IN2P3)"
 }, {
 	"id": 6,
 	"speaker": "Fabio Hernadez",
-	"affiliation": "IN2P3"
+	"affiliation": "French National Institute of Nuclear and Particle Physics (IN2P3)"
 }, {
 	"id": 7,
 	"speaker": "George Beckett",
-	"affiliation": "University of. Edinburgh"
+	"affiliation": "University of Edinburgh"
 }, {
 	"id": 8,
 	"speaker": "Ian Bird",
@@ -41,11 +41,11 @@
 }, {
 	"id": 11,
 	"speaker": "Mario Yuric",
-	"affiliation": "DIRAC Institute /University of . Washington (DIRAC)"
+	"affiliation": "DIRAC Institute /University of Washington (DIRAC)"
 }, {
 	"id": 12,
 	"speaker": "Nirav Merchant",
-	"affiliation": "Cyverse"
+	"affiliation": "CyVerse"
 }, {
 	"id": 13,
 	"speaker": "Richard Dubous",
@@ -69,5 +69,5 @@
 }, {
 	"id": 18,
 	"speaker": "William O’Mullane ",
-	"affiliation": "LSST"
+	"affiliation": "Legacy Survey of Space and Time"
 }]

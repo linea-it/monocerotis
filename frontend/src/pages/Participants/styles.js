@@ -5,6 +5,9 @@ const styles = makeStyles((theme) => ({
     flexGrow: 1,
     backgroundColor: theme.palette.background.paper,
   },
+  container: {
+    marginBottom: 'auto',
+  },
   grid: {
     margin: 'auto',
     marginTop: 20,
