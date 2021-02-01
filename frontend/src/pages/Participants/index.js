@@ -45,7 +45,7 @@ function Participants() {
         <Typography variant="h3" align="center" color="primary">
           Participants
         </Typography><br /><br />
-        <Grid item xs={11} md={8} className={classes.grid}>
+        <Grid item xs={11} md={11} className={classes.grid}>
           <TableContainer component={Paper}>
             <Table className={classes.table} aria-label="customized table">
               <TableHead>

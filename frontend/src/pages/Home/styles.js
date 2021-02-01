@@ -11,13 +11,11 @@ const styles = makeStyles((theme) => ({
       fontSize: '1.1rem'
     }
   },
-  title: {
-
-  },
   subtitle: {
+    fontWeight: 'bold',
     [theme.breakpoints.down('md')]: {
       fontSize: '1.6rem',
-    }
+    },
   },
   date: {
     fontSize: '1.8rem',
