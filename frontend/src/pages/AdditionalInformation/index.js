@@ -22,7 +22,7 @@ function AdditionalInformation() {
         >
           <Typography variant="h5" color="primary" className={classes.title}>Rationale:</Typography><br />
           <Typography variant="subtitle1" color="primary" className={classes.description}>
-          This workshop will bring together representatives of some of the more important data centers, eScience institutes and IT companies to discuss current solutions and new technological trends as data volumes from modern experiments such as LSST, Euclid and SKA continue to grow. The workshop will happen remotely April 13-15, 2021. Inquiries can be sent to  <a href={'mailto:workshop2021@linea.gov.br?subject="Workshop 2021"'}>workshop2021@linea.gov.br</a>.
+          This workshop will bring together representatives of some of the more important data centers, eScience institutes and IT companies to discuss current solutions and new technological trends as data volumes from modern experiments such as LSST, Euclid and SKA continue to grow. The workshop will take place remotely April 13-15, 2021. Inquiries can be sent to  <a href={'mailto:workshop2021@linea.gov.br?subject="Workshop 2021"'}>workshop2021@linea.gov.br</a>.
           </Typography><br /><br />
           <Typography variant="h5" color="primary" className={classes.title}>Venue:</Typography><br />
           <Typography variant="subtitle1" color="primary" className={classes.description}>

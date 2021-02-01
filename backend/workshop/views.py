@@ -13,7 +13,7 @@ from .token import account_activation_token
 from django.contrib.sites.shortcuts import get_current_site
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 from django.utils.encoding import force_bytes, force_text
-from rest_framework.reverse import reverse
+# from rest_framework.reverse import reverse
 from common.notify import Notify
 
 
@@ -65,16 +65,15 @@ class SubscriptionViewSet(viewsets.ModelViewSet):
         current_site = get_current_site(request).domain
         logger.info('Current site: [%s]' % current_site)
 
-        # Get the reverse subscription URL:
-        subscription_path = reverse('subscription-list')
-        logger.info('Subscription path: [%s]' % subscription_path)
+        # # Get the reverse subscription URL:
+        # subscription_path = reverse('subscription-list')
+        # logger.info('Subscription path: [%s]' % subscription_path)
 
         # The endpoint path to verify the email:
-        verify_email_path = 'verify_email'
+        verify_email_path = '/verify-email'
 
         # Absolute URL: http://HOST/api/subscription/verify_email
-        absoluteUrl = 'http://%s%s%s/?uid=%s&token=%s' % (current_site,
-                                                          subscription_path,
+        absoluteUrl = 'http://%s%s/uid=%s/token=%s' % (current_site,
                                                           verify_email_path,
                                                           urlsafe_base64_encode(
                                                               force_bytes(user.pk)),
@@ -123,7 +122,7 @@ class SubscriptionViewSet(viewsets.ModelViewSet):
             logger.error(e)
 
             return Response({
-                'error': 'Could not decode UID'
+                'error': 'Could not find User ID'
             })
 
         logger.info('User ID: [%s] || Token: [%s]' % (uid_decoded, token))
@@ -141,10 +140,10 @@ class SubscriptionViewSet(viewsets.ModelViewSet):
                 'error': 'Invalid user subscription'
             })
 
-        logger.info('Checking if user exists and if the token is valid')
-        # If user exists and if the token is valid
-        if user and account_activation_token.check_token(user, token):
-            logger.info('The user exists and the token is valid')
+        logger.info('Checking if the token is valid')
+        # If the token is valid
+        if account_activation_token.check_token(user, token):
+            logger.info('The token is valid')
 
             logger.info('Changing is_active to True')
             user.is_active = True
@@ -152,12 +151,12 @@ class SubscriptionViewSet(viewsets.ModelViewSet):
             logger.info('Saved subscription')
 
             return Response({
-                'success': 'Your account was activated'
+                'success': 'Your registration has been successful.'
             })
         else:
             logger.info(
-                'Either the user does not exist or the token is invalid')
+                'The token is invalid')
 
             return Response({
-                'error': 'Invalid token or invalid user'
+                'error': 'Invalid token'
             })

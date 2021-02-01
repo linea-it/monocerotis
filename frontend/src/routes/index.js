@@ -7,6 +7,7 @@ import Program from '../pages/Program';
 import Speakers from '../pages/Speakers';
 import Participants from '../pages/Participants';
 import AdditionalInformation from '../pages/AdditionalInformation';
+import VerifyEmail from '../pages/VerifyEmail';
 import Notfound from '../pages/NotFound';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -27,6 +28,7 @@ export default function Routes() {
           <Route exact path="/program" component={Program} />
           <Route exact path="/participants" component={Participants} />
           <Route exact path="/additional-information" component={AdditionalInformation} />
+          <Route exact path="/verify-email/uid=:uid/token=:token" component={VerifyEmail} />
           <Route component={Notfound} />
         </Switch>
         <Footer />

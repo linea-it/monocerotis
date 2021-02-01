@@ -18,3 +18,12 @@ export const getSubscriptions = () => {
     .catch(err => err)
     .then(res => res.data)
 }
+
+
+export const getVerifyEmail = ({uid, token}) => {
+  const params = { uid, token };
+
+  return axios.get('/subscription/verify_email/', { params })
+    .catch(err => err)
+    .then(res => res.data)
+}

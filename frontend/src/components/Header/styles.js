@@ -36,7 +36,8 @@ const styles = makeStyles((theme) => ({
     },
   },
   logoInctComputer: {
-    maxWidth: 160,
+    maxWidth: 135,
+    padding: '12px 20px 0px 0px',
     [theme.breakpoints.down('md')]: {
       display: 'none'
     },
