@@ -93,7 +93,8 @@ function Registration() {
         <Grid item xs={12}>
           <Grid item xs={11} md={6} className={classes.grid}>
             <Typography variant="h3" align="center" color="primary">Registration</Typography>
-            <br /><br />
+            <Typography variant="body1" align="center" color="primary">(Open until April 2nd, 2021)</Typography>
+            <br />
             <form
               ref={formRef}
               autoComplete="off"
@@ -208,7 +209,7 @@ function Registration() {
       <Snackbar anchorOrigin={{ vertical: 'top', horizontal: 'center' }} open={openFormFeedback} autoHideDuration={6000} onClose={handleClose}>
         <Alert onClose={handleClose} severity="success">
           <AlertTitle>Success</AlertTitle>
-          <Typography variant="body1">Registered with sucess! Check your e-mail for a confirmation message.</Typography>
+          <Typography variant="body1">Registered with success! Check your e-mail for a confirmation message.</Typography>
         </Alert>
       </Snackbar>
     </div>

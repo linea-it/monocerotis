@@ -8,6 +8,9 @@ const light = createMuiTheme({
     secondary: {
       main: '#ffdd00',
     },
+    success: {
+      main: '#4caf50'
+    },
   },
   typography: {
     fontFamily: [
