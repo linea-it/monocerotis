@@ -29,8 +29,8 @@ function Main() {
               <div>
                 <Typography align="center" color="primary" className={classes.blockText}>Andreas Wicenec (UWA)</Typography>
                 <Typography align="center" color="primary" className={classes.blockText}>Fabio Hernandez (IN2P3)</Typography>
-                <Typography align="center" color="primary" className={classes.blockText}>George Beckett (Univ. Edingburgh)</Typography>
-                <Typography align="center" color="primary" className={classes.blockText}>Mario Yuric (DIRAC/UW)</Typography>
+                <Typography align="center" color="primary" className={classes.blockText}>George Beckett (Univ. Edinburgh)</Typography>
+                <Typography align="center" color="primary" className={classes.blockText}>Mario Juric (DIRAC/UW)</Typography>
                 <Typography align="center" color="primary" className={classes.blockText}>William O’Mullane (LSST)</Typography>
               </div>
               </Grid>
