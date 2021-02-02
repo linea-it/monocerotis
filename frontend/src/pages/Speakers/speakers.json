@@ -20,7 +20,7 @@
 	"affiliation": "French National Institute of Nuclear and Particle Physics (IN2P3)"
 }, {
 	"id": 6,
-	"speaker": "Fabio Hernadez",
+	"speaker": "Fabio Hernandez",
 	"affiliation": "French National Institute of Nuclear and Particle Physics (IN2P3)"
 }, {
 	"id": 7,
@@ -44,7 +44,7 @@
 	"affiliation": "Laboratório Interinstitucional de e-Astronomia (LIneA)"
 }, {
 	"id": 11,
-	"speaker": "Mario Yuric",
+	"speaker": "Mario Juric",
 	"affiliation": "DIRAC Institute/University of Washington (DIRAC)"
 }, {
 	"id": 12,
@@ -52,7 +52,7 @@
 	"affiliation": "CyVerse"
 }, {
 	"id": 13,
-	"speaker": "Richard Dubous",
+	"speaker": "Richard Dubois",
 	"affiliation": "SLAC National Accelerator Laboratory (SLAC)"
 }, {
 	"id": 14,
@@ -65,7 +65,7 @@
 }, {
 	"id": 16,
 	"speaker": "Simone Campana",
-	"affiliation": "Worldwide LHC Computing Grid (WLCG)"
+	"affiliation": "Worldwide LHC Computing Grid (WLCG/CERN)"
 }, {
 	"id": 17,
 	"speaker": "Veronique Vallete",
