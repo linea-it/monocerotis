@@ -123,9 +123,8 @@ function Program() {
   return (
     <Container>
       <Grid item xs={12}>
-        <Typography variant="h3" align="center" color="primary">
-          Program
-        </Typography><br /><br />
+        <Typography variant="h3" align="center" color="primary">Program</Typography>
+        <Typography variant="body1" align="center" className={classes.tbd}>(To be defined)</Typography><br />
         <div className={classes.root}>
           <AppBar position="static">
             <Tabs value={value} onChange={handleChange} indicatorColor="secondary">

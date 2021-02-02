@@ -34,8 +34,15 @@ function Participants() {
 
   const StyledTableCell = withStyles(() => ({
     root: {
+      fontSize: '1rem',
+      padding: '8px 15px',
+    },
+  }))(TableCell);
+
+  const StyledTableCellTitle = withStyles(() => ({
+    root: {
       fontSize: '1.2rem',
-      padding: '10px 20px',
+      padding: '8px 15px',
     },
   }))(TableCell);
 
@@ -50,9 +57,9 @@ function Participants() {
             <Table className={classes.table} aria-label="customized table">
               <TableHead>
                 <TableRow>
-                  <StyledTableCell>Name</StyledTableCell>
-                  <StyledTableCell>Affiliation</StyledTableCell>
-                  <StyledTableCell>Country</StyledTableCell>
+                  <StyledTableCellTitle>Name</StyledTableCellTitle>
+                  <StyledTableCellTitle>Affiliation</StyledTableCellTitle>
+                  <StyledTableCellTitle>Country</StyledTableCellTitle>
                 </TableRow>
               </TableHead>
               <TableBody>
