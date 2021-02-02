@@ -31,7 +31,7 @@ function Main() {
                 <Typography align="center" color="primary" className={classes.blockText}>Fabio Hernandez (IN2P3/CNRS)</Typography>
                 <Typography align="center" color="primary" className={classes.blockText}>George Beckett (University of Edinburg)</Typography>
                 <Typography align="center" color="primary" className={classes.blockText}>Mario Juric (DIRAC/University of Washington)</Typography>
-                <Typography align="center" color="primary" className={classes.blockText}>William O’Mullane (LSST)</Typography>
+                <Typography align="center" color="primary" className={classes.blockText}>William O’Mullane (LSST/Rubin Observatory)</Typography>
               </div>
               </Grid>
               <Grid item xs={12} md={6} >
