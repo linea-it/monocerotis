@@ -31,6 +31,8 @@ function Registration() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    setErrorMessage({});
+
     if(submitEnabled) {
       const name = formRef.current.name.value;
       const email = formRef.current.email.value;
@@ -38,10 +40,21 @@ function Registration() {
       const country = formRef.current.country.value;
       const newsletter = formRef.current.newsletter.checked;
 
+      // Check if the filled country is available in the options.
+      // Prevent it from submitting undesirable values:
+      if (countries.filter(c => c.label === country).length === 0) {
+        setErrorMessage({ country: ['Please, select one of the country options!'] });
+
+        // Forcing the Autocomplete component to reset:
+        autocompleteRef.current.getElementsByClassName('MuiAutocomplete-clearIndicator')[0].click();
+
+        return;
+      }
+
+
       postSubscription({ name, email, institute, newsletter, country })
       .then(() => {
           setOpenFormFeedback(true);
-          setErrorMessage({});
           // Reseting form:
           formRef.current.reset();
           // Forcing the Autocomplete component to reset:
@@ -99,6 +112,7 @@ function Registration() {
               ref={formRef}
               autoComplete="off"
               onSubmit={handleSubmit}
+              noValidate
             >
               <div className={classes.textFields}>
                 <TextField
@@ -153,6 +167,7 @@ function Registration() {
                   ref={autocompleteRef}
                   options={countries}
                   getOptionLabel={(option) => option.label}
+                  autoComplete={false}
                   renderInput={(params) =>
                     <TextField {...params}
                       required
@@ -161,10 +176,19 @@ function Registration() {
                       label="Country"
                       variant="outlined"
                       placeholder="Countries"
+                      autoComplete="off"
                       fullWidth
                       size="small"
                       error={'country' in errorMessage}
                       helperText={'country' in errorMessage ? errorMessage.country[0] : ''}
+                      inputProps={{
+                        ...params.inputProps,
+                        "aria-autocomplete": "off",
+                        autoComplete: "off",
+                        form: {
+                          autoComplete: "off",
+                        }
+                      }}
                     />
                   }
                 />
