@@ -15,13 +15,17 @@
 	"speaker": "Chenzhou Cui",
 	"affiliation": "National Astronomical Observatories of China (NAOC)"
 }, {
+  "id": 21,
+  "speaker": "Denny Lee",
+  "affiliation": "Databricks"
+}, {
 	"id": 5,
 	"speaker": "Dominique Boutigny",
-	"affiliation": "French National Institute of Nuclear and Particle Physics (IN2P3)"
+	"affiliation": "French National Institute of Nuclear and Particle Physics (IN2P3/CNRS)"
 }, {
 	"id": 6,
 	"speaker": "Fabio Hernandez",
-	"affiliation": "French National Institute of Nuclear and Particle Physics (IN2P3)"
+	"affiliation": "French National Institute of Nuclear and Particle Physics (IN2P3/CNRS)"
 }, {
 	"id": 7,
 	"speaker": "George Beckett",
@@ -29,7 +33,7 @@
 }, {
 	"id": 8,
 	"speaker": "Ian Bird",
-	"affiliation": "CNRS-LAPP/ESCAPE   "
+	"affiliation": "CNRS-LAPP/ESCAPE"
 }, {
 	"id": 9,
 	"speaker": "JJ Kavelaars",
@@ -38,6 +42,10 @@
 	"id": 19,
 	"speaker": "Jordan Collier",
 	"affiliation": "Institute for Data Intensive Astronomy (IDIA)"
+}, {
+	"id": 22,
+	"speaker": "Knut Olsen",
+	"affiliation": "NOIRLab"
 }, {
 	"id": 10,
 	"speaker": "Luiz da Costa",
@@ -66,6 +74,10 @@
 	"id": 16,
 	"speaker": "Simone Campana",
 	"affiliation": "Worldwide LHC Computing Grid (WLCG/CERN)"
+}, {
+	"id": 21,
+	"speaker": "Vandana Desai",
+	"affiliation": "IPAC-CALTECH"
 }, {
 	"id": 17,
 	"speaker": "Veronique Vallete",

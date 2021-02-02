@@ -27,10 +27,10 @@ function Main() {
               <br />
               <br />
               <div>
-                <Typography align="center" color="primary" className={classes.blockText}>Andreas Wicenec (UWA)</Typography>
-                <Typography align="center" color="primary" className={classes.blockText}>Fabio Hernandez (IN2P3)</Typography>
-                <Typography align="center" color="primary" className={classes.blockText}>George Beckett (Univ. Edinburgh)</Typography>
-                <Typography align="center" color="primary" className={classes.blockText}>Mario Juric (DIRAC/UW)</Typography>
+                <Typography align="center" color="primary" className={classes.blockText}>Andreas Wicenec (University of Western Australia)</Typography>
+                <Typography align="center" color="primary" className={classes.blockText}>Fabio Hernandez (IN2P3/CNRS)</Typography>
+                <Typography align="center" color="primary" className={classes.blockText}>George Beckett (University of Edinburg)</Typography>
+                <Typography align="center" color="primary" className={classes.blockText}>Mario Juric (DIRAC/University of Washington)</Typography>
                 <Typography align="center" color="primary" className={classes.blockText}>William O’Mullane (LSST)</Typography>
               </div>
               </Grid>
