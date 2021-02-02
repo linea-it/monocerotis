@@ -166,7 +166,7 @@ class SubscriptionViewSet(viewsets.ModelViewSet):
 
     # Export participants to CSV:
     @action(detail=False, methods=['GET'])
-    def participants_to_csv(self, request, pk=None):
+    def to_csv(self, request, pk=None):
         response = HttpResponse(content_type='text/csv')
         response['Content-Disposition'] = 'attachment; filename="subscriptions.csv"'
 
@@ -181,7 +181,7 @@ class SubscriptionViewSet(viewsets.ModelViewSet):
             'creation_date',
         ])
 
-        subscriptions = Subscription.objects.all().values_list(
+        subscriptions = Subscription.objects.all().filter(is_active=True).values_list(
             'id',
             'name',
             'email',
