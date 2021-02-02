@@ -16,6 +16,9 @@ from django.utils.encoding import force_bytes, force_text
 # from rest_framework.reverse import reverse
 from common.notify import Notify
 
+from django.http import HttpResponse
+import csv
+
 
 class SubscriptionViewSet(viewsets.ModelViewSet):
     # Disable authentication and permission for this view
@@ -74,10 +77,10 @@ class SubscriptionViewSet(viewsets.ModelViewSet):
 
         # Absolute URL: http://HOST/api/subscription/verify_email
         absoluteUrl = 'http://%s%s/uid=%s/token=%s' % (current_site,
-                                                          verify_email_path,
-                                                          urlsafe_base64_encode(
-                                                              force_bytes(user.pk)),
-                                                          token)
+                                                       verify_email_path,
+                                                       urlsafe_base64_encode(
+                                                           force_bytes(user.pk)),
+                                                       token)
 
         logger.info('Generate the absolute url: [%s]' % absoluteUrl)
 
@@ -98,7 +101,7 @@ class SubscriptionViewSet(viewsets.ModelViewSet):
 
         return Response(subscription_data, status=status.HTTP_201_CREATED)
 
-    @action(detail=False, methods=['get'])
+    @action(detail=False, methods=['GET'])
     def verify_email(self, request, pk=None):
         logger = logging.getLogger('subscription')
         logger.info("".ljust(50, '-'))
@@ -160,3 +163,33 @@ class SubscriptionViewSet(viewsets.ModelViewSet):
             return Response({
                 'error': 'Invalid token'
             })
+
+    # Export participants to CSV:
+    @action(detail=False, methods=['GET'])
+    def participants_to_csv(self, request, pk=None):
+        response = HttpResponse(content_type='text/csv')
+        response['Content-Disposition'] = 'attachment; filename="subscriptions.csv"'
+
+        writer = csv.writer(response)
+
+        writer.writerow([
+            'id',
+            'name',
+            'email',
+            'institute',
+            'country',
+            'creation_date',
+        ])
+
+        subscriptions = Subscription.objects.all().values_list(
+            'id',
+            'name',
+            'email',
+            'institute',
+            'country',
+            'creation_date',
+        )
+        for subscription in subscriptions:
+            writer.writerow(subscription)
+
+        return response
