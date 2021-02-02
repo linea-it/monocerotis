@@ -61,7 +61,7 @@ function Registration() {
               eventLabel: 'Subscription Success'
             });
           } catch (err) {
-            console.log("Couldn't fire GA event", err);
+            // console.log("Couldn't fire GA event", err);
           }
       })
       .catch(error => {
@@ -75,7 +75,7 @@ function Registration() {
             eventLabel: 'Subscription Failure'
           });
         } catch (err) {
-          console.log(err);
+          // console.log(err);
         }
       });
     }
