@@ -40,12 +40,6 @@ function Registration() {
       const country = formRef.current.country.value;
       const newsletter = formRef.current.newsletter.checked;
 
-
-      console.log('Exists', countries.filter(c => c.label === country))
-      console.log('Not Exist', countries.filter(c => c.label === country).length === 0)
-      console.log('Country', country)
-      console.log('AutocompleteRef', autocompleteRef.current)
-
       // Check if the filled country is available in the options.
       // Prevent it from submitting undesirable values:
       if (countries.filter(c => c.label === country).length === 0) {
