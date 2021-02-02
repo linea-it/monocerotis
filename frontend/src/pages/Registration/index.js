@@ -112,7 +112,6 @@ function Registration() {
               ref={formRef}
               autoComplete="off"
               onSubmit={handleSubmit}
-              noValidate
             >
               <div className={classes.textFields}>
                 <TextField
@@ -181,14 +180,6 @@ function Registration() {
                       size="small"
                       error={'country' in errorMessage}
                       helperText={'country' in errorMessage ? errorMessage.country[0] : ''}
-                      inputProps={{
-                        ...params.inputProps,
-                        "aria-autocomplete": "off",
-                        autoComplete: "off",
-                        form: {
-                          autoComplete: "off",
-                        }
-                      }}
                     />
                   }
                 />
