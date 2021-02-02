@@ -51,9 +51,13 @@
 	"speaker": "Luiz da Costa",
 	"affiliation": "Laboratório Interinstitucional de e-Astronomia (LIneA)"
 }, {
-	"id": 11,
+	"id": 22,
 	"speaker": "Mario Juric",
 	"affiliation": "DIRAC Institute/University of Washington (DIRAC)"
+}, {
+	"id": 23,
+	"speaker": "Mark Allen",
+	"affiliation": "Centre de Donnés Astronomiqes de Strasbourg (CDS)"
 }, {
 	"id": 12,
 	"speaker": "Nirav Merchant",

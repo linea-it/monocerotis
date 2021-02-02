@@ -24,7 +24,6 @@ const styles = makeStyles((theme) => ({
     fontSize: '1.6rem',
   },
   blockText: {
-    whiteSpace: 'nowrap',
     fontSize: '1.4rem',
   },
 }));
