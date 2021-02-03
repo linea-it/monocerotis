@@ -51,8 +51,8 @@ function Header() {
     <AppBar position="static" className={classes.appbar}>
       <Toolbar className={classes.toolbar}>
         <div>
-          <img src={`${process.env.PUBLIC_URL}/img/logo-linea.png`} alt="LIneA" className={classes.logo} />
-          <img src={`${process.env.PUBLIC_URL}/img/logo-inct.png`} alt="LIneA" className={classes.logoInctMobile} />
+          <a href="http://linea.gov.br/"><img src={`${process.env.PUBLIC_URL}/img/logo-linea.png`} alt="LIneA" className={classes.logo} /></a>
+          <a href="https://www.linea.gov.br/3-inct-do-e-universo-2/"><img src={`${process.env.PUBLIC_URL}/img/logo-inct.png`} alt="LIneA" className={classes.logoInctMobile} /></a>
         </div>
         <Button color="primary" className={classes.menuMobileButton} onClick={toggleMenuClick}>
           {menuOpen ? <CloseIcon fontSize="large" color="primary" /> : <MenuIcon fontSize="large" color="primary" />}

@@ -3,7 +3,7 @@ import { BrowserRouter, Switch } from 'react-router-dom';
 import Route from './Route';
 import Home from '../pages/Home';
 import Registration from '../pages/Registration';
-import RegistrationSuccess from '../pages/Registration/RegistrationSuccess';
+import RegistrationSuccess from '../pages/Registration/Success';
 import Program from '../pages/Program';
 import Speakers from '../pages/Speakers';
 import Participants from '../pages/Participants';

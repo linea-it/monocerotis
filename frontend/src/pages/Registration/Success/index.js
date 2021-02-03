@@ -5,7 +5,7 @@ import {
 
 import styles from './styles';
 
-function RegistrationSuccess() {
+function Success() {
   // Change dynamically the page title:
   document.title = 'LIneA Workshop | Registration Success';
 
@@ -17,14 +17,14 @@ function RegistrationSuccess() {
         item
         xs={12}
       >
-          <div className={classes.verifyEmail}>
-            <Typography variant="h1" color="success" className={classes.success}>Congratulations!</Typography>
-            <Typography variant="h2" className={classes.success}>
+          <div className={classes.registrationSuccess}>
+            <Typography variant="h2" color="success" gutterBottom className={classes.success}>Congratulations!</Typography>
+            <Typography variant="h5" gutterBottom paragraph className={classes.success}>
               You are almost there. To complete your registration, please check your email.
             </Typography>
             <Typography variant="subtitle1" className={classes.description}>
               {' '}
-              <Link color="inherit" className={classes.returnPage} href="/">Return to homepage</Link>
+              <Link color="inherit" align="left" className={classes.returnPage} href="/">Return to homepage</Link>
             </Typography>
           </div>
       </Grid>
@@ -32,4 +32,4 @@ function RegistrationSuccess() {
   );
 }
 
-export default RegistrationSuccess;
+export default Success;

@@ -1,5 +1,6 @@
 /* eslint-disable no-nested-ternary */
 import React, { useRef, useState } from 'react';
+import { useHistory } from "react-router-dom";
 import {
   Grid, Container, Typography, TextField, Button, Snackbar, FormControlLabel, Checkbox
 } from '@material-ui/core';
@@ -17,6 +18,7 @@ function Registration() {
 
   const classes = styles();
 
+  const history = useHistory();
   const formRef = useRef();
   const autocompleteRef = useRef();
   const recaptchaRef = useRef();
@@ -76,7 +78,8 @@ function Registration() {
           } catch (err) {
             console.log("Couldn't fire GA event", err);
           }
-      })
+          history.push('/registration/success');
+        })
       .catch(error => {
         setErrorMessage(error.response.data);
 
