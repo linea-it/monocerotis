@@ -15,6 +15,7 @@ from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 from django.utils.encoding import force_bytes, force_text
 # from rest_framework.reverse import reverse
 from common.notify import Notify
+from django.conf import settings
 
 from django.http import HttpResponse
 import csv
@@ -65,7 +66,7 @@ class SubscriptionViewSet(viewsets.ModelViewSet):
         logger.info('Generated the token: [%s]' % token)
 
         # Get current site domain:
-        current_site = get_current_site(request).domain
+        current_site = settings.HOST_URL
         logger.info('Current site: [%s]' % current_site)
 
         # # Get the reverse subscription URL:
@@ -76,11 +77,11 @@ class SubscriptionViewSet(viewsets.ModelViewSet):
         verify_email_path = '/verify-email'
 
         # Absolute URL: http://HOST/api/subscription/verify_email
-        absoluteUrl = 'http://%s%s/uid=%s/token=%s' % (current_site,
-                                                       verify_email_path,
-                                                       urlsafe_base64_encode(
-                                                           force_bytes(user.pk)),
-                                                       token)
+        absoluteUrl = '%s%s/uid=%s/token=%s' % (current_site,
+                                                verify_email_path,
+                                                urlsafe_base64_encode(
+                                                    force_bytes(user.pk)),
+                                                token)
 
         logger.info('Generate the absolute url: [%s]' % absoluteUrl)
 
