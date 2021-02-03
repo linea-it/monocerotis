@@ -1,5 +1,6 @@
 /* eslint-disable no-nested-ternary */
 import React, { useRef, useState } from 'react';
+import { useHistory } from "react-router-dom";
 import {
   Grid, Container, Typography, TextField, Button, Snackbar, FormControlLabel, Checkbox
 } from '@material-ui/core';
@@ -17,6 +18,7 @@ function Registration() {
 
   const classes = styles();
 
+  const history = useHistory();
   const formRef = useRef();
   const autocompleteRef = useRef();
   const recaptchaRef = useRef();
@@ -76,7 +78,8 @@ function Registration() {
           } catch (err) {
             console.log("Couldn't fire GA event", err);
           }
-      })
+          history.push('/registration/success');
+        })
       .catch(error => {
         setErrorMessage(error.response.data);
 
@@ -106,8 +109,8 @@ function Registration() {
         <Grid item xs={12}>
           <Grid item xs={11} md={6} className={classes.grid}>
             <Typography variant="h3" align="center" color="primary">Registration</Typography>
-            <Typography variant="body1" align="center" color="primary">(Open until April 2nd, 2021)</Typography>
-            <br />
+            <Typography variant="body1" align="center" color="primary" gutterBottom>(Open until April 2nd, 2021)</Typography>
+            <Typography variant="button" color="error" gutterBottom paragraph>After submission, you will receive a confirmation email with the link to complete your registration.</Typography>
             <form
               ref={formRef}
               autoComplete="off"
@@ -216,7 +219,8 @@ function Registration() {
               </Grid>
             </form>
             <Grid item xs={12}>
-              <br /><Typography variant="body1" color="error">* required fields</Typography>
+              <br />
+              <Typography variant="button" color="error">* required fields</Typography>
             </Grid>
           </Grid>
         </Grid>
