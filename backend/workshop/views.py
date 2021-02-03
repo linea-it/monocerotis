@@ -77,11 +77,11 @@ class SubscriptionViewSet(viewsets.ModelViewSet):
         verify_email_path = '/verify-email'
 
         # Absolute URL: http://HOST/api/subscription/verify_email
-        absoluteUrl = 'http://%s%s/uid=%s/token=%s' % (current_site,
-                                                       verify_email_path,
-                                                       urlsafe_base64_encode(
-                                                           force_bytes(user.pk)),
-                                                       token)
+        absoluteUrl = '%s%s/uid=%s/token=%s' % (current_site,
+                                                verify_email_path,
+                                                urlsafe_base64_encode(
+                                                    force_bytes(user.pk)),
+                                                token)
 
         logger.info('Generate the absolute url: [%s]' % absoluteUrl)
 
