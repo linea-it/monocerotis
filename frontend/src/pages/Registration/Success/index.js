@@ -24,7 +24,7 @@ function Success() {
             </Typography>
             <Typography variant="subtitle1" className={classes.description}>
               {' '}
-              <Link color="inherit" align="left" className={classes.returnPage} href="/">Return to homepage</Link>
+              <Link color="inherit" className={classes.returnPage} href="/">Return to homepage</Link>
             </Typography>
           </div>
       </Grid>

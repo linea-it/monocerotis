@@ -67,7 +67,7 @@ function Header() {
             </ListItem>
           ))}
         </List>
-        <img src={`${process.env.PUBLIC_URL}/img/logo-inct.png`} alt="LIneA" className={classes.logoInctComputer} />
+        <a href="https://www.linea.gov.br/3-inct-do-e-universo-2/"><img src={`${process.env.PUBLIC_URL}/img/logo-inct.png`} alt="LIneA" className={classes.logoInctComputer} /></a>
       </Toolbar>
     </AppBar>
     </>

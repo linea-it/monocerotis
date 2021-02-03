@@ -31,8 +31,6 @@ const styles = makeStyles(() => ({
     textDecoration: 'none',
     borderBottom: '1px dashed #949494',
     borderRadius: '2px',
-    float: 'right',
-    marginRight: '11vw',
   },
   success: {
     color: '#4caf50'

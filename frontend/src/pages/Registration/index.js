@@ -2,7 +2,7 @@
 import React, { useRef, useState } from 'react';
 import { useHistory } from "react-router-dom";
 import {
-  Grid, Container, Typography, TextField, Button, Snackbar, FormControlLabel, Checkbox
+  Grid, Container, Typography, TextField, Button, Snackbar, FormControlLabel, Checkbox, CircularProgress
 } from '@material-ui/core';
 import { Alert, AlertTitle, Autocomplete } from '@material-ui/lab';
 import EmailIcon from '@material-ui/icons/Email';
@@ -28,12 +28,14 @@ function Registration() {
   const [openFormFeedback, setOpenFormFeedback] = useState(false);
   const [errorMessage, setErrorMessage] = useState({});
   const [submitEnabled, setSubmitEnabled] = useState(!recaptchaKey);
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleClose = () => setOpenFormFeedback(false);
 
   const handleSubmit = (event) => {
     event.preventDefault();
     setErrorMessage({});
+    setIsLoading(true);
 
     if(submitEnabled) {
       const name = formRef.current.name.value;
@@ -78,6 +80,7 @@ function Registration() {
           } catch (err) {
             console.log("Couldn't fire GA event", err);
           }
+          setIsLoading(false);
           history.push('/registration/success');
         })
       .catch(error => {
@@ -211,7 +214,7 @@ function Registration() {
                 </Grid>
                 <Grid item xs={12} md={2}>
                   <Button variant="contained" color="primary" type="submit" disableElevation disabled={!submitEnabled}>
-                    <EmailIcon fontSize="small" />
+                    {isLoading ? <CircularProgress size={20} color="inherit" /> : <EmailIcon fontSize="small" />}
                     &nbsp;Submit
                   </Button>
                 </Grid>
