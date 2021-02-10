@@ -15,6 +15,10 @@ const styles = makeStyles((theme) => ({
   tableCell: {
     padding: '6px 30px',
   },
+  infoIcon: {
+    verticalAlign: 'middle',
+    marginLeft: '8px',
+  },
 }));
 
 export default styles;
