@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import { Grid, Container, Typography } from '@material-ui/core';
 import Table from '@material-ui/core/Table';
@@ -13,6 +13,12 @@ import styles from './styles';
 import speakers from "./speakers.json";
 
 function Speakers() {
+  const [open, setOpen] = useState(100);
+
+  const handleTooltipClose = () => {
+    setOpen(100);
+  };
+
   // Change dynamically the page title:
   document.title = 'LIneA Workshop | Speakers';
   const classes = styles();
@@ -45,13 +51,20 @@ function Speakers() {
               <TableBody>
                 {speakers.map(speaker =>(
                   <TableRow key={speaker.id}>
-                    <StyledTableCell className={classes.tableCell}>
+                    <StyledTableCell
+                    className={classes.tableCell}
+                    onClick={() => {setOpen(speaker.id);}}
+                    onMouseOver={() => {setOpen(speaker.id);}}>
                       { speaker.title ?
-                      <LightTooltip title={<><Typography color="inherit">Title:</Typography>{speaker.title}</>} placement="right">
-                          <span>
-                            {speaker.speaker}
-                            <InfoIcon fontSize="small" className={classes.infoIcon} color="primary" />
-                          </span>
+                      <LightTooltip
+                      title={<><Typography color="inherit">Title:</Typography>{speaker.title}</>}
+                      placement="right"
+                      onClose={handleTooltipClose}
+                      open={speaker.id === open}>
+                        <span>
+                          {speaker.speaker}
+                          <InfoIcon fontSize="small" className={classes.infoIcon} color="primary" />
+                        </span>
                       </LightTooltip> :
                       <span className={classes.spanSpeaker}>{speaker.speaker}</span>
                       }
