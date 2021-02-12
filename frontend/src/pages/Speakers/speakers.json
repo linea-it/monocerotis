@@ -35,6 +35,10 @@
 	"speaker": "Ian Bird",
 	"affiliation": "CNRS-LAPP/ESCAPE"
 }, {
+	"id": 18,
+	"speaker": "J Ross Thomson",
+	"affiliation": "Google LLC"
+}, {
 	"id": 10,
 	"speaker": "JJ Kavelaars",
   "affiliation": "Canadian Astronomy Data Center (CADC)",
@@ -43,7 +47,7 @@
 	"id": 11,
 	"speaker": "Jordan Collier",
 	"affiliation": "Institute for Data Intensive Astronomy (IDIA)"
-}, {
+  }, {
 	"id": 12,
 	"speaker": "Knut Olsen",
   "affiliation": "NOIRLab",
@@ -70,10 +74,6 @@
   "affiliation": "SLAC National Accelerator Laboratory (SLAC)",
   "title": "Rubin US Data Facility"
 }, {
-	"id": 18,
-	"speaker": "Ross Thomson",
-	"affiliation": "Google LLC"
-}, {
 	"id": 19,
 	"speaker": "Sanjay Padhi",
 	"affiliation": "Amazon.com, Inc"
@@ -84,7 +84,8 @@
 }, {
 	"id": 21,
 	"speaker": "Vandana Desai",
-	"affiliation": "IPAC-CALTECH"
+	"affiliation": "IPAC-CALTECH",
+  "title": "Enabling next-generation science investigations with the NASA Astrophysics Archives"
 }, {
 	"id": 22,
 	"speaker": "Veronique Valette",
