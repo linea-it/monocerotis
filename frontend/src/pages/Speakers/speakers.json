@@ -15,67 +15,70 @@
 	"speaker": "Chenzhou Cui",
 	"affiliation": "National Astronomical Observatories of China (NAOC)"
 }, {
-  "id": 21,
+  "id": 5,
   "speaker": "Denny Lee",
   "affiliation": "Databricks"
 }, {
-	"id": 5,
+	"id": 6,
 	"speaker": "Dominique Boutigny",
 	"affiliation": "French National Institute of Nuclear and Particle Physics (IN2P3/CNRS)"
 }, {
-	"id": 6,
+	"id": 7,
 	"speaker": "Fabio Hernandez",
 	"affiliation": "French National Institute of Nuclear and Particle Physics (IN2P3/CNRS)"
 }, {
-	"id": 7,
+	"id": 8,
 	"speaker": "George Beckett",
 	"affiliation": "University of Edinburgh"
 }, {
-	"id": 8,
+	"id": 9,
 	"speaker": "Ian Bird",
 	"affiliation": "CNRS-LAPP/ESCAPE"
 }, {
-	"id": 9,
+	"id": 10,
 	"speaker": "JJ Kavelaars",
-	"affiliation": "Canadian Astronomy Data Center (CADC)"
+  "affiliation": "Canadian Astronomy Data Center (CADC)",
+  "title": "Canadian Astronomy Data Centre (CADC) and the Canadian Advanced Network for Astronomy Research (CANFAR): Building the science portal from inside the data centre."
 }, {
-	"id": 19,
+	"id": 11,
 	"speaker": "Jordan Collier",
 	"affiliation": "Institute for Data Intensive Astronomy (IDIA)"
 }, {
-	"id": 22,
+	"id": 12,
 	"speaker": "Knut Olsen",
-	"affiliation": "NOIRLab"
+  "affiliation": "NOIRLab",
+  "title": "Datasets and Data Services at NOIRLab’s Community Science and Data Center"
 }, {
-	"id": 10,
+	"id": 13,
 	"speaker": "Luiz da Costa",
 	"affiliation": "Laboratório Interinstitucional de e-Astronomia (LIneA)"
 }, {
-	"id": 22,
+	"id": 14,
 	"speaker": "Mario Juric",
 	"affiliation": "DIRAC Institute/University of Washington (DIRAC)"
 }, {
-	"id": 23,
+	"id": 15,
 	"speaker": "Mark Allen",
 	"affiliation": "Centre de Données Astronomiques de Strasbourg (CDS)"
 }, {
-	"id": 12,
+	"id": 16,
 	"speaker": "Nirav Merchant",
 	"affiliation": "CyVerse"
 }, {
-	"id": 13,
+	"id": 17,
 	"speaker": "Richard Dubois",
-	"affiliation": "SLAC National Accelerator Laboratory (SLAC)"
+  "affiliation": "SLAC National Accelerator Laboratory (SLAC)",
+  "title": "Rubin US Data Facility"
 }, {
-	"id": 14,
+	"id": 18,
 	"speaker": "Ross Thomson",
 	"affiliation": "Google LLC"
 }, {
-	"id": 15,
+	"id": 19,
 	"speaker": "Sanjay Padhi",
 	"affiliation": "Amazon.com, Inc"
 }, {
-	"id": 16,
+	"id": 20,
 	"speaker": "Simone Campana",
 	"affiliation": "Worldwide LHC Computing Grid (WLCG/CERN)"
 }, {
@@ -83,11 +86,11 @@
 	"speaker": "Vandana Desai",
 	"affiliation": "IPAC-CALTECH"
 }, {
-	"id": 17,
+	"id": 22,
 	"speaker": "Veronique Valette",
 	"affiliation": "Centre National d’Études Spatiales (CNES)"
 }, {
-	"id": 18,
+	"id": 23,
 	"speaker": "William O’Mullane ",
 	"affiliation": "Legacy Survey of Space and Time (LSST)/Vera C. Rubin Observatory"
 }]
