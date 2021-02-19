@@ -13,10 +13,12 @@ import styles from './styles';
 import speakers from "./speakers.json";
 
 function Speakers() {
-  const [open, setOpen] = useState(100);
+  const [open, setOpen] = useState(1000);
+  const [openWrapUp, setOpenWrapUp] = useState(1000);
 
   const handleTooltipClose = () => {
-    setOpen(100);
+    setOpen(1000);
+    setOpenWrapUp(1000);
   };
 
   // Change dynamically the page title:
@@ -30,9 +32,18 @@ function Speakers() {
     },
   }))(TableCell);
 
-  const LightTooltip = withStyles((theme) => ({
+  const TooltipInfo = withStyles((theme) => ({
     tooltip: {
       backgroundColor: theme.palette.primary.main,
+      // color: 'rgba(0, 0, 0, 0.87)',
+      boxShadow: 0,
+      fontSize: 14,
+    },
+  }))(Tooltip);
+
+  const TooltipWrapUp = withStyles((theme) => ({
+    tooltip: {
+      backgroundColor: theme.palette.error.main,
       // color: 'rgba(0, 0, 0, 0.87)',
       boxShadow: 0,
       fontSize: 14,
@@ -52,20 +63,48 @@ function Speakers() {
                 {speakers.map(speaker =>(
                   <TableRow key={speaker.id}>
                     <StyledTableCell
-                    className={classes.tableCell}
-                    onClick={() => {setOpen(speaker.id);}}
-                    onMouseOver={() => {setOpen(speaker.id);}}>
+                    className={classes.tableCell}>
                       { speaker.title ?
-                      <LightTooltip
-                      title={<><Typography color="inherit">Title:</Typography>{speaker.title}</>}
-                      placement="right"
-                      onClose={handleTooltipClose}
-                      open={speaker.id === open}>
+                      <>
                         <span>
                           {speaker.speaker}
-                          <InfoIcon fontSize="small" className={classes.infoIcon} color="primary" />
                         </span>
-                      </LightTooltip> :
+                        <TooltipInfo
+                        classes={{ tooltip: classes.customWidth }}
+                        title={<>
+                          <Typography gutterBottom color="inherit">Title:</Typography>
+                          <Typography gutterBottom color="inherit" variant="body2" >{speaker.title}</Typography>
+                          {speaker.abstract ?
+                          <>
+                            <Typography gutterBottom color="inherit">Abstract:</Typography>
+                            <Typography gutterBottom color="inherit" variant="body2" >{speaker.abstract}</Typography>
+                          </> :
+                          <></>}
+                        </>}
+                        placement="right"
+                        onClose={handleTooltipClose}
+                        open={speaker.id === open}>
+                          <span>
+                            <InfoIcon onClick={() => {setOpen(speaker.id);}} onMouseOver={() => {setOpen(speaker.id);}} fontSize="small" className={classes.infoIcon} color="primary" />
+                          </span>
+                        </TooltipInfo>
+
+                        {speaker.isOrganizer ?
+                          <>
+                          <TooltipWrapUp
+                          classes={{ tooltip: classes.customWidth }}
+                          title={<Typography gutterBottom color="inherit" variant="body2" >Wrap-up session</Typography>}
+                          placement="right"
+                          onClose={handleTooltipClose}
+                          open={speaker.id === openWrapUp}>
+                            <InfoIcon onClick={() => {setOpenWrapUp(speaker.id);}} onMouseOver={() => {setOpenWrapUp(speaker.id);}} fontSize="small" className={classes.infoIcon} color="error" />
+                        </TooltipWrapUp>
+                          </> :
+                        <></>}
+
+
+
+                      </> :
                       <span className={classes.spanSpeaker}>{speaker.speaker}</span>
                       }
                     </StyledTableCell>

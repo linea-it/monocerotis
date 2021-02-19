@@ -1,97 +1,162 @@
 [{
 	"id": 0,
 	"speaker": "Alex Szalay",
-	"affiliation": "The Institute of Data Intensive Engineering and  Science Johns Hopkins University (IDIES)"
+	"affiliation": "The Institute of Data Intensive Engineering and  Science Johns Hopkins University (IDIES)",
+	"title": "",
+	"abstract": "",
+	"isOrganizer": false
 }, {
 	"id": 1,
 	"speaker": "Andreas Wicenec",
-	"affiliation": "University of  Western Australia  (UWA)"
+	"affiliation": "International Centre for Radio Astronomy Research (ICRAR/UWA)",
+	"title": "",
+	"abstract": "",
+	"isOrganizer": true
 }, {
 	"id": 2,
 	"speaker": "Andy Conolly",
-	"affiliation": "DIRAC Institute and/e-Science Institute of the University of Washington (DIRAC)"
+	"affiliation": "DIRAC Institute and/e-Science Institute of the University of Washington (DIRAC)",
+	"title": "",
+	"abstract": "",
+	"isOrganizer": false
 }, {
 	"id": 4,
 	"speaker": "Chenzhou Cui",
-	"affiliation": "National Astronomical Observatories of China (NAOC)"
+	"affiliation": "National Astronomical Observatories of China (NAOC)",
+	"title": "",
+	"abstract": "",
+	"isOrganizer": false
 }, {
-  "id": 5,
-  "speaker": "Denny Lee",
-  "affiliation": "Databricks"
+	"id": 5,
+	"speaker": "Denny Lee",
+	"affiliation": "Databricks",
+	"title": "",
+	"abstract": "",
+	"isOrganizer": false
 }, {
 	"id": 6,
 	"speaker": "Dominique Boutigny",
-	"affiliation": "French National Institute of Nuclear and Particle Physics (IN2P3/CNRS)"
+	"affiliation": "French National Institute of Nuclear and Particle Physics (IN2P3/CNRS)",
+	"title": "Rubin and DESC computing organization at IN2P3",
+	"abstract": "CC-IN2P3 will be in charge of 50% of the Vera C. Rubin Observatory's Data Release Processing and will host a full copy of the data and catalogs. I will describe the computing infrastructure that is being deployed and the organization that we are setting up in France in order to process the Rubin data and to provide the services necessary to access them. I will also explain why it is critical to test and validate the infrastructure and services with real science use cases such as those provided by the Dark Energy Science Collaboration.",
+	"isOrganizer": false
 }, {
 	"id": 7,
 	"speaker": "Fabio Hernandez",
-	"affiliation": "French National Institute of Nuclear and Particle Physics (IN2P3/CNRS)"
+	"affiliation": "French National Institute of Nuclear and Particle Physics (IN2P3/CNRS)",
+	"title": "",
+	"abstract": "",
+	"isOrganizer": true
 }, {
 	"id": 8,
 	"speaker": "George Beckett",
-	"affiliation": "University of Edinburgh"
+	"affiliation": "University of Edinburgh",
+	"title": "LSST:UK plans for an Independent Data Access Centre, development roadmap and science ambitions”",
+	"abstract": "",
+	"isOrganizer": true
 }, {
 	"id": 9,
 	"speaker": "Ian Bird",
-	"affiliation": "CNRS-LAPP/ESCAPE"
+	"affiliation": "CNRS-LAPP/ESCAPE",
+	"title": "",
+	"abstract": "",
+	"isOrganizer": false
 }, {
 	"id": 18,
 	"speaker": "J Ross Thomson",
-	"affiliation": "Google LLC"
+	"affiliation": "Google LLC",
+	"title": "Multi-Cloud and Hybrid Strategies for Scientific Workloads",
+	"abstract": "Cloud computing is a fast moving environment offering great flexibility for modern scientific missions to build and optimize applications on Cloud platforms. The velocity of change in cloud computing presents a risk to science missions planning for a decades long project lifetime. In this presentation, we will discuss strategies to minimize risk and increase efficiency in a Multi-Cloud / Hybrid computing environment.",
+	"isOrganizer": false
 }, {
 	"id": 10,
 	"speaker": "JJ Kavelaars",
-  "affiliation": "Canadian Astronomy Data Center (CADC)",
-  "title": "Canadian Astronomy Data Centre (CADC) and the Canadian Advanced Network for Astronomy Research (CANFAR): Building the science portal from inside the data centre."
+	"affiliation": "Canadian Astronomy Data Center (CADC)",
+	"title": "Canadian Astronomy Data Centre (CADC) and the Canadian Advanced Network for Astronomy Research (CANFAR): Building the science portal from inside the data centre.",
+	"abstract": "I will describe the evolution of the Canadian Astronomy Data Centre (CADC) from an archive delivering data towards an integrated  science portal development and support group. The CADC is committed to expanding the capacity of the Canadian Advanced Network for Astronomy Research (CANFAR).  I will describe the current state of evolution along this path, the processes we have followed so far, the technologies we are currently developing to enable the archive/portal interaction and our plans for future development.   My goal is to provide examples of the use-case driven evolution of the CADC/CANFAR services and to raise some ",
+	"isOrganizer": false
 }, {
 	"id": 11,
 	"speaker": "Jordan Collier",
-	"affiliation": "Institute for Data Intensive Astronomy (IDIA)"
-  }, {
+	"affiliation": "Institute for Data Intensive Astronomy (IDIA)",
+	"title": "",
+	"abstract": "",
+	"isOrganizer": false
+}, {
 	"id": 12,
 	"speaker": "Knut Olsen",
-  "affiliation": "NOIRLab",
-  "title": "Datasets and Data Services at NOIRLab’s Community Science and Data Center"
+	"affiliation": "NOIRLab",
+	"title": "Datasets and Data Services at NOIRLab’s Community Science and Data Center",
+	"abstract": "",
+	"isOrganizer": false
 }, {
 	"id": 13,
 	"speaker": "Luiz da Costa",
-	"affiliation": "Laboratório Interinstitucional de e-Astronomia (LIneA)"
+	"affiliation": "Laboratório Interinstitucional de e-Astronomia (LIneA)",
+	"title": "",
+	"abstract": "",
+	"isOrganizer": false
 }, {
 	"id": 14,
 	"speaker": "Mario Juric",
-	"affiliation": "DIRAC Institute/University of Washington (DIRAC)"
+	"affiliation": "DIRAC Institute/University of Washington (DIRAC)",
+	"title": "",
+	"abstract": "",
+	"isOrganizer": true
 }, {
 	"id": 15,
 	"speaker": "Mark Allen",
-	"affiliation": "Centre de Données Astronomiques de Strasbourg (CDS)"
+	"affiliation": "Centre de Données Astronomiques de Strasbourg (CDS)",
+	"title": "CDS services for reference astronomy data - supporting Open Science.",
+	"abstract": "The Strasbourg astronomical Data Centre (CDS) provides services for reference data from published journal articles and from large astronomical surveys. The SIMBAD, VizieR, Aladin and the CDS X-Match services are being continuously updated and developed to meet the challenges of the rapidly increasing volumes of data. The services are designed to support Open Science and we will show how this is aimed at facilitating the scientific work of the research community but also the use of research data by educators and planetaria. We highlight the role of IVOA standards for interoperability, and the new approaches made possible by practical tools for manipulating the space- and time-coverage of data sets. We also mention the promising developments for integrating VO compliant services into wider systems such as the European Open Science Cloud.",
+	"isOrganizer": false
 }, {
 	"id": 16,
 	"speaker": "Nirav Merchant",
-	"affiliation": "CyVerse"
+	"affiliation": "CyVerse",
+	"title": "Infrastructure as code: Seeing clearly through Cloudy skies",
+	"abstract": "",
+	"isOrganizer": false
 }, {
 	"id": 17,
 	"speaker": "Richard Dubois",
-  "affiliation": "SLAC National Accelerator Laboratory (SLAC)",
-  "title": "Rubin US Data Facility"
+	"affiliation": "SLAC National Accelerator Laboratory (SLAC)",
+	"title": "Rubin US Data Facility",
+	"abstract": "",
+	"isOrganizer": false
 }, {
 	"id": 19,
 	"speaker": "Sanjay Padhi",
-	"affiliation": "Amazon.com, Inc"
+	"affiliation": "Amazon.com, Inc",
+	"title": "",
+	"abstract": "",
+	"isOrganizer": false
 }, {
 	"id": 20,
 	"speaker": "Simone Campana",
-	"affiliation": "Worldwide LHC Computing Grid (WLCG/CERN)"
+	"affiliation": "Worldwide LHC Computing Grid (WLCG/CERN)",
+	"title": "",
+	"abstract": "",
+	"isOrganizer": false
 }, {
 	"id": 21,
 	"speaker": "Vandana Desai",
 	"affiliation": "IPAC-CALTECH",
-  "title": "Enabling next-generation science investigations with the NASA Astrophysics Archives"
+	"title": "Enabling next-generation science investigations with the NASA Astrophysics Archives",
+	"abstract": "",
+	"isOrganizer": false
 }, {
 	"id": 22,
 	"speaker": "Veronique Valette",
-	"affiliation": "Centre National d’Études Spatiales (CNES)"
+	"affiliation": "Centre National d’Études Spatiales (CNES)",
+	"title": "CNES computing and data center serving scientific projects: existing and roadmap",
+	"abstract": "CNES, French Space Agency is in charge of developing and operating data processing centers for scientific projects,: earth observation, astrophysics, space exploration. The paper will present our existing  data processing center  (HPC, HPSS, Jupyterhub, VRE),  were we want to go in the near future (OpenStack, Datalake, Datalabs) and all the tools that are available for scientists and developers (software factory).  It will also explain how the science projects use this data center now and what are the plans for the future.",
+	"isOrganizer": false
 }, {
 	"id": 23,
 	"speaker": "William O’Mullane ",
-	"affiliation": "Legacy Survey of Space and Time (LSST)/Vera C. Rubin Observatory"
+	"affiliation": "Legacy Survey of Space and Time (LSST)/Vera C. Rubin Observatory",
+	"title": "",
+	"abstract": "",
+	"isOrganizer": true
 }]
