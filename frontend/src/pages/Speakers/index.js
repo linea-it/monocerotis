@@ -88,8 +88,10 @@ function Speakers() {
                             <InfoIcon onClick={() => {setOpen(speaker.id);}} onMouseOver={() => {setOpen(speaker.id);}} fontSize="small" className={classes.infoIcon} color="primary" />
                           </span>
                         </TooltipInfo>
-
-                        {speaker.isOrganizer ?
+                      </> :
+                      <span className={classes.spanSpeaker}>{speaker.speaker}</span>
+                      }
+                      {speaker.isOrganizer ?
                           <>
                           <TooltipWrapUp
                           classes={{ tooltip: classes.customWidth }}
@@ -98,15 +100,9 @@ function Speakers() {
                           onClose={handleTooltipClose}
                           open={speaker.id === openWrapUp}>
                             <InfoIcon onClick={() => {setOpenWrapUp(speaker.id);}} onMouseOver={() => {setOpenWrapUp(speaker.id);}} fontSize="small" className={classes.infoIcon} color="error" />
-                        </TooltipWrapUp>
+                      </TooltipWrapUp>
                           </> :
-                        <></>}
-
-
-
-                      </> :
-                      <span className={classes.spanSpeaker}>{speaker.speaker}</span>
-                      }
+                      <></>}
                     </StyledTableCell>
                     <StyledTableCell align="right" className={classes.tableCell}>{speaker.affiliation}</StyledTableCell>
                   </TableRow >
