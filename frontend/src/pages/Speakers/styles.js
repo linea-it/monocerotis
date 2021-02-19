@@ -19,6 +19,9 @@ const styles = makeStyles((theme) => ({
     verticalAlign: 'middle',
     marginLeft: '8px',
   },
+  customWidth: {
+    maxWidth: 800,
+  },
 }));
 
 export default styles;
