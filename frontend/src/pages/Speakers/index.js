@@ -91,11 +91,11 @@ function Speakers() {
                       </> :
                       <span className={classes.spanSpeaker}>{speaker.speaker}</span>
                       }
-                      {speaker.isOrganizer ?
+                      {speaker.isOrganizer || speaker.isOwner ?
                           <>
                           <TooltipWrapUp
                           classes={{ tooltip: classes.customWidth }}
-                          title={<Typography gutterBottom color="inherit" variant="body2" >Wrap-up session</Typography>}
+                          title={<Typography gutterBottom color="inherit" variant="body2" > {speaker.isOrganizer ? 'Wrap-up session' : 'Opening Remarks'}</Typography>}
                           placement="right"
                           onClose={handleTooltipClose}
                           open={speaker.id === openWrapUp}>
