@@ -58,8 +58,8 @@
 	"id": 9,
 	"speaker": "Ian Bird",
 	"affiliation": "CNRS-LAPP/ESCAPE",
-	"title": "",
-	"abstract": "",
+	"title": "The ESCAPE project - objectives and plans",
+	"abstract": "The ESCAPE project brings together 11 ESFRI and other Research Infrastructures in Astronomy, Astro-Particle, Particle and Nuclear Physics fo the first time.  It is one of 5 such thematic science cluster projects that are integrating communities, infrastructure, and research tools as contributions to the European Open Science Cloud (EOSC).  ESCAPE is building a next-generation data management infrastructure (“data-lake”) to provide FAIR data management at exabyte scales, capable of delivering data to distributed high performance analysis and compute facilities.  That is complemented by work on a software infrastructure, enabling the sharing of the research tools and products, an integration of the International Virtual Observatory (IVOA) framework into the proto-EOSC and high level science platforms.  ESCAPE is currently planning two science challenges; one on Dark Matter, and the second on Gravitational Waves and the Extreme Universe, which together will demonstrate the capabilities of open data and cross-domain science.  This talk will give an overview of the ESCAPE work and output, the two science projects, and will look at the prospects for how this all feeds into the first implementation of the EOSC.",
 	"isOrganizer": false
 }, {
 	"id": 18,
@@ -95,7 +95,8 @@
 	"affiliation": "Laboratório Interinstitucional de e-Astronomia (LIneA)",
 	"title": "",
 	"abstract": "",
-	"isOrganizer": false
+	"isOrganizer": false,
+  "isOwner": true
 }, {
 	"id": 14,
 	"speaker": "Mario Juric",
@@ -122,7 +123,7 @@
 	"speaker": "Richard Dubois",
 	"affiliation": "SLAC National Accelerator Laboratory (SLAC)",
 	"title": "Rubin US Data Facility",
-	"abstract": "",
+	"abstract": "Rubin’s 10-year Survey is projected to begin in late 2023: about 20 TB per Chilean night will be delivered to the US Data Facility (US DF). The US DF will perform three major functions: prompt processing to generate transient alerts within 1 minute after exposures were taken; annual reprocessing of all images taken to date; and providing a science platform for analysis to an anticipated 5000-7500 users, dedicating about 10% of the total resource to them. The annual reprocessings will be executed in concert with facilities in France and the UK, and are projected to occupy about 500 PB of nearline storage by year 10.",
 	"isOrganizer": false
 }, {
 	"id": 19,
