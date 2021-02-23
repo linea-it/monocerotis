@@ -30,8 +30,8 @@
 	"id": 5,
 	"speaker": "Denny Lee",
 	"affiliation": "Databricks",
-	"title": "",
-	"abstract": "",
+	"title": "Optimizing LSST Analysis with Apache Spark™",
+	"abstract": "With the vast amount of data captured in the night sky, how can we effectively analyze all of this data while also collaborating between different institutions in different geographies, whether on-premises or in the cloud?  It is essential to use a distributed data processing framework designed for collaboration.  Apache Spark™ is the defacto big data standard as it can scale to large datasets across thousands of nodes and cores.  It is a compute engine that works well on-premises and in the cloud.  ",
 	"isOrganizer": false
 }, {
 	"id": 6,
@@ -79,8 +79,8 @@
 	"id": 11,
 	"speaker": "Jordan Collier",
 	"affiliation": "Institute for Data Intensive Astronomy (IDIA)",
-	"title": "",
-	"abstract": "",
+	"title": "The MeerKAT toolbelt: a waist of data",
+	"abstract": "A number of tools and systems have been developed or adopted to deal with the PB scale of MeerKAT data at the Inter-University Institute for Data Intensive Astronomy (IDIA), Cape Town. I will present a number of these tools and underlying systems, including those for storage, processing, visualisation, and data transfer. I will present a worked example of processing MeerKAT data via the IDIA pipeline, a fully automated end-to-end pipeline that is efficient, flexible, scalable, and user-friendly, and designed to operate across the ilifu cluster using SLURM and MPI. Our unique setup uses an IDIA cloud-based platform running on hardware provided by the ilifu national facility, taking advantage of cluster-level parallelism, resource management and software containers. Altogether this represents a pathfinder science regional data centre, and a good framework for solving many of the broader challenges of the SKA.",
 	"isOrganizer": false
 }, {
 	"id": 12,
