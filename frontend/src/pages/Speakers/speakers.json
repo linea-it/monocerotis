@@ -2,8 +2,8 @@
 	"id": 0,
 	"speaker": "Alex Szalay",
 	"affiliation": "The Institute of Data Intensive Engineering and  Science Johns Hopkins University (IDIES)",
-	"title": "",
-	"abstract": "",
+	"title": "The Future of Long Term Data",
+	"abstract": "The talk will present a discussion about how science is changing, results in data sets with an ever longer effective lifetime. Many of the current sky-surveys (and other mid-scale projects) generate data sets at a cost of tens to hundreds of millions of dollars, yet there is no coherent strategy to ensure the survival of these data sets.  WE will discuss the different factors related to long term data preservation, the technological changes, and the sociological changes in how data is used, including AI applications.",
 	"isOrganizer": false
 }, {
 	"id": 1,
@@ -136,8 +136,8 @@
 	"id": 20,
 	"speaker": "Simone Campana",
 	"affiliation": "Worldwide LHC Computing Grid (WLCG/CERN)",
-	"title": "",
-	"abstract": "",
+	"title": "WLCG: a distributed infrastructure for large scale scientific computing",
+	"abstract": "The Worldwide LHC Computing Grid collaboration provides the computing infrastructure for the CERN experiments at the Large Hadron Collider. Such an infrastructure is deployed across more than 150 data centres in 42 countries worldwide and provides more than an exabyte of storage and one million CPU cores to the LHC experiments. The CERN LHC program is entering an unprecedented challenging phase, increasing by more than 10 times the computing needs. This contribution will provide an overview of WLCG and present how the infrastructure is evolving in terms of policies and services to face such a challenge, leveraging and adapting to the rapidly changing Information Technology market",
 	"isOrganizer": false
 }, {
 	"id": 21,
