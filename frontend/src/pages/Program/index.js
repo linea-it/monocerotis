@@ -9,6 +9,7 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Toolbar from '@material-ui/core/Toolbar';
 import Paper from '@material-ui/core/Paper';
+import Tooltip from '@material-ui/core/Tooltip';
 import PropTypes from 'prop-types';
 
 import AppBar from '@material-ui/core/AppBar';
@@ -36,9 +37,22 @@ function TabPanel(props) {
       [theme.breakpoints.up('lg')]: {
         fontSize: '1.2rem',
         padding: '10px 20px',
+        maxWidth: '620px',
+        textOverflow: 'ellipsis',
+        whiteSpace: 'nowrap',
+        overflow: 'hidden',
       }
     },
   }))(TableCell);
+
+  const TooltipInfo = withStyles((theme) => ({
+    tooltip: {
+      backgroundColor: theme.palette.primary.main,
+      boxShadow: 0,
+      fontSize: 14,
+    },
+  }))(Tooltip);
+
 
   useEffect(() => {
     setScheduleSelected(schedule.events[value]);
@@ -85,9 +99,24 @@ function TabPanel(props) {
                       <StyledTableCell component="th" scope="row">
                         {row.time}
                       </StyledTableCell>
-                      <StyledTableCell>{row.title}</StyledTableCell>
+                      <StyledTableCell>
+                        <TooltipInfo
+                          classes={{ tooltip: classes.customWidth }}
+                          title={<>
+                            <Typography gutterBottom color="inherit">Title:</Typography>
+                            <Typography gutterBottom color="inherit" variant="body2" >{row.title}</Typography>
+                            {row.abstract ?
+                            <>
+                              <Typography gutterBottom color="inherit">Abstract:</Typography>
+                              <Typography gutterBottom color="inherit" variant="body2" >{row.abstract}</Typography>
+                            </> :
+                            <></>}
+                          </>}>
+                          <span>{row.title}</span>
+                        </TooltipInfo>
+                      </StyledTableCell>
                       <StyledTableCell>{row.speaker}</StyledTableCell>
-                      <StyledTableCell>{row.affiliation}</StyledTableCell>
+                      <StyledTableCell width={500}>{row.affiliation}</StyledTableCell>
                     </StyledTableRow >
                   )
               } )}
@@ -123,8 +152,8 @@ function Program() {
   return (
     <Container>
       <Grid item xs={12}>
-        <Typography variant="h3" align="center" color="primary">Program</Typography>
-        <Typography variant="body1" align="center" className={classes.tbd}>(To be defined)</Typography><br />
+        <Typography variant="h3" align="center" color="primary">Program</Typography><br /><br />
+        {/* <Typography variant="body1" align="center" className={classes.tbd}>(To be defined)</Typography><br /> */}
         <div className={classes.root}>
           <AppBar position="static">
             <Tabs value={value} onChange={handleChange} indicatorColor="secondary">

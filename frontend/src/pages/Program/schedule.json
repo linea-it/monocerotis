@@ -1,186 +1,204 @@
 {
-  "events": [{
-      "id": 1,
-      "day": "01",
-      "date": "13-04-2021",
-      "rows": [{
-        "id": 0,
-        "speaker": "Chair: "
-      },{
-        "id": 1,
-        "time": "11:15 - 11:30",
-        "title": "",
-        "speaker": "",
-        "affiliation": ""
-      }, {
-        "id": 2,
-        "time": "11:30 - 12:00",
-        "title": "",
-        "speaker": "",
-        "affiliation": ""
-      }, {
-        "id": 3,
-        "time": "12:00 - 12:30",
-        "title": "",
-        "speaker": "",
-        "affiliation": ""
-      }, {
-        "id": 4,
-        "time": "12:30 - 12:45",
-        "title": "",
-        "speaker": "",
-        "affiliation": ""
-      }, {
-        "id": 5,
-        "time": "12:45 - 13:00",
-        "title": "",
-        "speaker": "",
-        "affiliation": ""
-      }, {
-        "id": 6,
-        "speaker": "break"
-      },{
-        "id": 7,
-        "speaker": "Chair: "
-      }, {
-        "id": 8,
-        "time": "13:30 - 14:00",
-        "title": "",
-        "speaker": "",
-        "affiliation": ""
-      }, {
-        "id": 9,
-        "time": "14:30 - 15:00",
-        "title": "",
-        "speaker": "",
-        "affiliation": ""
-      }, {
-        "id": 10,
-        "time": "15:00 - 15:30",
-        "title": "",
-        "speaker": "",
-        "affiliation": ""
-      }]
-    },
-    {
-      "id": 12,
-      "day": "02",
-      "date": "14-04-2021",
-      "rows": [{
-        "id": 13,
-        "speaker": "Chair: "
-      },{
-        "id": 14,
-        "time": "11:15 - 11:30",
-        "title": "",
-        "speaker": "",
-        "affiliation": ""
-      }, {
-        "id": 15,
-        "time": "11:30 - 12:00",
-        "title": "",
-        "speaker": "",
-        "affiliation": ""
-      }, {
-        "id": 16,
-        "time": "12:00 - 12:30",
-        "title": "",
-        "speaker": "",
-        "affiliation": ""
-      }, {
-        "id": 17,
-        "time": "12:30 - 13:00",
-        "title": "",
-        "speaker": "",
-        "affiliation": ""
-      }, {
-        "id": 18,
-        "speaker": "break"
-      },{
-        "id": 19,
-        "speaker": "Chair: "
-      }, {
-        "id": 20,
-        "time": "13:30 - 14:00",
-        "title": "",
-        "speaker": "",
-        "affiliation": ""
-      }, {
-        "id": 21,
-        "time": "14:00 - 14:30",
-        "title": "",
-        "speaker": "",
-        "affiliation": ""
-      }, {
-        "id": 22,
-        "time": "14:30 - 15:00",
-        "title": "",
-        "speaker": "",
-        "affiliation": ""
-      }]
-    },
-    {
-      "id": 23,
-      "day": "03",
-      "date": "15-04-2021",
-      "rows": [{
-        "id": 24,
-        "speaker": "Chair: "
-      },{
-        "id": 25,
-        "time": "11:15 - 11:30",
-        "title": "",
-        "speaker": "",
-        "affiliation": ""
-      }, {
-        "id": 26,
-        "time": "11:30 - 12:00",
-        "title": "",
-        "speaker": "",
-        "affiliation": ""
-      }, {
-        "id": 27,
-        "time": "12:00 - 12:30",
-        "title": "",
-        "speaker": "",
-        "affiliation": ""
-      }, {
-        "id": 28,
-        "time": "12:30 - 12:45",
-        "title": "",
-        "speaker": "",
-        "affiliation": ""
-      }, {
-        "id": 29,
-        "time": "12:45 - 13:30",
-        "title": "",
-        "speaker": "",
-        "affiliation": ""
-      }, {
-        "id": 30,
-        "speaker": "break"
-      },{
-        "id": 31,
-        "speaker": "Chair: "
-      }, {
-        "id": 32,
-        "time": "13:30 - 14:00",
-        "title": "",
-        "speaker": "",
-        "affiliation": ""
-      }, {
-        "id": 33,
-        "time": "14:30 - 15:00",
-        "title": "",
-        "speaker": "",
-        "affiliation": ""
-      }, {
-        "id": 34,
-        "time": "15:00 - 15:30",
-        "title": "",
-        "speaker": "",
-        "affiliation": ""
-      }]
-    }
-  ]
+	"events": [{
+			"id": 1,
+			"day": "01",
+			"date": "13-04-2021",
+			"rows": [{
+				"id": 0,
+				"speaker": "Chair: George Beckett"
+			}, {
+				"id": 1,
+				"localTime": "04:15 PM",
+				"time": "11:15 - 11:30",
+				"title": "Opening Remarks",
+				"speaker": "Luiz da Costa",
+				"affiliation": "LIneA"
+			}, {
+				"id": 2,
+				"localTime": "04:30 PM",
+				"time": "11:30 - 12:00",
+        "title": "WLCG: a distributed infrastructure for large scale scientific computing",
+				"speaker": "Simone Campana",
+				"affiliation": "WLCG / CERN",
+        "abstract": "The Worldwide LHC Computing Grid collaboration provides the computing infrastructure for the CERN experiments at the Large Hadron Collider. Such an infrastructure is deployed across more than 150 data centres in 42 countries worldwide and provides more than an exabyte of storage and one million CPU cores to the LHC experiments. The CERN LHC program is entering an unprecedented challenging phase, increasing by more than 10 times the computing needs. This contribution will provide an overview of WLCG and present how the infrastructure is evolving in terms of policies and services to face such a challenge, leveraging and adapting to the rapidly changing Information Technology market"
+			}, {
+				"id": 3,
+				"localTime": "05:00 PM",
+				"time": "12:00 - 12:30",
+        "title": "The ESCAPE project - objectives and plans",
+				"speaker": "Ian Bird",
+				"affiliation": "ESCAPE",
+        "abstract": "The ESCAPE project brings together 11 ESFRI and other Research Infrastructures in Astronomy, Astro-Particle, Particle and Nuclear Physics fo the first time.  It is one of 5 such thematic science cluster projects that are integrating communities, infrastructure, and research tools as contributions to the European Open Science Cloud (EOSC).  ESCAPE is building a next-generation data management infrastructure (“data-lake”) to provide FAIR data management at exabyte scales, capable of delivering data to distributed high performance analysis and compute facilities.  That is complemented by work on a software infrastructure, enabling the sharing of the research tools and products, an integration of the International Virtual Observatory (IVOA) framework into the proto-EOSC and high level science platforms.  ESCAPE is currently planning two science challenges; one on Dark Matter, and the second on Gravitational Waves and the Extreme Universe, which together will demonstrate the capabilities of open data and cross-domain science.  This talk will give an overview of the ESCAPE work and output, the two science projects, and will look at the prospects for how this all feeds into the first implementation of the EOSC."
+        }, {
+				"id": 4,
+				"localTime": "",
+				"time": "12:30 - 12:45",
+				"title": "Infrastructure as code: Seeing clearly through Cloudy skies",
+				"speaker": "Nirav Merchant",
+				"affiliation": "Cyverse",
+				"abstract": ""
+			}, {
+				"id": 5,
+				"localTime": "",
+				"time": "12:45 - 13:00",
+        "title": "Multi-Cloud and Hybrid Strategies for Scientific Workloads",
+				"speaker": "J. Ross Thomson",
+				"affiliation": "Google LLC",
+        "abstract": "Cloud computing is a fast moving environment offering great flexibility for modern scientific missions to build and optimize applications on Cloud platforms. The velocity of change in cloud computing presents a risk to science missions planning for a decades long project lifetime. In this presentation, we will discuss strategies to minimize risk and increase efficiency in a Multi-Cloud / Hybrid computing environment."
+        }, {
+				"id": 6,
+				"speaker": "break"
+			}, {
+				"id": 7,
+				"speaker": "Chair: Fabio Hernandez"
+			}, {
+				"id": 8,
+				"localTime": "",
+				"time": "13:30 - 14:00",
+        "title": "The MeerKAT toolbelt: a waist of data",
+				"speaker": "Jordan Collier",
+				"affiliation": "IDIA",
+        "abstract": "A number of tools and systems have been developed or adopted to deal with the PB scale of MeerKAT data at the Inter-University Institute for Data Intensive Astronomy (IDIA), Cape Town. I will present a number of these tools and underlying systems, including those for storage, processing, visualisation, and data transfer. I will present a worked example of processing MeerKAT data via the IDIA pipeline, a fully automated end-to-end pipeline that is efficient, flexible, scalable, and user-friendly, and designed to operate across the ilifu cluster using SLURM and MPI. Our unique setup uses an IDIA cloud-based platform running on hardware provided by the ilifu national facility, taking advantage of cluster-level parallelism, resource management and software containers. Altogether this represents a pathfinder science regional data centre, and a good framework for solving many of the broader challenges of the SKA."
+        }, {
+				"id": 9,
+				"localTime": "",
+				"time": "14:30 - 15:00",
+				"title": "The Future of Long Term Data",
+				"speaker": "Alex Szalay",
+				"affiliation": "IDIES",
+        "abstract": "The talk will present a discussion about how science is changing, results in data sets with an ever longer effective lifetime. Many of the current sky-surveys (and other mid-scale projects) generate data sets at a cost of tens to hundreds of millions of dollars, yet there is no coherent strategy to ensure the survival of these data sets.  WE will discuss the different factors related to long term data preservation, the technological changes, and the sociological changes in how data is used, including AI applications."
+        }, {
+				"id": 10,
+				"localTime": "",
+				"time": "15:00 - 15:30",
+        "title": "Building data science across research communities",
+				"speaker": "Andrew Connolly",
+				"affiliation": "DIRAC",
+        "abstract": "Over the last decade data science has emerged as a key component of research within many domains. Taking the eScience and DiRAC Institutes at the University of Washington as exemplars, I will discuss the opportunities and challenges building data science communities in the context of the data-intensive astrophysics expected from a new generation of facilities such as the Rubin Observatory and Roman Space Telescope. Programs to develop tools and techniques that can scale to the volume and complexity of the LSST,  educational frameworks that can train researchers in data science methodologies and applications, and mechanisms by which we can share our ideas and expertise (both within and beyond astrophysics) will all need to be part of any data science institute. I will end by describing some of the needs that are emerging across a range of disciplines as we start to scale our science and where astronomy might look to draw on the experience of the broader research community."
+        }]
+		},
+		{
+			"id": 12,
+			"day": "02",
+			"date": "14-04-2021",
+			"rows": [{
+				"id": 13,
+				"speaker": "Chair: William O’Mullane"
+			}, {
+				"id": 14,
+				"localTime": "",
+				"time": "11:15 - 11:30",
+        "title": "Optimizing LSST Analysis with Apache Spark™",
+				"speaker": "Denny Lee ",
+				"affiliation": "Databricks",
+        "abstract": "With the vast amount of data captured in the night sky, how can we effectively analyze all of this data while also collaborating between different institutions in different geographies, whether on-premises or in the cloud?  It is essential to use a distributed data processing framework designed for collaboration.  Apache Spark™ is the defacto big data standard as it can scale to large datasets across thousands of nodes and cores.  It is a compute engine that works well on-premises and in the cloud.  "
+        }, {
+				"id": 15,
+				"localTime": "",
+				"time": "11:30 - 12:00",
+        "title": "Towards an astronomical science platform: Experiences and lessons learned from Chinese Virtual Observatory",
+        "speaker": "Chenzhou Cui",
+				"affiliation": "NAOC",
+        "abstract": "In the era of big data astronomy, next generation telescopes and large sky surveys produce data sets at the TB or even PB level. Due to their large data volumes, these astronomical data sets are extremely difficult to transfer and analyze using personal computers or small clusters. In order to offer better access to data, data centers now generally provide online science platforms that enable analysis close to the data. The Chinese Virtual Observatory (China-VO) is one of the member projects in the International Virtual Observatory Alliance and it is dedicated to providing a research and education environment where globally distributed astronomy archives are simple to find, access, and interoperate. In this study, we summarize highlights of the work conducted at the China-VO, as well the experiences and lessons learned during the full life-cycle management of astronomical data. Finally, We discuss the challenges and future trends for astronomical science platforms."
+        }, {
+				"id": 16,
+				"localTime": "",
+				"time": "12:00 - 12:30",
+        "title": "Canadian Astronomy Data Centre (CADC) and the Canadian Advanced Network for Astronomy Research (CANFAR): Building the science portal from inside the data centre.",
+				"speaker": "JJ Kavelaars",
+				"affiliation": "CDAC",
+        "abstract": "I will describe the evolution of the Canadian Astronomy Data Centre (CADC) from an archive delivering data towards an integrated  science portal development and support group. The CADC is committed to expanding the capacity of the Canadian Advanced Network for Astronomy Research (CANFAR).  I will describe the current state of evolution along this path, the processes we have followed so far, the technologies we are currently developing to enable the archive/portal interaction and our plans for future development.   My goal is to provide examples of the use-case driven evolution of the CADC/CANFAR services and to raise some "
+        }, {
+				"id": 17,
+				"localTime": "",
+				"time": "12:30 - 13:00",
+        "title": "CNES computing and data center serving scientific projects: existing and roadmap",
+				"speaker": "Veronique Valette",
+				"affiliation": "CNES",
+        "abstract": "CNES, French Space Agency is in charge of developing and operating data processing centers for scientific projects,: earth observation, astrophysics, space exploration. The paper will present our existing  data processing center  (HPC, HPSS, Jupyterhub, VRE),  were we want to go in the near future (OpenStack, Datalake, Datalabs) and all the tools that are available for scientists and developers (software factory).  It will also explain how the science projects use this data center now and what are the plans for the future."
+        }, {
+				"id": 18,
+				"speaker": "break"
+			}, {
+				"id": 19,
+				"speaker": "Chari: Mario Juric"
+			}, {
+				"id": 20,
+				"localTime": "",
+				"time": "13:30 - 14:00",
+        "title": "CDS services for reference astronomy data - supporting Open Science.",
+				"speaker": "Mark Allen",
+				"affiliation": "CDS",
+        "abstract": "The Strasbourg astronomical Data Centre (CDS) provides services for reference data from published journal articles and from large astronomical surveys. The SIMBAD, VizieR, Aladin and the CDS X-Match services are being continuously updated and developed to meet the challenges of the rapidly increasing volumes of data. The services are designed to support Open Science and we will show how this is aimed at facilitating the scientific work of the research community but also the use of research data by educators and planetaria. We highlight the role of IVOA standards for interoperability, and the new approaches made possible by practical tools for manipulating the space- and time-coverage of data sets. We also mention the promising developments for integrating VO compliant services into wider systems such as the European Open Science Cloud."
+        }, {
+				"id": 21,
+				"localTime": "",
+				"time": "14:00 - 14:30",
+        "title": "Enabling next-generation science investigations with the NASA Astrophysics Archives",
+				"speaker": "Vandana Desai",
+				"affiliation": "IPAC",
+				"abstract": ""
+			}, {
+				"id": 22,
+				"localTime": "",
+				"time": "14:30 - 15:00",
+        "title": "Datasets and Data Services at NOIRLab’s Community Science and Data Center",
+				"speaker": "Knut Olsen",
+				"affiliation": "NOIRLab",
+				"abstract": ""
+			}]
+		},
+		{
+			"id": 23,
+			"day": "03",
+			"date": "15-04-2021",
+			"rows": [{
+				"id": 24,
+				"speaker": "Chair: Andreas Wicenec"
+			}, {
+				"id": 25,
+				"localTime": "",
+				"time": "11:15 - 11:30",
+				"title": "To be defined",
+				"speaker": "Sanjay Padhi",
+				"affiliation": "AWS",
+				"abstract": ""
+			}, {
+				"id": 26,
+				"localTime": "",
+				"time": "11:30 - 12:00",
+        "title": "Rubin and DESC computing organization at IN2P3",
+				"speaker": "Dominique Boutigny",
+				"affiliation": "IN2P3",
+        "abstract": "CC-IN2P3 will be in charge of 50% of the Vera C. Rubin Observatory's Data Release Processing and will host a full copy of the data and catalogs. I will describe the computing infrastructure that is being deployed and the organization that we are setting up in France in order to process the Rubin data and to provide the services necessary to access them. I will also explain why it is critical to test and validate the infrastructure and services with real science use cases such as those provided by the Dark Energy Science Collaboration."
+        }, {
+				"id": 27,
+				"localTime": "",
+				"time": "12:00 - 12:30",
+        "title": "LSST:UK plans for an Independent Data Access Centre, development roadmap and science ambitions”",
+				"speaker": "George Beckett",
+				"affiliation": "Edingburg",
+				"abstract": ""
+			}, {
+				"id": 28,
+				"localTime": "",
+				"time": "12:30 - 12:45",
+        "title": "Rubin US Data Facility",
+				"speaker": "Richard Dubois",
+				"affiliation": "SLAC",
+        "abstract": "Rubin’s 10-year Survey is projected to begin in late 2023: about 20 TB per Chilean night will be delivered to the US Data Facility (US DF). The US DF will perform three major functions: prompt processing to generate transient alerts within 1 minute after exposures were taken; annual reprocessing of all images taken to date; and providing a science platform for analysis to an anticipated 5000-7500 users, dedicating about 10% of the total resource to them. The annual reprocessings will be executed in concert with facilities in France and the UK, and are projected to occupy about 500 PB of nearline storage by year 10."
+        }, {
+				"id": 29,
+				"speaker": "break"
+			}, {
+				"id": 30,
+				"localTime": "",
+				"time": "13:30 - 14:00",
+				"title": "Wrap-up",
+				"speaker": "IOC",
+				"affiliation": "Round table",
+				"abstract": ""
+			}]
+		}
+	]
 }

@@ -4,6 +4,7 @@ const styles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     backgroundColor: theme.palette.background.paper,
+    height: '685px',
   },
   grid: {
     margin: 'auto',
@@ -25,7 +26,10 @@ const styles = makeStyles((theme) => ({
   },
   tbd: {
     color: '#f44336'
-  }
+  },
+  customWidth: {
+    maxWidth: 800,
+  },
 }));
 
 export default styles;
