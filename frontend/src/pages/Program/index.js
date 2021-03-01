@@ -84,7 +84,8 @@ function TabPanel(props) {
                 if (row.speaker.includes('Chair')) {
                   return (
                     <StyledTableRow  key={row.id}>
-                      <StyledTableCell colSpan="4" >{row.speaker}</StyledTableCell>
+                      <StyledTableCell />
+                      <StyledTableCell colSpan="3" >{row.speaker}</StyledTableCell>
                     </StyledTableRow >
                   )
                 } if (row.speaker === 'break') {
