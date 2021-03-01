@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Set the default baseURL for the API
-axios.defaults.baseURL = 'https://workshop2021.linea.gov.br/api';
+axios.defaults.baseURL = process.env.REACT_APP_API;
 
 export const postSubscription = ({
   name,
