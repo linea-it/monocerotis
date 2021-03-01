@@ -35,7 +35,7 @@
 				"time": "12:30 - 12:45",
 				"title": "Infrastructure as code: Seeing clearly through Cloudy skies",
 				"speaker": "Nirav Merchant",
-				"affiliation": "Cyverse",
+				"affiliation": "CyVerse",
 				"abstract": ""
 			}, {
 				"id": 5,
@@ -121,7 +121,7 @@
 				"speaker": "break"
 			}, {
 				"id": 19,
-				"speaker": "Chari: Mario Juric"
+				"speaker": "Chair: Mario Juric"
 			}, {
 				"id": 20,
 				"localTime": "",
@@ -159,7 +159,7 @@
 				"id": 25,
 				"localTime": "",
 				"time": "11:15 - 11:30",
-				"title": "To be defined",
+				"title": "Key areas for a Scientific Cloud Platform for Researchers",
 				"speaker": "Sanjay Padhi",
 				"affiliation": "AWS",
 				"abstract": ""
@@ -177,7 +177,7 @@
 				"time": "12:00 - 12:30",
         "title": "LSST:UK plans for an Independent Data Access Centre, development roadmap and science ambitions”",
 				"speaker": "George Beckett",
-				"affiliation": "Edingburg",
+				"affiliation": "Univ. of Edinburgh",
 				"abstract": ""
 			}, {
 				"id": 28,
@@ -191,12 +191,15 @@
 				"id": 29,
 				"speaker": "break"
 			}, {
+				"id": 24,
+				"speaker": "Chair: Luiz da Costa"
+			}, {
 				"id": 30,
 				"localTime": "",
 				"time": "13:30 - 14:00",
-				"title": "Wrap-up",
+				"title": "Round table",
 				"speaker": "IOC",
-				"affiliation": "Round table",
+				"affiliation": "-",
 				"abstract": ""
 			}]
 		}
