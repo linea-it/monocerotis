@@ -14,10 +14,10 @@
 	"isOrganizer": true
 }, {
 	"id": 2,
-	"speaker": "Andy Conolly",
+	"speaker": "Andrew Connolly",
 	"affiliation": "DIRAC Institute and/e-Science Institute of the University of Washington (DIRAC)",
-	"title": "",
-	"abstract": "",
+	"title": "Building data science across research communities",
+	"abstract": "Over the last decade data science has emerged as a key component of research within many domains. Taking the eScience and DiRAC Institutes at the University of Washington as exemplars, I will discuss the opportunities and challenges building data science communities in the context of the data-intensive astrophysics expected from a new generation of facilities such as the Rubin Observatory and Roman Space Telescope. Programs to develop tools and techniques that can scale to the volume and complexity of the LSST,  educational frameworks that can train researchers in data science methodologies and applications, and mechanisms by which we can share our ideas and expertise (both within and beyond astrophysics) will all need to be part of any data science institute. I will end by describing some of the needs that are emerging across a range of disciplines as we start to scale our science and where astronomy might look to draw on the experience of the broader research community.",
 	"isOrganizer": false
 }, {
 	"id": 4,
@@ -63,7 +63,7 @@
 	"isOrganizer": false
 }, {
 	"id": 18,
-	"speaker": "J Ross Thomson",
+	"speaker": "J. Ross Thomson",
 	"affiliation": "Google LLC",
 	"title": "Multi-Cloud and Hybrid Strategies for Scientific Workloads",
 	"abstract": "Cloud computing is a fast moving environment offering great flexibility for modern scientific missions to build and optimize applications on Cloud platforms. The velocity of change in cloud computing presents a risk to science missions planning for a decades long project lifetime. In this presentation, we will discuss strategies to minimize risk and increase efficiency in a Multi-Cloud / Hybrid computing environment.",
@@ -155,7 +155,7 @@
 	"isOrganizer": false
 }, {
 	"id": 23,
-	"speaker": "William O’Mullane ",
+	"speaker": "William O’Mullane",
 	"affiliation": "Legacy Survey of Space and Time (LSST)/Vera C. Rubin Observatory",
 	"title": "",
 	"abstract": "",
