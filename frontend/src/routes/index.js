@@ -9,13 +9,13 @@ import Speakers from '../pages/Speakers';
 import Participants from '../pages/Participants';
 import AdditionalInformation from '../pages/AdditionalInformation';
 import VerifyEmail from '../pages/VerifyEmail';
+import Plots from '../pages/Plots';
 import Notfound from '../pages/NotFound';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import useStyles from './styles';
 
 export default function Routes() {
-
   const classes = useStyles();
 
   return (
@@ -25,12 +25,25 @@ export default function Routes() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/registration" component={Registration} />
-          <Route exact path="/registration/success" component={RegistrationSuccess} />
+          <Route
+            exact
+            path="/registration/success"
+            component={RegistrationSuccess}
+          />
           <Route exact path="/speakers" component={Speakers} />
           <Route exact path="/program" component={Program} />
           <Route exact path="/participants" component={Participants} />
-          <Route exact path="/additional-information" component={AdditionalInformation} />
-          <Route exact path="/verify-email/uid=:uid/token=:token" component={VerifyEmail} />
+          <Route
+            exact
+            path="/additional-information"
+            component={AdditionalInformation}
+          />
+          <Route
+            exact
+            path="/verify-email/uid=:uid/token=:token"
+            component={VerifyEmail}
+          />
+          <Route exact path="/plots" component={Plots} />
           <Route component={Notfound} />
         </Switch>
         <Footer />

@@ -105,7 +105,7 @@
 	{ "code": "IN", "label": "India", "phone": "91" },
 	{ "code": "IO", "label": "British Indian Ocean Territory", "phone": "246" },
 	{ "code": "IQ", "label": "Iraq", "phone": "964" },
-	{ "code": "IR", "label": "Iran, Islamic Republic of", "phone": "98" },
+	{ "code": "IR", "label": "Islamic Republic of Iran", "phone": "98" },
 	{ "code": "IS", "label": "Iceland", "phone": "354" },
 	{ "code": "IT", "label": "Italy", "phone": "39" },
 	{ "code": "JE", "label": "Jersey", "phone": "44" },
