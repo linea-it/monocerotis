@@ -37,7 +37,7 @@ function TabPanel(props) {
       [theme.breakpoints.up('lg')]: {
         fontSize: '1.2rem',
         padding: '10px 20px',
-        maxWidth: '620px',
+        maxWidth: '585px',
         textOverflow: 'ellipsis',
         whiteSpace: 'nowrap',
         overflow: 'hidden',
