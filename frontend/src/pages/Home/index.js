@@ -42,7 +42,7 @@ function Main() {
                 <div>
                   <Typography align="center" color="primary" className={classes.blockText}>Carlos Adean (LIneA)</Typography>
                   <Typography align="center" color="primary" className={classes.blockText}>Mariana Fernandes (LIneA)</Typography>
-                  <Typography align="center" color="primary" className={classes.blockText}>Rodrigo Boufleur (LIneA)</Typography>
+                  <Typography align="center" color="primary" className={classes.blockText}>Rodrigo Boufleur (ON/LIneA)</Typography>
                 </div>
                 </Grid>
               </Grid>
