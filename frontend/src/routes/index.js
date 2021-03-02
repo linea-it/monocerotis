@@ -43,7 +43,7 @@ export default function Routes() {
             path="/verify-email/uid=:uid/token=:token"
             component={VerifyEmail}
           />
-          <Route exact path="/plots" component={Plots} />
+          <Route isPrivate exact path="/plots" component={Plots} />
           <Route component={Notfound} />
         </Switch>
         <Footer />
