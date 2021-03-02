@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   container: {
     display: 'flex',
     flexDirection: 'column',
@@ -8,7 +8,11 @@ const useStyles = makeStyles(() => ({
     maxWidth: 2087,
     margin: '0 auto',
     height: '100%',
-  }
+  },
+  backdrop: {
+    zIndex: theme.zIndex.drawer + 2,
+    color: '#fff',
+  },
 }));
 
 export default useStyles;
