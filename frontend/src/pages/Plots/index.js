@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Grid, Container, Typography } from '@material-ui/core';
+import { Grid, Container } from '@material-ui/core';
 import Plot from 'react-plotly.js';
 import { getSubscriptions } from '../../services/api';
 import styles from './styles';
@@ -13,9 +13,10 @@ function Plots() {
   const groupByKey = (arr, key) => {
     let result = [];
     result = arr.reduce((r, a) => {
-      r[a[key]] = r[a[key]] || [];
-      r[a[key]].push(a);
-      return r;
+      const row = r;
+      row[a[key]] = row[a[key]] || [];
+      row[a[key]].push(a);
+      return row;
     }, Object.create(null));
     return result;
   };
