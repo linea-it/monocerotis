@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { Route, Redirect } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import { Backdrop, CircularProgress } from '@material-ui/core';
 import { isAuthenticated, url } from '../services/auth';
 import useStyles from './styles';
@@ -15,6 +15,7 @@ export default function RouteWrapper({
 
   useEffect(() => {
     if (isPrivate) {
+      // eslint-disable-next-line consistent-return
       isAuthenticated().then((res) => {
         setAuthenticated(res);
 
