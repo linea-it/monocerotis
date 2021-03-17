@@ -4,7 +4,6 @@ const styles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     backgroundColor: theme.palette.background.paper,
-    height: '685px',
   },
   grid: {
     margin: 'auto',
@@ -19,13 +18,13 @@ const styles = makeStyles((theme) => ({
     color: 'white',
     fontSize: '1.5rem',
   },
-  tab : {
+  tab: {
     [theme.breakpoints.up('md')]: {
       fontSize: '1.2rem',
-    }
+    },
   },
   tbd: {
-    color: '#f44336'
+    color: '#f44336',
   },
   customWidth: {
     maxWidth: 800,
