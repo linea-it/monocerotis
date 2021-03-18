@@ -4,17 +4,17 @@
 			"day": "01",
 			"date": "13-04-2021",
 			"rows": [{
-				"id": 0,
+				"id": 1,
 				"speaker": "Chair: George Beckett"
 			}, {
-				"id": 1,
+				"id": 2,
 				"localTime": "04:15 PM",
 				"time": "11:15 - 11:30",
 				"title": "Opening Remarks",
 				"speaker": "Luiz da Costa",
 				"affiliation": "LIneA"
 			}, {
-				"id": 2,
+				"id": 3,
 				"localTime": "04:30 PM",
 				"time": "11:30 - 12:00",
         "title": "WLCG: a distributed infrastructure for large scale scientific computing",
@@ -22,7 +22,7 @@
 				"affiliation": "WLCG / CERN",
         "abstract": "The Worldwide LHC Computing Grid collaboration provides the computing infrastructure for the CERN experiments at the Large Hadron Collider. Such an infrastructure is deployed across more than 150 data centres in 42 countries worldwide and provides more than an exabyte of storage and one million CPU cores to the LHC experiments. The CERN LHC program is entering an unprecedented challenging phase, increasing by more than 10 times the computing needs. This contribution will provide an overview of WLCG and present how the infrastructure is evolving in terms of policies and services to face such a challenge, leveraging and adapting to the rapidly changing Information Technology market"
 			}, {
-				"id": 3,
+				"id": 4,
 				"localTime": "05:00 PM",
 				"time": "12:00 - 12:30",
         "title": "The ESCAPE project - objectives and plans",
@@ -30,7 +30,7 @@
 				"affiliation": "ESCAPE",
         "abstract": "The ESCAPE project brings together 11 ESFRI and other Research Infrastructures in Astronomy, Astro-Particle, Particle and Nuclear Physics fo the first time.  It is one of 5 such thematic science cluster projects that are integrating communities, infrastructure, and research tools as contributions to the European Open Science Cloud (EOSC).  ESCAPE is building a next-generation data management infrastructure (“data-lake”) to provide FAIR data management at exabyte scales, capable of delivering data to distributed high performance analysis and compute facilities.  That is complemented by work on a software infrastructure, enabling the sharing of the research tools and products, an integration of the International Virtual Observatory (IVOA) framework into the proto-EOSC and high level science platforms.  ESCAPE is currently planning two science challenges; one on Dark Matter, and the second on Gravitational Waves and the Extreme Universe, which together will demonstrate the capabilities of open data and cross-domain science.  This talk will give an overview of the ESCAPE work and output, the two science projects, and will look at the prospects for how this all feeds into the first implementation of the EOSC."
         }, {
-				"id": 4,
+				"id": 5,
 				"localTime": "",
 				"time": "12:30 - 12:45",
 				"title": "Infrastructure as code: Seeing clearly through Cloudy skies",
@@ -38,7 +38,7 @@
 				"affiliation": "CyVerse",
 				"abstract": ""
 			}, {
-				"id": 5,
+				"id": 6,
 				"localTime": "",
 				"time": "12:45 - 13:00",
         "title": "Multi-Cloud and Hybrid Strategies for Scientific Workloads",
@@ -46,13 +46,13 @@
 				"affiliation": "Google LLC",
         "abstract": "Cloud computing is a fast moving environment offering great flexibility for modern scientific missions to build and optimize applications on Cloud platforms. The velocity of change in cloud computing presents a risk to science missions planning for a decades long project lifetime. In this presentation, we will discuss strategies to minimize risk and increase efficiency in a Multi-Cloud / Hybrid computing environment."
         }, {
-				"id": 6,
+				"id": 7,
 				"speaker": "break"
 			}, {
-				"id": 7,
+				"id": 8,
 				"speaker": "Chair: Fabio Hernandez"
 			}, {
-				"id": 8,
+				"id": 9,
 				"localTime": "",
 				"time": "13:30 - 14:00",
         "title": "The MeerKAT toolbelt: a waist of data",
@@ -60,7 +60,7 @@
 				"affiliation": "IDIA",
         "abstract": "A number of tools and systems have been developed or adopted to deal with the PB scale of MeerKAT data at the Inter-University Institute for Data Intensive Astronomy (IDIA), Cape Town. I will present a number of these tools and underlying systems, including those for storage, processing, visualisation, and data transfer. I will present a worked example of processing MeerKAT data via the IDIA pipeline, a fully automated end-to-end pipeline that is efficient, flexible, scalable, and user-friendly, and designed to operate across the ilifu cluster using SLURM and MPI. Our unique setup uses an IDIA cloud-based platform running on hardware provided by the ilifu national facility, taking advantage of cluster-level parallelism, resource management and software containers. Altogether this represents a pathfinder science regional data centre, and a good framework for solving many of the broader challenges of the SKA."
         }, {
-				"id": 9,
+				"id": 10,
 				"localTime": "",
 				"time": "14:30 - 15:00",
 				"title": "The Future of Long Term Data",
@@ -68,7 +68,7 @@
 				"affiliation": "IDIES",
         "abstract": "The talk will present a discussion about how science is changing, results in data sets with an ever longer effective lifetime. Many of the current sky-surveys (and other mid-scale projects) generate data sets at a cost of tens to hundreds of millions of dollars, yet there is no coherent strategy to ensure the survival of these data sets.  WE will discuss the different factors related to long term data preservation, the technological changes, and the sociological changes in how data is used, including AI applications."
         }, {
-				"id": 10,
+				"id": 11,
 				"localTime": "",
 				"time": "15:00 - 15:30",
         "title": "Building data science across research communities",
@@ -191,17 +191,37 @@
 				"id": 29,
 				"speaker": "break"
 			}, {
-				"id": 24,
-				"speaker": "Chair: Luiz da Costa"
-			}, {
 				"id": 30,
+				"speaker": "Chair: Luiz da Costa"
+			},
+      {
+        "id": 31,
+        "localTime": "",
+        "time": "13:30 - 14:00",
+        "title": "Data analysis plans for ESA’s Big Data Euclid mission ",
+        "speaker": "Bruno Altieri ",
+        "affiliation": "ESA",
+        "abstract": "ESA’s Euclid dark energy mission will release about 100 Pbytes of images and catalogues at the end of six years of operations, currently planned to start in 2022. Even if the data rate will not be the most extreme (approximately 200 Gbyte per day of raw science data), Euclid is expected to generate a 24/7 data flow for 6 years to cover eventually an area of 15,000 deg^{2} in optical imaging, near-infrared imaging photometry and near-infrared spectroscopy, with space-based spatial resolution. These data will be combined with g,r,i and z-band ground-based optical photometry, covering the same sky as Euclid. Key elements are the accessible archive with its data products, the scientific validations, and user support providing knowledge and, possibly, advanced remote processing facilities. We will review these key elements from a Euclid perspective and discuss the possible use of the ESA Datalabs platform for facilitating and maximising the scientific return from this high-quality space-grade data deluge."
+      },
+      {
+				"id": 32,
 				"localTime": "",
-				"time": "13:30 - 14:30",
+        "time": "14:00 - 14:30",
+				"title": "Big Data platforms for Cosmology analysis ",
+				"speaker": "Jorge Carretero",
+				"affiliation": "PIC - IFAE",
+				"abstract": "Galaxy surveys require support from massive datasets in order to achieve precise estimations of cosmological parameters. CosmoHub is a web platform based on Hadoop to perform interactive exploration, customization and distribution of massive astronomy datasets without any Structured Query Language (SQL) knowledge required. Hosted at the Port d'Informació Científica (PIC) manages over 60 TB of catalogued information and 50 billion astronomical objects, and provides support to an ever-growing worldwide community of more than 1000 scientists and several leading edge collaborations such as the Gaia and Euclid space missions, Dark Energy Survey (DES), DESI Legacy Imaging Surveys, Cherenkov Telescope Array (CTA), Major Atmospheric Gamma Imaging Cherenkov (MAGIC) telescopes, Physics of the Accelerating Universe (PAU) and MICE numerical simulations, among others. ESA's Euclid mission is scheduled for launch in 2023. The SciPIC scientific pipeline has been developed to efficiently generate mock galaxy catalogs using as input a dark matter halo population. It runs on top of the Hadoop platform using Apache Spark, which is an open-source cluster-computing framework. Different Euclid teams have created the largest simulated galaxy catalog ever produced: the Euclid Flagship mock galaxy catalog. The simulation reproduces with high accuracy both the shear pattern and the galaxy clustering down to small scales. Also the simulation mimics complex properties that real sources exhibit, such as their shapes, colours and luminosities. During the talk I will describe CosmoHub and the process of generating the Euclid Flagship mock galaxy catalogue."
+			},
+      {
+				"id": 33,
+				"localTime": "",
+				"time": "14:30 - 15:30",
 				"title": "Round table",
 				"speaker": "IOC",
 				"affiliation": "-",
 				"abstract": ""
-			}]
-		}
-	]
+			}
+    ]
+	}
+]
 }
