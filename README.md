@@ -22,7 +22,7 @@ docker-compose up
 
 3. Create super user
 ```
-docker-compose exec web manage.py createsuperuser
+docker-compose exec backend python manage.py createsuperuser
 ```
 
 ---
