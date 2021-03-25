@@ -141,17 +141,17 @@
 	"isOrganizer": false
 }, {
 	"id": 21,
-	"speaker": "Sanjay Padhi",
-	"affiliation": "Amazon.com, Inc",
-	"title": "Key areas for a Scientific Cloud Platform for Researchers",
-	"abstract": "",
-	"isOrganizer": false
-}, {
-	"id": 22,
 	"speaker": "Simone Campana",
 	"affiliation": "Worldwide LHC Computing Grid (WLCG/CERN)",
 	"title": "WLCG: a distributed infrastructure for large scale scientific computing",
 	"abstract": "The Worldwide LHC Computing Grid collaboration provides the computing infrastructure for the CERN experiments at the Large Hadron Collider. Such an infrastructure is deployed across more than 150 data centres in 42 countries worldwide and provides more than an exabyte of storage and one million CPU cores to the LHC experiments. The CERN LHC program is entering an unprecedented challenging phase, increasing by more than 10 times the computing needs. This contribution will provide an overview of WLCG and present how the infrastructure is evolving in terms of policies and services to face such a challenge, leveraging and adapting to the rapidly changing Information Technology market",
+	"isOrganizer": false
+}, {
+	"id": 22,
+	"speaker": "Tom Soderstrom",
+	"affiliation": "Amazon.com, Inc",
+	"title": "Key areas for a Scientific Cloud Platform for Researchers",
+	"abstract": "",
 	"isOrganizer": false
 }, {
 	"id": 23,
