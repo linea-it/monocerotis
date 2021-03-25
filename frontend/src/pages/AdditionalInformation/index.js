@@ -80,7 +80,8 @@ function AdditionalInformation() {
             className={classes.description}
           >
             We will use Slack to address your questions. To register for the
-            workshop's workspace, please click here and follow the instructions.
+            workshop&apos;s workspace, please click here and follow the
+            instructions.
           </Typography>
           <br />
           <Typography
