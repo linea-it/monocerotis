@@ -80,12 +80,12 @@ function AdditionalInformation() {
             className={classes.description}
           >
             We will use Slack to address your questions. To register for the
-            workshop&apos;s workspace, please{' '}
+            workshop&apos;s workspace, please click{' '}
             <a
               href="https://join.slack.com/t/workshop2021grupo/shared_invite/zt-odwhahoh-1GkqK04VW7CN5UOqSvcR6w"
               target="blank"
             >
-              click here
+              here
             </a>{' '}
             and follow the instructions.
           </Typography>
