@@ -80,8 +80,14 @@ function AdditionalInformation() {
             className={classes.description}
           >
             We will use Slack to address your questions. To register for the
-            workshop&apos;s workspace, please click here and follow the
-            instructions.
+            workshop&apos;s workspace, please{' '}
+            <a
+              href="https://join.slack.com/t/workshop2021grupo/shared_invite/zt-odwhahoh-1GkqK04VW7CN5UOqSvcR6w"
+              target="blank"
+            >
+              click here
+            </a>{' '}
+            and follow the instructions.
           </Typography>
           <br />
           <Typography
@@ -96,7 +102,6 @@ function AdditionalInformation() {
             session, use the channel #discussions. Inquiries about the event can
             be posted at #helpdesk.
           </Typography>
-          Slack
         </Grid>
       </Grid>
     </Container>
