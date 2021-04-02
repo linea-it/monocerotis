@@ -1,8 +1,16 @@
 /* eslint-disable no-nested-ternary */
 import React, { useRef, useState } from 'react';
-import { useHistory } from "react-router-dom";
+import { useHistory } from 'react-router-dom';
 import {
-  Grid, Container, Typography, TextField, Button, Snackbar, FormControlLabel, Checkbox, CircularProgress
+  Grid,
+  Container,
+  Typography,
+  TextField,
+  Button,
+  Snackbar,
+  FormControlLabel,
+  Checkbox,
+  CircularProgress,
 } from '@material-ui/core';
 import { Alert, AlertTitle, Autocomplete } from '@material-ui/lab';
 import EmailIcon from '@material-ui/icons/Email';
@@ -12,7 +20,6 @@ import countries from './countries.json';
 import { postSubscription } from '../../services/api';
 
 function Registration() {
-
   // Change dynamically the page title:
   document.title = 'LIneA Workshop | Registration';
 
@@ -37,7 +44,7 @@ function Registration() {
     setErrorMessage({});
     setIsLoading(true);
 
-    if(submitEnabled) {
+    if (submitEnabled) {
       const name = formRef.current.name.value;
       const email = formRef.current.email.value;
       const institute = formRef.current.institute.value;
@@ -46,26 +53,31 @@ function Registration() {
 
       // Check if the filled country is available in the options.
       // Prevent it from submitting undesirable values:
-      if (countries.filter(c => c.label === country).length === 0) {
-        setErrorMessage({ country: ['Please, select one of the country options!'] });
+      if (countries.filter((c) => c.label === country).length === 0) {
+        setErrorMessage({
+          country: ['Please, select one of the country options!'],
+        });
 
         // Forcing the Autocomplete component to reset:
-        autocompleteRef.current.getElementsByClassName('MuiAutocomplete-clearIndicator')[0].click();
+        autocompleteRef.current
+          .getElementsByClassName('MuiAutocomplete-clearIndicator')[0]
+          .click();
 
         return;
       }
 
-
       postSubscription({ name, email, institute, newsletter, country })
-      .then(() => {
+        .then(() => {
           setOpenFormFeedback(true);
           // Reseting form:
           formRef.current.reset();
           // Forcing the Autocomplete component to reset:
-          autocompleteRef.current.getElementsByClassName('MuiAutocomplete-clearIndicator')[0].click();
+          autocompleteRef.current
+            .getElementsByClassName('MuiAutocomplete-clearIndicator')[0]
+            .click();
 
           // Forcing the reCAPTCHA to reset:
-          recaptchaRef.current.reset()
+          recaptchaRef.current.reset();
 
           // Forcing the Newsletter checkbox to reset:
           formRef.current.newsletter.checked = false;
@@ -75,7 +87,7 @@ function Registration() {
               hitType: 'event',
               eventCategory: 'Subscription',
               eventAction: 'subscript',
-              eventLabel: 'Subscription Success'
+              eventLabel: 'Subscription Success',
             });
           } catch (err) {
             console.log("Couldn't fire GA event", err);
@@ -83,42 +95,60 @@ function Registration() {
           setIsLoading(false);
           history.push('/registration/success');
         })
-      .catch(error => {
-        setErrorMessage(error.response.data);
+        .catch((error) => {
+          setErrorMessage(error.response.data);
 
-        try {
-          window.ga('send', {
-            hitType: 'event',
-            eventCategory: 'Subscription',
-            eventAction: 'subscript',
-            eventLabel: 'Subscription Failure'
-          });
-        } catch (err) {
-          console.log(err);
-        }
-      });
+          try {
+            window.ga('send', {
+              hitType: 'event',
+              eventCategory: 'Subscription',
+              eventAction: 'subscript',
+              eventLabel: 'Subscription Failure',
+            });
+          } catch (err) {
+            console.log(err);
+          }
+        });
     }
   };
 
-  const onRecaptchaChange = humanKey => {
-    if(humanKey) {
+  const onRecaptchaChange = (humanKey) => {
+    if (humanKey) {
       setSubmitEnabled(true);
     }
-  }
+  };
 
   return (
     <div>
       <Container align="center">
         <Grid item xs={12}>
           <Grid item xs={11} md={6} className={classes.grid}>
-            <Typography variant="h3" align="center" color="primary">Registration</Typography>
-            <Typography variant="body1" align="center" color="primary" gutterBottom>(Open until April 2nd, 2021)</Typography>
-            <Typography variant="button" color="error" gutterBottom paragraph>After submission, you will receive a confirmation email with the link to complete your registration.</Typography>
-            <form
-              ref={formRef}
-              autoComplete="off"
-              onSubmit={handleSubmit}
+            <Typography variant="h3" align="center" color="primary">
+              Registration
+            </Typography>
+            <Typography
+              variant="body1"
+              align="center"
+              color="primary"
+              gutterBottom
+              className={classes.strike}
             >
+              (Open until April 2nd, 2021)
+            </Typography>
+            <Typography
+              variant="body1"
+              align="center"
+              color="primary"
+              gutterBottom
+            >
+              (The deadline for registration has been extended to April 9th,
+              2021)
+            </Typography>
+            <Typography variant="button" color="error" gutterBottom paragraph>
+              After submission, you will receive a confirmation email with the
+              link to complete your registration.
+            </Typography>
+            <form ref={formRef} autoComplete="off" onSubmit={handleSubmit}>
               <div className={classes.textFields}>
                 <TextField
                   required
@@ -131,7 +161,9 @@ function Registration() {
                   fullWidth
                   size="small"
                   error={'name' in errorMessage}
-                  helperText={'name' in errorMessage ? errorMessage.name[0] : ''}
+                  helperText={
+                    'name' in errorMessage ? errorMessage.name[0] : ''
+                  }
                 />
               </div>
 
@@ -147,7 +179,9 @@ function Registration() {
                   fullWidth
                   size="small"
                   error={'email' in errorMessage}
-                  helperText={'email' in errorMessage ? errorMessage.email[0] : ''}
+                  helperText={
+                    'email' in errorMessage ? errorMessage.email[0] : ''
+                  }
                 />
               </div>
 
@@ -163,7 +197,9 @@ function Registration() {
                   fullWidth
                   size="small"
                   error={'institute' in errorMessage}
-                  helperText={'institute' in errorMessage ? errorMessage.institute[0] : ''}
+                  helperText={
+                    'institute' in errorMessage ? errorMessage.institute[0] : ''
+                  }
                 />
               </div>
 
@@ -173,8 +209,9 @@ function Registration() {
                   options={countries}
                   getOptionLabel={(option) => option.label}
                   autoComplete={false}
-                  renderInput={(params) =>
-                    <TextField {...params}
+                  renderInput={(params) => (
+                    <TextField
+                      {...params}
                       required
                       id="country"
                       name="country"
@@ -185,9 +222,11 @@ function Registration() {
                       fullWidth
                       size="small"
                       error={'country' in errorMessage}
-                      helperText={'country' in errorMessage ? errorMessage.country[0] : ''}
+                      helperText={
+                        'country' in errorMessage ? errorMessage.country[0] : ''
+                      }
                     />
-                  }
+                  )}
                 />
               </div>
 
@@ -195,15 +234,11 @@ function Registration() {
                 label="Subscribe to LIneA News"
                 labelPlacement="start"
                 className={classes.checkboxLabel}
-                control={
-                  <Checkbox
-                    name="newsletter"
-                  />
-                }
+                control={<Checkbox name="newsletter" />}
               />
 
               <Grid container spacing={2} alignItems="flex-end">
-                <Grid item xs={12} md={10} >
+                <Grid item xs={12} md={10}>
                   {recaptchaKey ? (
                     <ReCAPTCHA
                       ref={recaptchaRef}
@@ -213,8 +248,18 @@ function Registration() {
                   ) : null}
                 </Grid>
                 <Grid item xs={12} md={2}>
-                  <Button variant="contained" color="primary" type="submit" disableElevation disabled={!submitEnabled}>
-                    {isLoading ? <CircularProgress size={20} color="inherit" /> : <EmailIcon fontSize="small" />}
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    type="submit"
+                    disableElevation
+                    disabled={!submitEnabled}
+                  >
+                    {isLoading ? (
+                      <CircularProgress size={20} color="inherit" />
+                    ) : (
+                      <EmailIcon fontSize="small" />
+                    )}
                     &nbsp;Submit
                   </Button>
                 </Grid>
@@ -223,15 +268,25 @@ function Registration() {
             </form>
             <Grid item xs={12}>
               <br />
-              <Typography variant="button" color="error">* required fields</Typography>
+              <Typography variant="button" color="error">
+                * required fields
+              </Typography>
             </Grid>
           </Grid>
         </Grid>
       </Container>
-      <Snackbar anchorOrigin={{ vertical: 'top', horizontal: 'center' }} open={openFormFeedback} autoHideDuration={6000} onClose={handleClose}>
+      <Snackbar
+        anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
+        open={openFormFeedback}
+        autoHideDuration={6000}
+        onClose={handleClose}
+      >
         <Alert onClose={handleClose} severity="success">
           <AlertTitle>Success</AlertTitle>
-          <Typography variant="body1">Registered with success! Check your e-mail for a confirmation message.</Typography>
+          <Typography variant="body1">
+            Registered with success! Check your e-mail for a confirmation
+            message.
+          </Typography>
         </Alert>
       </Snackbar>
     </div>

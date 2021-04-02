@@ -4,12 +4,15 @@ const styles = makeStyles(() => ({
   textFields: {
     marginBottom: '15px',
   },
-  grid : {
+  grid: {
     textAlign: 'left',
   },
   checkboxLabel: {
     margin: 0,
-  }
+  },
+  strike: {
+    textDecoration: 'line-through',
+  },
 }));
 
 export default styles;
