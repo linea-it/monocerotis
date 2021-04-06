@@ -27,7 +27,7 @@ const styles = makeStyles((theme) => ({
     color: '#f44336',
   },
   customWidth: {
-    maxWidth: 800,
+    maxWidth: 445,
   },
 }));
 

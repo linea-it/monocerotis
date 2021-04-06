@@ -58,8 +58,8 @@
 	"id": 9,
 	"speaker": "George Beckett",
 	"affiliation": "University of Edinburgh",
-	"title": "LSST:UK plans for an Independent Data Access Centre, development roadmap and science ambitions”",
-	"abstract": "",
+	"title": "LSST:UK plans for an Independent Data Access Centre, development roadmap and science ambitions",
+	"abstract": "20-year programme of activities, intended to best prepare UK-based astronomers to exploit the LSST to its full potential. A key element of the UK's plan is to set up and operate an ambitious Independent Data Access Centre, not only to serve the full range of Rubin Observatory data products, but also to operate a Community Broker service to receive and process the Observatory's real-time alert stream, and to run campaigns to generate and curate a number of User-generated Products intended to expand the reach of the baseline data products and to integrate complementary data from other topical surveys. In this talk, we will provide a high-level summary of the LSST:UK Programme and highlight potentially interesting research and development topics. We will also provide an update on our progress to design and implement a Data Access Centre, and describe the portfolio of services we plan to provide.",
 	"isOrganizer": true
 }, {
 	"id": 10,

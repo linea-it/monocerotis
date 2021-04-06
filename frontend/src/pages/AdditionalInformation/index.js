@@ -26,10 +26,8 @@ function AdditionalInformation() {
             volumes from modern experiments such as LSST, Euclid and SKA
             continue to grow. The workshop will take place remotely April 13-15,
             2021. Inquiries can be sent to{' '}
-            <a
-              href={'mailto:workshop2021@linea.gov.br?subject="Workshop 2021"'}
-            >
-              workshop2021@linea.gov.br
+            <a href="mailto:workshop2021@linea.gov.br?subject=Workshop 2021">
+              <strong>workshop2021@linea.gov.br</strong>
             </a>
             .
           </Typography>
@@ -46,8 +44,11 @@ function AdditionalInformation() {
           >
             The workshop will be entirely remote and there will be no
             registration fee. We ask those interested in participating to
-            register <a href="/registration">here</a>. Participants will receive
-            connection information on April 12.
+            register{' '}
+            <a href="/registration">
+              <strong>here</strong>
+            </a>
+            . Participants will receive connection information on April 12.
           </Typography>
           <br />
           <Typography
@@ -69,6 +70,19 @@ function AdditionalInformation() {
             site and announced on LIneA’s social media the following Monday.
           </Typography>
           <br />
+          <Typography
+            variant="subtitle1"
+            color="primary"
+            className={classes.description}
+          >
+            Certificates may be provided for registered participants. Please
+            contact the{' '}
+            <a href="mailto:workshop2021@linea.gov.br?subject=Workshop 2021 - Certificate">
+              <strong>LOC</strong>
+            </a>{' '}
+            if you need one.
+          </Typography>
+          <br />
           <br />
           <Typography variant="h5" color="primary" className={classes.title}>
             Slack:
@@ -85,7 +99,7 @@ function AdditionalInformation() {
               href="https://join.slack.com/t/workshop2021grupo/shared_invite/zt-odwhahoh-1GkqK04VW7CN5UOqSvcR6w"
               target="blank"
             >
-              here
+              <strong>here</strong>
             </a>{' '}
             and follow the instructions.
           </Typography>

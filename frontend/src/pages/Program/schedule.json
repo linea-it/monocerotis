@@ -5,7 +5,8 @@
 			"date": "13-04-2021",
 			"rows": [{
 				"id": 1,
-				"speaker": "Chair: George Beckett"
+				"speaker": "Chair: George Beckett",
+        "youtubeLink": "https://youtu.be/YHUn93BwZoE"
 			}, {
 				"id": 2,
 				"localTime": "04:15 PM",
@@ -50,7 +51,8 @@
 				"speaker": "break"
 			}, {
 				"id": 8,
-				"speaker": "Chair: Fabio Hernandez"
+				"speaker": "Chair: William O’Mullane",
+        "youtubeLink": "https://youtu.be/jTDj-YSUU-k"
 			}, {
 				"id": 9,
 				"localTime": "",
@@ -83,7 +85,8 @@
 			"date": "14-04-2021",
 			"rows": [{
 				"id": 13,
-				"speaker": "Chair: William O’Mullane"
+				"speaker": "Chair: Fabio Hernandez",
+        "youtubeLink": "https://youtu.be/FU3ADiP24ds"
 			}, {
 				"id": 14,
 				"localTime": "",
@@ -121,7 +124,8 @@
 				"speaker": "break"
 			}, {
 				"id": 19,
-				"speaker": "Chair: Mario Juric"
+				"speaker": "Chair: Mario Juric",
+        "youtubeLink": "https://youtu.be/Wk28pZOD3QE"
 			}, {
 				"id": 20,
 				"localTime": "",
@@ -154,7 +158,8 @@
 			"date": "15-04-2021",
 			"rows": [{
 				"id": 24,
-				"speaker": "Chair: Andreas Wicenec"
+				"speaker": "Chair: Andreas Wicenec",
+        "youtubeLink": "https://youtu.be/nwHd4RWCgYU"
 			}, {
 				"id": 25,
 				"localTime": "",
@@ -175,10 +180,10 @@
 				"id": 27,
 				"localTime": "",
 				"time": "12:00 - 12:30",
-        "title": "LSST:UK plans for an Independent Data Access Centre, development roadmap and science ambitions”",
+        "title": "LSST:UK plans for an Independent Data Access Centre, development roadmap and science ambitions",
 				"speaker": "George Beckett",
 				"affiliation": "Univ. of Edinburgh",
-				"abstract": ""
+				"abstract": "20-year programme of activities, intended to best prepare UK-based astronomers to exploit the LSST to its full potential. A key element of the UK's plan is to set up and operate an ambitious Independent Data Access Centre, not only to serve the full range of Rubin Observatory data products, but also to operate a Community Broker service to receive and process the Observatory's real-time alert stream, and to run campaigns to generate and curate a number of User-generated Products intended to expand the reach of the baseline data products and to integrate complementary data from other topical surveys. In this talk, we will provide a high-level summary of the LSST:UK Programme and highlight potentially interesting research and development topics. We will also provide an update on our progress to design and implement a Data Access Centre, and describe the portfolio of services we plan to provide."
 			}, {
 				"id": 28,
 				"localTime": "",
@@ -192,7 +197,8 @@
 				"speaker": "break"
 			}, {
 				"id": 30,
-				"speaker": "Chair: Luiz da Costa"
+				"speaker": "Chair: Luiz da Costa",
+        "youtubeLink": "https://youtu.be/WyKIrde_WZY"
 			},
       {
         "id": 31,
