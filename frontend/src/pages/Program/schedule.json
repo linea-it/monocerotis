@@ -170,12 +170,12 @@
 				"abstract": "The global interest in Space is rising exponentially from Governments, private industry, startups, universities, and private citizens. Of particular interest is the large amount of data that will flow from Space to Earth and then be analyzed, shared, re-analyzed, published, and used for scientific and business use cases. In this talk, I will address the challenges and opportunities involved in democratizing Space and Space data and how everyone can help discover new worlds as well as save our own."
 			}, {
 				"id": 26,
-				"localTime": "",
+        "localTime": "",
 				"time": "11:30 - 12:00",
-        "title": "Rubin and DESC computing organization at IN2P3",
-				"speaker": "Dominique Boutigny",
-				"affiliation": "IN2P3",
-        "abstract": "CC-IN2P3 will be in charge of 50% of the Vera C. Rubin Observatory's Data Release Processing and will host a full copy of the data and catalogs. I will describe the computing infrastructure that is being deployed and the organization that we are setting up in France in order to process the Rubin data and to provide the services necessary to access them. I will also explain why it is critical to test and validate the infrastructure and services with real science use cases such as those provided by the Dark Energy Science Collaboration."
+        "title": "Rubin US Data Facility",
+				"speaker": "Richard Dubois",
+				"affiliation": "SLAC",
+        "abstract": "Rubin’s 10-year Survey is projected to begin in late 2023: about 20 TB per Chilean night will be delivered to the US Data Facility (US DF). The US DF will perform three major functions: prompt processing to generate transient alerts within 1 minute after exposures were taken; annual reprocessing of all images taken to date; and providing a science platform for analysis to an anticipated 5000-7500 users, dedicating about 10% of the total resource to them. The annual reprocessings will be executed in concert with facilities in France and the UK, and are projected to occupy about 500 PB of nearline storage by year 10."
         }, {
 				"id": 27,
 				"localTime": "",
@@ -187,11 +187,11 @@
 			}, {
 				"id": 28,
 				"localTime": "",
-				"time": "12:30 - 12:45",
-        "title": "Rubin US Data Facility",
-				"speaker": "Richard Dubois",
-				"affiliation": "SLAC",
-        "abstract": "Rubin’s 10-year Survey is projected to begin in late 2023: about 20 TB per Chilean night will be delivered to the US Data Facility (US DF). The US DF will perform three major functions: prompt processing to generate transient alerts within 1 minute after exposures were taken; annual reprocessing of all images taken to date; and providing a science platform for analysis to an anticipated 5000-7500 users, dedicating about 10% of the total resource to them. The annual reprocessings will be executed in concert with facilities in France and the UK, and are projected to occupy about 500 PB of nearline storage by year 10."
+				"time": "12:30 - 13:00",
+        "title": "Rubin and DESC computing organization at IN2P3",
+				"speaker": "Dominique Boutigny",
+				"affiliation": "IN2P3",
+        "abstract": "CC-IN2P3 will be in charge of 50% of the Vera C. Rubin Observatory's Data Release Processing and will host a full copy of the data and catalogs. I will describe the computing infrastructure that is being deployed and the organization that we are setting up in France in order to process the Rubin data and to provide the services necessary to access them. I will also explain why it is critical to test and validate the infrastructure and services with real science use cases such as those provided by the Dark Energy Science Collaboration."
         }, {
 				"id": 29,
 				"speaker": "break"
