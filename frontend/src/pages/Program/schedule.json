@@ -39,14 +39,6 @@
 				"affiliation": "CyVerse",
 				"abstract": ""
 			}, {
-				"id": 6,
-				"localTime": "",
-				"time": "12:45 - 13:00",
-        "title": "Multi-Cloud and Hybrid Strategies for Scientific Workloads",
-				"speaker": "J. Ross Thomson",
-				"affiliation": "Google LLC",
-        "abstract": "Cloud computing is a fast moving environment offering great flexibility for modern scientific missions to build and optimize applications on Cloud platforms. The velocity of change in cloud computing presents a risk to science missions planning for a decades long project lifetime. In this presentation, we will discuss strategies to minimize risk and increase efficiency in a Multi-Cloud / Hybrid computing environment."
-        }, {
 				"id": 7,
 				"speaker": "break"
 			}, {
@@ -77,6 +69,14 @@
 				"speaker": "Andrew Connolly",
 				"affiliation": "DIRAC",
         "abstract": "Over the last decade data science has emerged as a key component of research within many domains. Taking the eScience and DiRAC Institutes at the University of Washington as exemplars, I will discuss the opportunities and challenges building data science communities in the context of the data-intensive astrophysics expected from a new generation of facilities such as the Rubin Observatory and Roman Space Telescope. Programs to develop tools and techniques that can scale to the volume and complexity of the LSST,  educational frameworks that can train researchers in data science methodologies and applications, and mechanisms by which we can share our ideas and expertise (both within and beyond astrophysics) will all need to be part of any data science institute. I will end by describing some of the needs that are emerging across a range of disciplines as we start to scale our science and where astronomy might look to draw on the experience of the broader research community."
+        }, {
+          "id": 6,
+          "localTime": "",
+          "time": "15:30 - 15:45",
+          "title": "Multi-Cloud and Hybrid Strategies for Scientific Workloads",
+          "speaker": "J. Ross Thomson",
+          "affiliation": "Google LLC",
+          "abstract": "Cloud computing is a fast moving environment offering great flexibility for modern scientific missions to build and optimize applications on Cloud platforms. The velocity of change in cloud computing presents a risk to science missions planning for a decades long project lifetime. In this presentation, we will discuss strategies to minimize risk and increase efficiency in a Multi-Cloud / Hybrid computing environment."
         }]
 		},
 		{
