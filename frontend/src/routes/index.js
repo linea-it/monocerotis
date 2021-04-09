@@ -2,8 +2,8 @@ import React from 'react';
 import { BrowserRouter, Switch } from 'react-router-dom';
 import Route from './Route';
 import Home from '../pages/Home';
-import Registration from '../pages/Registration';
-import RegistrationSuccess from '../pages/Registration/Success';
+// import Registration from '../pages/Registration';
+// import RegistrationSuccess from '../pages/Registration/Success';
 import Program from '../pages/Program';
 import Speakers from '../pages/Speakers';
 import Participants from '../pages/Participants';
@@ -24,12 +24,12 @@ export default function Routes() {
         <Header />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/registration" component={Registration} />
+          {/* <Route exact path="/registration" component={Registration} />
           <Route
             exact
             path="/registration/success"
             component={RegistrationSuccess}
-          />
+          /> */}
           <Route exact path="/speakers" component={Speakers} />
           <Route exact path="/program" component={Program} />
           <Route exact path="/participants" component={Participants} />

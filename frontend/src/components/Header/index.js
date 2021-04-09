@@ -20,10 +20,10 @@ function Header() {
       description: 'Home',
       href: '/',
     },
-    {
-      description: 'Registration',
-      href: '/registration',
-    },
+    // {
+    //   description: 'Registration',
+    //   href: '/registration',
+    // },
     {
       description: 'Speakers',
       href: '/speakers',
