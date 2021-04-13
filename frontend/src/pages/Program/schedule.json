@@ -56,7 +56,7 @@
         }, {
 				"id": 10,
 				"localTime": "",
-				"time": "14:30 - 15:00",
+				"time": "14:00 - 14:30",
 				"title": "The Future of Long Term Data",
 				"speaker": "Alex Szalay",
 				"affiliation": "IDIES",
@@ -64,7 +64,7 @@
         }, {
 				"id": 11,
 				"localTime": "",
-				"time": "15:00 - 15:30",
+				"time": "14:30 - 15:00",
         "title": "Building data science across research communities",
 				"speaker": "Andrew Connolly",
 				"affiliation": "DIRAC",
@@ -72,7 +72,7 @@
         }, {
           "id": 6,
           "localTime": "",
-          "time": "15:30 - 15:45",
+          "time": "15:00 - 15:15",
           "title": "Multi-Cloud and Hybrid Strategies for Scientific Workloads",
           "speaker": "J. Ross Thomson",
           "affiliation": "Google LLC",
