@@ -164,7 +164,7 @@ function TabPanel(props) {
                     <StyledTableCell>{row.speaker}</StyledTableCell>
                     <StyledTableCell>{row.affiliation}</StyledTableCell>
                     <StyledTableCell align="center">
-                      <IconButton>
+                      <IconButton href={row.youtubeLink} target="_blank">
                         <VideoLibraryIcon />
                       </IconButton>
                     </StyledTableCell>
