@@ -15,7 +15,7 @@
 				"speaker": "Luiz da Costa",
 				"affiliation": "LIneA",
         "slideLink": "",
-        "youtubeLink": "https://youtu.be/YHUn93BwZoE"
+        "youtubeLink": "https://youtu.be/YHUn93BwZoE?t=0"
 			}, {
 				"id": 3,
 				"localTime": "04:30 PM",
@@ -108,11 +108,11 @@
 				"localTime": "",
 				"time": "11:15 - 11:30",
         "title": "Optimizing LSST Analysis with Apache Spark™",
-				"speaker": "Denny Lee ",
+				"speaker": "Denny Lee",
 				"affiliation": "Databricks",
         "abstract": "With the vast amount of data captured in the night sky, how can we effectively analyze all of this data while also collaborating between different institutions in different geographies, whether on-premises or in the cloud?  It is essential to use a distributed data processing framework designed for collaboration.  Apache Spark™ is the defacto big data standard as it can scale to large datasets across thousands of nodes and cores.  It is a compute engine that works well on-premises and in the cloud.",
         "slideLink": "",
-        "youtubeLink": "https://youtu.be/FU3ADiP24ds"
+        "youtubeLink": "https://youtu.be/FU3ADiP24ds?t=0"
         }, {
 				"id": 15,
 				"localTime": "",
@@ -159,7 +159,7 @@
 				"affiliation": "CDS",
         "abstract": "The Strasbourg astronomical Data Centre (CDS) provides services for reference data from published journal articles and from large astronomical surveys. The SIMBAD, VizieR, Aladin and the CDS X-Match services are being continuously updated and developed to meet the challenges of the rapidly increasing volumes of data. The services are designed to support Open Science and we will show how this is aimed at facilitating the scientific work of the research community but also the use of research data by educators and planetaria. We highlight the role of IVOA standards for interoperability, and the new approaches made possible by practical tools for manipulating the space- and time-coverage of data sets. We also mention the promising developments for integrating VO compliant services into wider systems such as the European Open Science Cloud.",
         "slideLink": "",
-        "youtubeLink": ""
+        "youtubeLink": "https://youtu.be/Wk28pZOD3QE?t=77"
         }, {
 				"id": 21,
 				"localTime": "",
@@ -169,7 +169,7 @@
 				"affiliation": "IPAC",
 				"abstract": "",
         "slideLink": "",
-        "youtubeLink": ""
+        "youtubeLink": "https://youtu.be/Wk28pZOD3QE?t=1955"
 			}, {
 				"id": 22,
 				"localTime": "",
@@ -179,7 +179,7 @@
 				"affiliation": "NOIRLab",
 				"abstract": "",
         "slideLink": "",
-        "youtubeLink": ""
+        "youtubeLink": "https://youtu.be/Wk28pZOD3QE?t=4082"
 			}]
 		},
 		{
