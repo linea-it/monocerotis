@@ -20,7 +20,10 @@ import {
   Tabs,
   Tab,
 } from '@material-ui/core';
-import VideoLibraryIcon from '@material-ui/icons/VideoLibrary';
+import {
+  VideoLibrary as VideoLibraryIcon,
+  Description as DescriptionIcon,
+} from '@material-ui/icons';
 import schedule from './schedule.json';
 import styles from './styles';
 
@@ -42,7 +45,7 @@ function TabPanel(props) {
       [theme.breakpoints.up('lg')]: {
         fontSize: '1.2rem',
         padding: '10px 20px',
-        maxWidth: 365,
+        maxWidth: 320,
         textOverflow: 'ellipsis',
         whiteSpace: 'nowrap',
         overflow: 'hidden',
@@ -83,6 +86,7 @@ function TabPanel(props) {
                 <StyledTableCell>Title</StyledTableCell>
                 <StyledTableCell>Speaker</StyledTableCell>
                 <StyledTableCell>Affiliation</StyledTableCell>
+                <StyledTableCell>Slide</StyledTableCell>
                 <StyledTableCell>Recording</StyledTableCell>
               </TableRow>
             </TableHead>
@@ -94,7 +98,7 @@ function TabPanel(props) {
                       <StyledTableCell colSpan="1">
                         {row.speaker}
                       </StyledTableCell>
-                      <StyledTableCell colSpan="4">
+                      <StyledTableCell colSpan="5">
                         <Link
                           href={row.youtubeLink}
                           target="_blank"
@@ -111,7 +115,7 @@ function TabPanel(props) {
                     <StyledTableRow key={row.id}>
                       <StyledTableCell
                         align="center"
-                        colSpan="5"
+                        colSpan="6"
                         className={classes.tableCell}
                       >
                         Break
@@ -164,9 +168,22 @@ function TabPanel(props) {
                     <StyledTableCell>{row.speaker}</StyledTableCell>
                     <StyledTableCell>{row.affiliation}</StyledTableCell>
                     <StyledTableCell align="center">
-                      <IconButton href={row.youtubeLink} target="_blank">
-                        <VideoLibraryIcon />
-                      </IconButton>
+                      {row.slideLink ? (
+                        <IconButton href={row.slideLink} target="_blank">
+                          <DescriptionIcon />
+                        </IconButton>
+                      ) : (
+                        '-'
+                      )}
+                    </StyledTableCell>
+                    <StyledTableCell align="center">
+                      {row.youtubeLink ? (
+                        <IconButton href={row.youtubeLink} target="_blank">
+                          <VideoLibraryIcon />
+                        </IconButton>
+                      ) : (
+                        '-'
+                      )}
                     </StyledTableCell>
                   </StyledTableRow>
                 );
