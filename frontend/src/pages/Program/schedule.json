@@ -14,7 +14,7 @@
 				"title": "Opening Remarks",
 				"speaker": "Luiz da Costa",
 				"affiliation": "LIneA",
-        "slideLink": "",
+        "slideLink": "https://drive.google.com/file/d/1WvNGqq8tztcKwuxt516OatHywa5F3aXq/view",
         "youtubeLink": "https://youtu.be/YHUn93BwZoE?t=0"
 			}, {
 				"id": 3,
@@ -198,8 +198,8 @@
 				"speaker": "Tom Soderstrom",
 				"affiliation": "AWS",
 				"abstract": "The global interest in Space is rising exponentially from Governments, private industry, startups, universities, and private citizens. Of particular interest is the large amount of data that will flow from Space to Earth and then be analyzed, shared, re-analyzed, published, and used for scientific and business use cases. In this talk, I will address the challenges and opportunities involved in democratizing Space and Space data and how everyone can help discover new worlds as well as save our own.",
-        "slideLink": "",
-        "youtubeLink": ""
+        "slideLink": "https://drive.google.com/file/d/1LUtBLdXt2ZudblYyNWQXvn3l1P9Z2Xwc/view",
+        "youtubeLink": "https://www.youtube.com/watch?v=nwHd4RWCgYU?t=0"
 			}, {
 				"id": 26,
         "localTime": "",
@@ -209,7 +209,7 @@
 				"affiliation": "SLAC",
         "abstract": "Rubin’s 10-year Survey is projected to begin in late 2023: about 20 TB per Chilean night will be delivered to the US Data Facility (US DF). The US DF will perform three major functions: prompt processing to generate transient alerts within 1 minute after exposures were taken; annual reprocessing of all images taken to date; and providing a science platform for analysis to an anticipated 5000-7500 users, dedicating about 10% of the total resource to them. The annual reprocessings will be executed in concert with facilities in France and the UK, and are projected to occupy about 500 PB of nearline storage by year 10.",
         "slideLink": "",
-        "youtubeLink": ""
+        "youtubeLink": "https://youtu.be/nwHd4RWCgYU?t=1050"
         }, {
 				"id": 27,
 				"localTime": "",
@@ -219,7 +219,7 @@
 				"affiliation": "Univ. of Edinburgh",
 				"abstract": "20-year programme of activities, intended to best prepare UK-based astronomers to exploit the LSST to its full potential. A key element of the UK's plan is to set up and operate an ambitious Independent Data Access Centre, not only to serve the full range of Rubin Observatory data products, but also to operate a Community Broker service to receive and process the Observatory's real-time alert stream, and to run campaigns to generate and curate a number of User-generated Products intended to expand the reach of the baseline data products and to integrate complementary data from other topical surveys. In this talk, we will provide a high-level summary of the LSST:UK Programme and highlight potentially interesting research and development topics. We will also provide an update on our progress to design and implement a Data Access Centre, and describe the portfolio of services we plan to provide.",
         "slideLink": "",
-        "youtubeLink": ""
+        "youtubeLink": "https://youtu.be/nwHd4RWCgYU?t=2302"
 			}, {
 				"id": 28,
 				"localTime": "",
@@ -228,8 +228,8 @@
 				"speaker": "Dominique Boutigny",
 				"affiliation": "IN2P3",
         "abstract": "CC-IN2P3 will be in charge of 50% of the Vera C. Rubin Observatory's Data Release Processing and will host a full copy of the data and catalogs. I will describe the computing infrastructure that is being deployed and the organization that we are setting up in France in order to process the Rubin data and to provide the services necessary to access them. I will also explain why it is critical to test and validate the infrastructure and services with real science use cases such as those provided by the Dark Energy Science Collaboration.",
-        "slideLink": "",
-        "youtubeLink": ""
+        "slideLink": "https://drive.google.com/file/d/140P1CAc613cnTTAyM_2XiRuAI2D8cgZb/view",
+        "youtubeLink": "https://youtu.be/nwHd4RWCgYU?t=3949"
         }, {
 				"id": 29,
 				"speaker": "break"
