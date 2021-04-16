@@ -81,7 +81,7 @@
 				"speaker": "Andrew Connolly",
 				"affiliation": "DIRAC",
         "abstract": "Over the last decade data science has emerged as a key component of research within many domains. Taking the eScience and DiRAC Institutes at the University of Washington as exemplars, I will discuss the opportunities and challenges building data science communities in the context of the data-intensive astrophysics expected from a new generation of facilities such as the Rubin Observatory and Roman Space Telescope. Programs to develop tools and techniques that can scale to the volume and complexity of the LSST,  educational frameworks that can train researchers in data science methodologies and applications, and mechanisms by which we can share our ideas and expertise (both within and beyond astrophysics) will all need to be part of any data science institute. I will end by describing some of the needs that are emerging across a range of disciplines as we start to scale our science and where astronomy might look to draw on the experience of the broader research community.",
-        "slideLink": "",
+        "slideLink": "https://drive.google.com/file/d/12KoVFUTYyi8aOwkgUkn_m7EiNz0ntjgN/view",
         "youtubeLink": "https://youtu.be/jTDj-YSUU-k?t=4894"
         }, {
           "id": 6,
@@ -168,7 +168,7 @@
 				"speaker": "Vandana Desai",
 				"affiliation": "IPAC",
 				"abstract": "",
-        "slideLink": "",
+        "slideLink": "https://drive.google.com/file/d/1RGcDQcwfv4zWuV-hldBjY1j06su91RDT/view",
         "youtubeLink": "https://youtu.be/Wk28pZOD3QE?t=1955"
 			}, {
 				"id": 22,
