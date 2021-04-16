@@ -14,7 +14,7 @@
 				"title": "Opening Remarks",
 				"speaker": "Luiz da Costa",
 				"affiliation": "LIneA",
-        "slideLink": "https://drive.google.com/file/d/1WvNGqq8tztcKwuxt516OatHywa5F3aXq/view",
+        "slideLink": "https://drive.google.com/file/d/17n1Uik9AtkKly_MYsQVSDfI_qTWe3n8u/view",
         "youtubeLink": "https://youtu.be/YHUn93BwZoE?t=0"
 			}, {
 				"id": 3,
@@ -34,7 +34,7 @@
 				"speaker": "Ian Bird",
 				"affiliation": "ESCAPE",
         "abstract": "The ESCAPE project brings together 11 ESFRI and other Research Infrastructures in Astronomy, Astro-Particle, Particle and Nuclear Physics fo the first time.  It is one of 5 such thematic science cluster projects that are integrating communities, infrastructure, and research tools as contributions to the European Open Science Cloud (EOSC).  ESCAPE is building a next-generation data management infrastructure (“data-lake”) to provide FAIR data management at exabyte scales, capable of delivering data to distributed high performance analysis and compute facilities.  That is complemented by work on a software infrastructure, enabling the sharing of the research tools and products, an integration of the International Virtual Observatory (IVOA) framework into the proto-EOSC and high level science platforms.  ESCAPE is currently planning two science challenges; one on Dark Matter, and the second on Gravitational Waves and the Extreme Universe, which together will demonstrate the capabilities of open data and cross-domain science.  This talk will give an overview of the ESCAPE work and output, the two science projects, and will look at the prospects for how this all feeds into the first implementation of the EOSC.",
-        "slideLink": "https://drive.google.com/file/d/1mo-dCXjFonfHJchJ6graMdbQoSvKaA_j/view",
+        "slideLink": "https://drive.google.com/file/d/1T6MhdCGLFD6GVKfrfiruWVw-Mf7vcejF/view",
         "youtubeLink": "https://youtu.be/YHUn93BwZoE?t=2935"
         }, {
 				"id": 5,
@@ -61,7 +61,7 @@
 				"speaker": "Jordan Collier",
 				"affiliation": "IDIA",
         "abstract": "A number of tools and systems have been developed or adopted to deal with the PB scale of MeerKAT data at the Inter-University Institute for Data Intensive Astronomy (IDIA), Cape Town. I will present a number of these tools and underlying systems, including those for storage, processing, visualisation, and data transfer. I will present a worked example of processing MeerKAT data via the IDIA pipeline, a fully automated end-to-end pipeline that is efficient, flexible, scalable, and user-friendly, and designed to operate across the ilifu cluster using SLURM and MPI. Our unique setup uses an IDIA cloud-based platform running on hardware provided by the ilifu national facility, taking advantage of cluster-level parallelism, resource management and software containers. Altogether this represents a pathfinder science regional data centre, and a good framework for solving many of the broader challenges of the SKA.",
-        "slideLink": "https://drive.google.com/file/d/1U22w8H0731v0-Gqk-oupjyGRpAgO2Laa/view",
+        "slideLink": "https://drive.google.com/file/d/1r3oEN-dGCOMjifgDzzkP_bTIHnXPEqFK/view",
         "youtubeLink": "https://youtu.be/jTDj-YSUU-k?t=123"
         }, {
 				"id": 10,
@@ -71,7 +71,7 @@
 				"speaker": "Alex Szalay",
 				"affiliation": "IDIES",
         "abstract": "The talk will present a discussion about how science is changing, results in data sets with an ever longer effective lifetime. Many of the current sky-surveys (and other mid-scale projects) generate data sets at a cost of tens to hundreds of millions of dollars, yet there is no coherent strategy to ensure the survival of these data sets.  WE will discuss the different factors related to long term data preservation, the technological changes, and the sociological changes in how data is used, including AI applications.",
-        "slideLink": "https://drive.google.com/file/d/1SHgHZ6dkyNt3UzL-BpoK3ya-n-vkZ_-C/view",
+        "slideLink": "https://drive.google.com/file/d/1d_nWc2QH6EYIvz_MTDB7S24Mk_dbmygi/view",
         "youtubeLink": "https://youtu.be/jTDj-YSUU-k?t=2126"
         }, {
 				"id": 11,
@@ -91,7 +91,7 @@
           "speaker": "J. Ross Thomson",
           "affiliation": "Google LLC",
           "abstract": "Cloud computing is a fast moving environment offering great flexibility for modern scientific missions to build and optimize applications on Cloud platforms. The velocity of change in cloud computing presents a risk to science missions planning for a decades long project lifetime. In this presentation, we will discuss strategies to minimize risk and increase efficiency in a Multi-Cloud / Hybrid computing environment.",
-          "slideLink": "https://drive.google.com/file/d/1bg43Rez8g7EIFCllaZzCSe7T6_jn585k/view",
+          "slideLink": "https://drive.google.com/file/d/1HHc0snLQlABHie-A_U_AHoTRtTXn81al/view",
           "youtubeLink": "https://youtu.be/jTDj-YSUU-k?t=7274"
         }]
 		},
@@ -131,7 +131,7 @@
 				"speaker": "JJ Kavelaars",
 				"affiliation": "CDAC",
         "abstract": "I will describe the evolution of the Canadian Astronomy Data Centre (CADC) from an archive delivering data towards an integrated  science portal development and support group. The CADC is committed to expanding the capacity of the Canadian Advanced Network for Astronomy Research (CANFAR).  I will describe the current state of evolution along this path, the processes we have followed so far, the technologies we are currently developing to enable the archive/portal interaction and our plans for future development.   My goal is to provide examples of the use-case driven evolution of the CADC/CANFAR services and to raise some.",
-        "slideLink": "https://drive.google.com/file/d/1_-8n5sjappkfYt2XxGOP0SA8P5ugrjcK/view",
+        "slideLink": "https://drive.google.com/file/d/1d3purSZdbSWNhs_-P-fyU8gWOXea14MB/view",
         "youtubeLink": "https://youtu.be/FU3ADiP24ds?t=2957"
         }, {
 				"id": 17,
@@ -141,7 +141,7 @@
 				"speaker": "Veronique Valette",
 				"affiliation": "CNES",
         "abstract": "CNES, French Space Agency is in charge of developing and operating data processing centers for scientific projects,: earth observation, astrophysics, space exploration. The paper will present our existing  data processing center  (HPC, HPSS, Jupyterhub, VRE),  were we want to go in the near future (OpenStack, Datalake, Datalabs) and all the tools that are available for scientists and developers (software factory).  It will also explain how the science projects use this data center now and what are the plans for the future.",
-        "slideLink": "https://drive.google.com/file/d/1azPmOc6E7HJvK9VPm8OcbrcE80g2CIbe/view",
+        "slideLink": "https://drive.google.com/file/d/1eqn1veghx0toLDR4FnhUvaswMV3fbVnu/view",
         "youtubeLink": "https://youtu.be/FU3ADiP24ds?t=4693"
         }, {
 				"id": 18,
@@ -158,7 +158,7 @@
 				"speaker": "Mark Allen",
 				"affiliation": "CDS",
         "abstract": "The Strasbourg astronomical Data Centre (CDS) provides services for reference data from published journal articles and from large astronomical surveys. The SIMBAD, VizieR, Aladin and the CDS X-Match services are being continuously updated and developed to meet the challenges of the rapidly increasing volumes of data. The services are designed to support Open Science and we will show how this is aimed at facilitating the scientific work of the research community but also the use of research data by educators and planetaria. We highlight the role of IVOA standards for interoperability, and the new approaches made possible by practical tools for manipulating the space- and time-coverage of data sets. We also mention the promising developments for integrating VO compliant services into wider systems such as the European Open Science Cloud.",
-        "slideLink": "https://drive.google.com/file/d/1mC15iFHZ5rwpP3iFmTQOaz7gdZdOlScF/view",
+        "slideLink": "https://drive.google.com/file/d/1VqmdyTGph6muxyAfRLRjeJOOBcQ7Njio/view",
         "youtubeLink": "https://youtu.be/Wk28pZOD3QE?t=77"
         }, {
 				"id": 21,
@@ -178,7 +178,7 @@
 				"speaker": "Knut Olsen",
 				"affiliation": "NOIRLab",
 				"abstract": "",
-        "slideLink": "",
+        "slideLink": "https://drive.google.com/file/d/1vI4ixl02XU8tIVJjVSJRZ9dm8P_mR7uI/view",
         "youtubeLink": "https://youtu.be/Wk28pZOD3QE?t=4082"
 			}]
 		},
@@ -198,7 +198,7 @@
 				"speaker": "Tom Soderstrom",
 				"affiliation": "AWS",
 				"abstract": "The global interest in Space is rising exponentially from Governments, private industry, startups, universities, and private citizens. Of particular interest is the large amount of data that will flow from Space to Earth and then be analyzed, shared, re-analyzed, published, and used for scientific and business use cases. In this talk, I will address the challenges and opportunities involved in democratizing Space and Space data and how everyone can help discover new worlds as well as save our own.",
-        "slideLink": "https://drive.google.com/file/d/1LUtBLdXt2ZudblYyNWQXvn3l1P9Z2Xwc/view",
+        "slideLink": "https://drive.google.com/file/d/19pjTA8xmOBve9Gfi6FrqKEWrDEWrkdPx/view",
         "youtubeLink": "https://www.youtube.com/watch?v=nwHd4RWCgYU?t=0"
 			}, {
 				"id": 26,
@@ -208,7 +208,7 @@
 				"speaker": "Richard Dubois",
 				"affiliation": "SLAC",
         "abstract": "Rubin’s 10-year Survey is projected to begin in late 2023: about 20 TB per Chilean night will be delivered to the US Data Facility (US DF). The US DF will perform three major functions: prompt processing to generate transient alerts within 1 minute after exposures were taken; annual reprocessing of all images taken to date; and providing a science platform for analysis to an anticipated 5000-7500 users, dedicating about 10% of the total resource to them. The annual reprocessings will be executed in concert with facilities in France and the UK, and are projected to occupy about 500 PB of nearline storage by year 10.",
-        "slideLink": "",
+        "slideLink": "https://drive.google.com/file/d/1CZ_mXL5QKL3SEQclwDeo9DwCidHAFUPP/view",
         "youtubeLink": "https://youtu.be/nwHd4RWCgYU?t=1050"
         }, {
 				"id": 27,
@@ -218,7 +218,7 @@
 				"speaker": "George Beckett",
 				"affiliation": "Univ. of Edinburgh",
 				"abstract": "20-year programme of activities, intended to best prepare UK-based astronomers to exploit the LSST to its full potential. A key element of the UK's plan is to set up and operate an ambitious Independent Data Access Centre, not only to serve the full range of Rubin Observatory data products, but also to operate a Community Broker service to receive and process the Observatory's real-time alert stream, and to run campaigns to generate and curate a number of User-generated Products intended to expand the reach of the baseline data products and to integrate complementary data from other topical surveys. In this talk, we will provide a high-level summary of the LSST:UK Programme and highlight potentially interesting research and development topics. We will also provide an update on our progress to design and implement a Data Access Centre, and describe the portfolio of services we plan to provide.",
-        "slideLink": "",
+        "slideLink": "https://drive.google.com/file/d/1uyP9_3D05e8pZDueeSajlXvKZNBhd4wS/view",
         "youtubeLink": "https://youtu.be/nwHd4RWCgYU?t=2302"
 			}, {
 				"id": 28,
@@ -228,7 +228,7 @@
 				"speaker": "Dominique Boutigny",
 				"affiliation": "IN2P3",
         "abstract": "CC-IN2P3 will be in charge of 50% of the Vera C. Rubin Observatory's Data Release Processing and will host a full copy of the data and catalogs. I will describe the computing infrastructure that is being deployed and the organization that we are setting up in France in order to process the Rubin data and to provide the services necessary to access them. I will also explain why it is critical to test and validate the infrastructure and services with real science use cases such as those provided by the Dark Energy Science Collaboration.",
-        "slideLink": "https://drive.google.com/file/d/140P1CAc613cnTTAyM_2XiRuAI2D8cgZb/view",
+        "slideLink": "https://drive.google.com/file/d/1QC7FFaol-jGDwVJ5IV-ibRbCvtVZXzd-/view",
         "youtubeLink": "https://youtu.be/nwHd4RWCgYU?t=3949"
         }, {
 				"id": 29,
@@ -246,7 +246,7 @@
         "speaker": "Bruno Altieri",
         "affiliation": "ESA",
         "abstract": "ESA’s Euclid dark energy mission will release about 10 Pbytes of images and catalogues at the end of six years of operations, currently planned to start in 2022. Even if the data rate will not be the most extreme (approximately 200 Gbyte per day of raw science data), Euclid is expected to generate a 24/7 data flow for 6 years to cover eventually an area of 15,000 deg^{2} in optical imaging, near-infrared imaging photometry and near-infrared spectroscopy, with space-based spatial resolution. These data will be combined with g,r,i and z-band ground-based optical photometry, covering the same sky as Euclid. Key elements are the accessible archive with its data products, the scientific validations, and user support providing knowledge and, possibly, advanced remote processing facilities. We will review these key elements from a Euclid perspective and discuss the possible use of the ESA Datalabs platform for facilitating and maximising the scientific return from this high-quality space-grade data deluge.",
-        "slideLink": "",
+        "slideLink": "https://drive.google.com/file/d/1I_dUR-z-BU4kWgDVMjS_3uAHunJDIgGM/view",
         "youtubeLink": "https://youtu.be/WyKIrde_WZY?t=32"
       },
       {
@@ -257,7 +257,7 @@
 				"speaker": "Jorge Carretero",
 				"affiliation": "PIC - IFAE",
 				"abstract": "Galaxy surveys require support from massive datasets in order to achieve precise estimations of cosmological parameters. CosmoHub is a web platform based on Hadoop to perform interactive exploration, customization and distribution of massive astronomy datasets without any Structured Query Language (SQL) knowledge required. Hosted at the Port d'Informació Científica (PIC) manages over 60 TB of catalogued information and 50 billion astronomical objects, and provides support to an ever-growing worldwide community of more than 1000 scientists and several leading edge collaborations such as the Gaia and Euclid space missions, Dark Energy Survey (DES), DESI Legacy Imaging Surveys, Cherenkov Telescope Array (CTA), Major Atmospheric Gamma Imaging Cherenkov (MAGIC) telescopes, Physics of the Accelerating Universe (PAU) and MICE numerical simulations, among others. ESA's Euclid mission is scheduled for launch in 2023. The SciPIC scientific pipeline has been developed to efficiently generate mock galaxy catalogs using as input a dark matter halo population. It runs on top of the Hadoop platform using Apache Spark, which is an open-source cluster-computing framework. Different Euclid teams have created the largest simulated galaxy catalog ever produced: the Euclid Flagship mock galaxy catalog. The simulation reproduces with high accuracy both the shear pattern and the galaxy clustering down to small scales. Also the simulation mimics complex properties that real sources exhibit, such as their shapes, colours and luminosities. During the talk I will describe CosmoHub and the process of generating the Euclid Flagship mock galaxy catalogue.",
-        "slideLink": "",
+        "slideLink": "https://drive.google.com/file/d/1x5Q6rh4-0mpzDoY-9mSHI4JjfnFV8E-1/view",
         "youtubeLink": "https://youtu.be/WyKIrde_WZY?t=1916"
 			},
       {
@@ -268,7 +268,7 @@
 				"speaker": "IOC",
 				"affiliation": "-",
 				"abstract": "",
-        "slideLink": "https://drive.google.com/file/d/1hRsJlGi26rnVPb0i4oxn_VMVx63FnIol/view",
+        "slideLink": "https://drive.google.com/file/d/1nbyw5_hVghsIrJ019NiU2NZZcMXDpq3Y/view",
         "youtubeLink": "https://youtu.be/WyKIrde_WZY?t=3936"
 			}
     ]
