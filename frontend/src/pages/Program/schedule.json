@@ -24,7 +24,7 @@
 				"speaker": "Simone Campana",
 				"affiliation": "WLCG / CERN",
         "abstract": "The Worldwide LHC Computing Grid collaboration provides the computing infrastructure for the CERN experiments at the Large Hadron Collider. Such an infrastructure is deployed across more than 150 data centres in 42 countries worldwide and provides more than an exabyte of storage and one million CPU cores to the LHC experiments. The CERN LHC program is entering an unprecedented challenging phase, increasing by more than 10 times the computing needs. This contribution will provide an overview of WLCG and present how the infrastructure is evolving in terms of policies and services to face such a challenge, leveraging and adapting to the rapidly changing Information Technology market",
-        "slideLink": "",
+        "slideLink": "https://drive.google.com/file/d/1hav_uluE3b4f7_X0xVEeFx1LNYYVBoxB/view",
         "youtubeLink": "https://youtu.be/YHUn93BwZoE?t=1015"
 			}, {
 				"id": 4,
@@ -111,7 +111,7 @@
 				"speaker": "Denny Lee",
 				"affiliation": "Databricks",
         "abstract": "With the vast amount of data captured in the night sky, how can we effectively analyze all of this data while also collaborating between different institutions in different geographies, whether on-premises or in the cloud?  It is essential to use a distributed data processing framework designed for collaboration.  Apache Spark™ is the defacto big data standard as it can scale to large datasets across thousands of nodes and cores.  It is a compute engine that works well on-premises and in the cloud.",
-        "slideLink": "",
+        "slideLink": "https://drive.google.com/file/d/1-sINtsqLHCfpN526BFT_vXO8uBZiF73N/view",
         "youtubeLink": "https://youtu.be/FU3ADiP24ds?t=0"
         }, {
 				"id": 15,
